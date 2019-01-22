@@ -1,2 +1,0 @@
-allow hal_audio_default hal_audio_default:process { execmem };
-allow hal_audio_default audio_data_file:dir { search };
