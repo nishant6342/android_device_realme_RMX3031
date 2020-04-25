@@ -72,6 +72,9 @@ ro.vendor.mtk_zsdhdr_support=1
 ro.mtk_cam_dualzoom_support=1
 ro.vendor.mtk_slow_motion_support=1
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 ro.opengles.version=196610
 debug.hwui.renderer=opengl
