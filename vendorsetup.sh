@@ -16,3 +16,6 @@ fi
 POCKET=packages/apps/PocketMode/pocket_mode.mk
 if ! [ -a $POCKET ]; then git clone https://github.com/nishant6342/packages_apps_PocketMode packages/apps/PocketMode
 fi
+FW=vendor/realme/RMX3031-firmware/Android.mk
+if ! [ -a $FW ]; then git clone https://github.com/nishant6342/vendor_realme_RMX3031-firmware vendor/realme/RMX3031-firmware
+fi
