@@ -75,7 +75,12 @@
     <string name="refresh_rate_120_summary">Maximum smoothness with higher refresh rate but Apps&#47;Games can still limit to 60 FPS</string>
     <string name="refresh_rate_120Forced_title">Smooth Display</string>
     <string name="refresh_rate_120Forced_summary">Force display to 120Hz which improves touch responsiveness &amp; animation quality. Increases battery usage. </string>
-
+	<!-- Vibration Strength -->
+    <string name="vibration_strength_title">Vibration Strength</string>
+    <string name="vibration_strength_low">Low</string>
+    <string name="vibration_strength_medium">Medium</string>
+    <string name="vibration_strength_high">High (default)</string>
+	
     <!-- Unsupported -->
     <string name="unsupported">Unsupported</string>
 </resources>

@@ -54,3 +54,7 @@ on property:persist.perf_profile=2
 	write /sys/module/ged/parameters/gx_boost_on 1
 	write /sys/module/ged/parameters/boost_gpu_enable 1
 	
+# Vibration Strength
+on property:persist.vib_strength=*
+    write /sys/class/leds/vibrator/vmax ${persist.vib_strength}
+	

@@ -153,6 +153,14 @@
         android:key="misc"
         android:title="@string/misc_title">
 
+        <com.realmeparts.SecureSettingListPreference
+            android:key="vibration_strength"
+            android:title="@string/vibration_strength_title"
+            android:icon="@drawable/ic_vibration"
+            android:entries="@array/vibration_strength_entries"
+            android:entryValues="@array/vibration_strength_values"
+            android:defaultValue="2500" />
+			
         <SwitchPreference
             android:icon="@drawable/usb_otg_icon"
             android:key="otg"

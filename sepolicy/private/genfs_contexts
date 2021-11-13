@@ -1,2 +1,5 @@
 genfscon proc  /gpufreq     u:object_r:proc_gpufreq:s0
 genfscon proc  /touchpanel  u:object_r:proc_tp:s0
+
+# Vibration
+genfscon sysfs /sys/class/leds/vibrator/vmax         u:object_r:sysfs_vibrator:s0

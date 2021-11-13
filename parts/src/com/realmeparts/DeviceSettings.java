@@ -23,6 +23,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.hardware.display.DisplayManager;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.Display;
 
@@ -48,6 +50,8 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_DC_SWITCH = "dc";
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_PERF_PROFILE = "perf_profile";
+	public static final String KEY_VIBRATION_STRENGTH = "vibration_strength";
+	public static final String VIB_STRENGTH_SYSTEM_PROPERTY = "persist.vib_strength";
     public static final String PERF_PROFILE_SYSTEM_PROPERTY = "persist.perf_profile";
     public static final String KEY_GAME_SWITCH = "game";
     public static final String KEY_CHARGING_SWITCH = "smart_charging";
@@ -75,6 +79,8 @@ public class DeviceSettings extends PreferenceFragment
     private static NotificationManager mNotificationManager;
     public TwoStatePreference mDNDSwitch;
     public PreferenceCategory mPreferenceCategory;
+	private Vibrator mVibrator;
+	private SecureSettingListPreference mVibStrength;
     private TwoStatePreference mDCModeSwitch;
     private TwoStatePreference mSRGBModeSwitch;
     private TwoStatePreference mHBMModeSwitch;
@@ -168,6 +174,13 @@ public class DeviceSettings extends PreferenceFragment
         mDT2WModeSwitch.setChecked(DT2WModeSwitch.isCurrentlyEnabled(this.getContext()));
         mDT2WModeSwitch.setOnPreferenceChangeListener(new DT2WModeSwitch());
 
+        mVibStrength = (SecureSettingListPreference) findPreference(KEY_VIBRATION_STRENGTH);
+        mVibStrength.setValue(Utils.getStringProp(VIB_STRENGTH_SYSTEM_PROPERTY, "2500"));
+        mVibStrength.setSummary(mVibStrength.getEntry());
+        mVibStrength.setOnPreferenceChangeListener(this);
+
+        mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
+
         // Few checks to enable/disable options when activity is launched
         if ((prefs.getBoolean("refresh_rate_120", false) && prefs.getBoolean("refresh_rate_120Forced", false))) {
             mRefreshRate60.setEnabled(false);
@@ -218,6 +231,12 @@ public class DeviceSettings extends PreferenceFragment
             mPerfProfile.setValue((String) newValue);
             mPerfProfile.setSummary(mPerfProfile.getEntry());
             Utils.setStringProp(PERF_PROFILE_SYSTEM_PROPERTY, (String) newValue);
+        }
+		if (preference == mVibStrength) {
+            mVibStrength.setValue((String) newValue);
+            mVibStrength.setSummary(mVibStrength.getEntry());
+            Utils.setStringProp(VIB_STRENGTH_SYSTEM_PROPERTY, (String) newValue);
+            mVibrator.vibrate(VibrationEffect.createOneShot(85, VibrationEffect.DEFAULT_AMPLITUDE));
         }
         return true;
     }
