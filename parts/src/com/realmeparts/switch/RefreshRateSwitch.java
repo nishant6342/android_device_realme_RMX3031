@@ -88,10 +88,10 @@ public class RefreshRateSwitch implements OnPreferenceChangeListener {
                 Settings.System.putFloat(mContext.getContentResolver(), "MIN_REFRESH_RATE".toLowerCase(), 60f);
                 break;
             case 2:
-                setForcedRefreshRate(0);
+                setForcedRefreshRate(1);
                 break;
             case 3:
-                setForcedRefreshRate(-1);
+                setForcedRefreshRate(0);
                 break;
         }
         return true;

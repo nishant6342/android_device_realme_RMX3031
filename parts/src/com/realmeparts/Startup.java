@@ -70,7 +70,7 @@ public class Startup extends BroadcastReceiver {
         }
         enabled = sharedPrefs.getBoolean("refresh_rate_120Forced", false);
         if (enabled) {
-            RefreshRateSwitch.setForcedRefreshRate(0);
+            RefreshRateSwitch.setForcedRefreshRate(1);
         }
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_HBM_SWITCH, false);
         if (enabled) {
