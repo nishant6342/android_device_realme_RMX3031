@@ -72,7 +72,6 @@ public class GameModeTileService extends TileService {
             AppNotification.Send(this, GameModeSwitch.GameMode_Notification_Channel_ID, this.getString(R.string.game_mode_title), this.getString(R.string.game_mode_notif_content));
         } else AppNotification.Cancel(this, GameModeSwitch.GameMode_Notification_Channel_ID);
         Utils.writeValue(GameModeSwitch.getFile(), enabled ? "0" : "1");
-        Utils.writeValue(DeviceSettings.TP_LIMIT_ENABLE, enabled ? "1" : "0");
         Utils.writeValue(DeviceSettings.TP_DIRECTION, enabled ? "0" : "1");
         SystemProperties.set("perf_profile", enabled ? "0" : "1");
         if (sharedPrefs.getBoolean("dnd", false)) GameModeTileDND();

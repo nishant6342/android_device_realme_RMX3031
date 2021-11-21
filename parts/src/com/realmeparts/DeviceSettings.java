@@ -62,7 +62,6 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_CABC = "cabc";
     public static final String CABC_SYSTEM_PROPERTY = "persist.cabc_profile";
     public static final String KEY_SETTINGS_PREFIX = "device_setting_";
-    public static final String TP_LIMIT_ENABLE = "/proc/touchpanel/oplus_tp_limit_enable";
     public static final String TP_DIRECTION = "/proc/touchpanel/oplus_tp_direction";
     private static final String ProductName = Utils.ProductName();
     private static final String KEY_CATEGORY_CHARGING = "charging";
