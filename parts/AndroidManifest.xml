@@ -72,9 +72,6 @@
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/device_summary" />
-            <meta-data 
-                android:name="com.android.settings.order" 
-                android:value="-199"/>
         </activity>
 
         <activity android:name=".DeviceSettings" />
