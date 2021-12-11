@@ -53,3 +53,18 @@ lib/libsink.so|a7f8fa44abac16851dc83c58a13407e65c6a2cb0
 lib/libsource.so|0e01c6c5d76e21629463d1f94d28d1b8f91c4c30
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Kernel Modules
+lib/modules/bt_drv.ko
+lib/modules/conninfra.ko
+lib/modules/fmradio_drv.ko
+lib/modules/fpsgo.ko
+lib/modules/gps_drv.ko
+lib/modules/kheaders.ko
+lib/modules/met.ko
+lib/modules/modules.alias
+lib/modules/modules.dep
+lib/modules/modules.load
+lib/modules/modules.softdep
+lib/modules/wlan_drv_gen4m.ko
+lib/modules/wmt_chrdev_wifi.ko
