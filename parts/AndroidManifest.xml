@@ -117,17 +117,6 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-		<service
-            android:name="com.realmeparts.PerfProfileTileService"
-            android:icon="@drawable/ic_perf_profile"
-            android:label="@string/perf_profile_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-			android:exported="true">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
         <service
             android:name="com.realmeparts.GameModeTileService"
             android:icon="@drawable/ic_game_tile"
@@ -155,17 +144,6 @@
             android:name="com.realmeparts.OtgToggleService"
             android:icon="@drawable/ic_otg_tile"
             android:label="@string/tile_otg_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
-			android:exported="true">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-        <service
-            android:name="com.realmeparts.CABCTileService"
-            android:icon="@drawable/ic_cabc"
-            android:label="@string/cabc_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
 			android:exported="true">
             <intent-filter>

@@ -47,14 +47,11 @@ public class DCModeTileService extends TileService {
     public void onStartListening() {
         super.onStartListening();
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (!sharedPrefs.getBoolean("DC_DeviceMatched", false)) {
-            getQsTile().setState(Tile.STATE_UNAVAILABLE);
-            getQsTile().setLabel(getResources().getString(R.string.unsupported));
-        } else {
-            enabled = DCModeSwitch.isCurrentlyEnabled(this);
-            getQsTile().setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
-            getQsTile().setLabel(getResources().getString(R.string.tile_dc_mode));
-        }
+		
+        enabled = DCModeSwitch.isCurrentlyEnabled(this);
+        getQsTile().setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
+        getQsTile().setLabel(getResources().getString(R.string.tile_dc_mode));
+			
         getQsTile().updateTile();
 
     }
