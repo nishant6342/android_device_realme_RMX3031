@@ -38,15 +38,6 @@ public class RefreshRateSwitch implements OnPreferenceChangeListener {
         mContext = context;
     }
 
-    public static boolean isCurrentlyEnabled(Context context) {
-        return Settings.System.getFloat(context.getContentResolver(), "PEAK_REFRESH_RATE".toLowerCase(), 120f) == 120f;
-    }
-
-    public static void setPeakRefresh(Context context, boolean enabled) {
-        Settings.System.putFloat(context.getContentResolver(), "PEAK_REFRESH_RATE".toLowerCase(), enabled ? 120f : 60f);
-        Settings.System.putFloat(context.getContentResolver(), "MIN_REFRESH_RATE".toLowerCase(), enabled ? 120f : 60f);
-    }
-
     public static void setForcedRefreshRate(int value) {
         Parcel Info = Parcel.obtain();
         Info.writeInterfaceToken("android.ui.ISurfaceComposer");
@@ -64,35 +55,10 @@ public class RefreshRateSwitch implements OnPreferenceChangeListener {
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         Boolean enabled = (Boolean) newValue;
 
-        if (preference == DeviceSettings.mRefreshRate120 && enabled) {
-            setRefreshRate = 1;
-        } else if (preference == DeviceSettings.mRefreshRate60 && enabled) {
-            setRefreshRate = 0;
-        } else if (preference == DeviceSettings.mRefreshRate120Forced && enabled) {
-            DeviceSettings.mRefreshRate60.setEnabled(false);
-            DeviceSettings.mRefreshRate120.setEnabled(false);
-            setRefreshRate = 2;
+        if (preference == DeviceSettings.mRefreshRate120Forced && enabled) {
+            setForcedRefreshRate(1);
         } else if (preference == DeviceSettings.mRefreshRate120Forced && !enabled) {
-            DeviceSettings.mRefreshRate60.setEnabled(true);
-            DeviceSettings.mRefreshRate120.setEnabled(true);
-            setRefreshRate = 3;
-        }
-
-        switch (setRefreshRate) {
-            case 1:
-                Settings.System.putFloat(mContext.getContentResolver(), "PEAK_REFRESH_RATE".toLowerCase(), 120f);
-                Settings.System.putFloat(mContext.getContentResolver(), "MIN_REFRESH_RATE".toLowerCase(), 120f);
-                break;
-            case 0:
-                Settings.System.putFloat(mContext.getContentResolver(), "PEAK_REFRESH_RATE".toLowerCase(), 60f);
-                Settings.System.putFloat(mContext.getContentResolver(), "MIN_REFRESH_RATE".toLowerCase(), 60f);
-                break;
-            case 2:
-                setForcedRefreshRate(1);
-                break;
-            case 3:
-                setForcedRefreshRate(0);
-                break;
+            setForcedRefreshRate(0);
         }
         return true;
     }

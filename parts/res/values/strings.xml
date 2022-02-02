@@ -66,15 +66,10 @@
     <string name="dnd_title">Do Not Disturb</string>
     <string name="dnd_summary">DND will be activated if Game Mode is enabled</string>
     <string name="game_mode_notif_content">Game Mode is activated</string>
-    <!-- Refresh rate -->
+    <!-- Forced Refresh rate -->
     <string name="refresh_title">Screen Refresh Rate</string>
-    <string name="tile_refresh_rate">Refresh Rate</string>
-    <string name="refresh_rate_60_title">60Hz</string>
-    <string name="refresh_rate_60_summary">Less smoothness but slightly extended battery life</string>
-    <string name="refresh_rate_120_title">120Hz</string>
-    <string name="refresh_rate_120_summary">Maximum smoothness with higher refresh rate but Apps&#47;Games can still limit to 60 FPS</string>
-    <string name="refresh_rate_120Forced_title">Smooth Display</string>
-    <string name="refresh_rate_120Forced_summary">Force display to 120Hz which improves touch responsiveness &amp; animation quality. Increases battery usage. </string>
+    <string name="refresh_rate_120Forced_title">Force 120Hz Refresh Rate</string>
+    <string name="refresh_rate_120Forced_summary">Force display to 120Hz which improves animation quality. Heavily increases battery usage. Reboot device manually after disabling. </string>
 	<!-- Vibration Strength -->
     <string name="vibration_strength_title">Vibration Strength</string>
     <string name="vibration_strength_low">Low</string>
