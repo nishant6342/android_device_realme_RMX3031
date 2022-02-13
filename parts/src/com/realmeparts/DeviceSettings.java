@@ -171,12 +171,6 @@ public class DeviceSettings extends PreferenceFragment
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
 
         isCoolDownAvailable();
-        DisplayRefreshRateModes();
-        try {
-            ParseJson();
-        } catch (Exception e) {
-            Log.d("DeviceSettings", e.toString());
-        }
     }
 
     @Override
@@ -217,91 +211,5 @@ public class DeviceSettings extends PreferenceFragment
         } else {
             getPreferenceScreen().removePreference(mPreferenceCategory);
         }
-    }
-
-    // Remove display refresh rate modes category if display doesn't support 120hz
-    private void DisplayRefreshRateModes() {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
-        String refreshRate = "";
-        mDisplayManager = (DisplayManager) this.getContext().getSystemService(Context.DISPLAY_SERVICE);
-        Display.Mode[] DisplayModes = mDisplayManager.getDisplay(Display.DEFAULT_DISPLAY).getSupportedModes();
-        for (Display.Mode mDisplayMode : DisplayModes) {
-            DecimalFormat df = new DecimalFormat("0.##");
-            refreshRate += df.format(mDisplayMode.getRefreshRate()) + "Hz, ";
-        }
-        Log.d("DeviceSettings", "Device supports " + refreshRate + "refresh rate modes");
-
-        if (!refreshRate.contains("120")) {
-            prefs.edit().putBoolean("refresh_rate_120_device", false).apply();
-            mPreferenceCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_REFRESH_RATE);
-            getPreferenceScreen().removePreference(mPreferenceCategory);
-        } else prefs.edit().putBoolean("refresh_rate_120_device", true).apply();
-    }
-
-    private void ParseJson() throws JSONException {
-        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
-        mPreferenceCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_GRAPHICS);
-        String features_json = Utils.InputStreamToString(getResources().openRawResource(R.raw.realmeparts_features));
-        JSONObject jsonOB = new JSONObject(features_json);
-
-        JSONArray CABC = jsonOB.getJSONArray(KEY_CABC);
-        for (int i = 0; i < CABC.length(); i++) {
-            if (ProductName.toUpperCase().contains(CABC.getString(i))) {
-                {
-                    CABC_DeviceMatched = true;
-                }
-            }
-        }
-
-        JSONArray DC = jsonOB.getJSONArray(KEY_DC_SWITCH);
-        for (int i = 0; i < DC.length(); i++) {
-            if (ProductName.toUpperCase().contains(DC.getString(i))) {
-                {
-                    DC_DeviceMatched = true;
-                }
-            }
-        }
-
-        JSONArray HBM = jsonOB.getJSONArray(KEY_HBM_SWITCH);
-        for (int i = 0; i < HBM.length(); i++) {
-            if (ProductName.toUpperCase().contains(HBM.getString(i))) {
-                {
-                    HBM_DeviceMatched = true;
-                }
-            }
-        }
-
-        JSONArray sRGB = jsonOB.getJSONArray(KEY_SRGB_SWITCH);
-        for (int i = 0; i < sRGB.length(); i++) {
-            if (ProductName.toUpperCase().contains(sRGB.getString(i))) {
-                {
-                    sRGB_DeviceMatched = true;
-                }
-            }
-        }
-
-        // Remove CABC preference if device is unsupported
-        if (!CABC_DeviceMatched) {
-            mPreferenceCategory.removePreference(findPreference(KEY_CABC));
-            prefs.edit().putBoolean("CABC_DeviceMatched", false).apply();
-        } else prefs.edit().putBoolean("CABC_DeviceMatched", true).apply();
-
-        // Remove DC-Dimming preference if device is unsupported
-        if (!DC_DeviceMatched) {
-            mPreferenceCategory.removePreference(findPreference(KEY_DC_SWITCH));
-            prefs.edit().putBoolean("DC_DeviceMatched", false).apply();
-        } else prefs.edit().putBoolean("DC_DeviceMatched", true).apply();
-
-        // Remove HBM preference if device is unsupported
-        if (!HBM_DeviceMatched) {
-            mPreferenceCategory.removePreference(findPreference(KEY_HBM_SWITCH));
-            prefs.edit().putBoolean("HBM_DeviceMatched", false).apply();
-        } else prefs.edit().putBoolean("HBM_DeviceMatched", true).apply();
-
-        // Remove sRGB preference if device is unsupported
-        if (!sRGB_DeviceMatched) {
-            mPreferenceCategory.removePreference(findPreference(KEY_SRGB_SWITCH));
-            prefs.edit().putBoolean("sRGB_DeviceMatched", false).apply();
-        } else prefs.edit().putBoolean("sRGB_DeviceMatched", true).apply();
     }
 }
