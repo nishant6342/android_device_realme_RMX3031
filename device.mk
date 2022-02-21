@@ -25,7 +25,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/realme/RMX3031/RMX3031-vendor.mk)
+$(call inherit-product, vendor/realme/RMX3031/RMX3031-vendor.mk)
+$(call inherit-product, vendor/realme/IMS-RMX3031/mtk-ims.mk)
+$(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -47,7 +49,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 30
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
-
+	
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
