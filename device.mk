@@ -138,6 +138,10 @@ PRODUCT_PACKAGES += \
     RealmeParts \
 	parts.rc
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
