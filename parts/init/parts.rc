@@ -1,0 +1,56 @@
+on boot
+	chown system system /sys/class/power_supply/usb/otg_switch
+    chown system system /sys/class/power_supply/battery/mmi_charging_enable
+	
+    # CABC
+    chown system system /sys/kernel/oppo_display/LCM_CABC
+    chmod 0644 /sys/kernel/oppo_display/LCM_CABC
+	
+	# Touchpanel
+	chown system system /proc/touchpanel/oplus_tp_limit_enable
+	write /proc/touchpanel/oplus_tp_limit_enable 0
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chown system system /proc/touchpanel/game_switch_enable
+	
+	# HBM
+	chown system system /sys/kernel/oppo_display/hbm
+	
+	# DC Mode
+	chown system system /sys/kernel/oppo_display/dimlayer_bl_en
+
+    # CABC off
+on property:persist.cabc_profile=0
+    write /sys/kernel/oppo_display/LCM_CABC 0
+
+    # CABC on
+on property:persist.cabc_profile=1
+    write /sys/kernel/oppo_display/LCM_CABC 1
+
+    # CABC balanced
+on property:persist.cabc_profile=2
+    write /sys/kernel/oppo_display/LCM_CABC 2
+
+    # CABC aggressive
+on property:persist.cabc_profile=3
+    write /sys/kernel/oppo_display/LCM_CABC 3
+
+# Performance profiles
+on property:persist.perf_profile=0
+    write /sys/module/ged/parameters/gx_game_mode 0
+	write /sys/module/ged/parameters/gx_force_cpu_boost 0
+	write /sys/module/ged/parameters/gx_boost_on 0
+	write /sys/module/ged/parameters/boost_gpu_enable 0
+	write /sys/module/ged/parameters/ged_smart_boost 1
+
+on property:persist.perf_profile=1
+    write /sys/module/ged/parameters/gx_game_mode 0
+	write /sys/module/ged/parameters/gx_force_cpu_boost 0
+	write /sys/module/ged/parameters/gx_boost_on 0
+	write /sys/module/ged/parameters/boost_gpu_enable 0
+
+on property:persist.perf_profile=2
+    write /sys/module/ged/parameters/gx_game_mode 1
+	write /sys/module/ged/parameters/gx_force_cpu_boost 1
+	write /sys/module/ged/parameters/gx_boost_on 1
+	write /sys/module/ged/parameters/boost_gpu_enable 1
+	

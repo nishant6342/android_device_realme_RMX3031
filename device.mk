@@ -22,9 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
-
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Call proprietary blob setup
@@ -124,6 +121,11 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     RcsService \
     PresencePolling
+
+# RealmeParts
+PRODUCT_PACKAGES += \
+    RealmeParts \
+	parts.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
