@@ -1,0 +1,11 @@
+type mtk_hal_audio, domain;
+type mtk_hal_audio_tmpfs, fs_type;
+type mtk_hal_audio_exec, exec_type, file_type;
+init_daemon_domain(mtk_hal_audio)
+
+allow mtk_hal_audio mtk_hal_audio_tmpfs:file { execute };
+allow mtk_hal_audio default_prop:property_service { set };
+allow mtk_hal_audio mtk_hal_audio:process { execmem };
+allow mtk_hal_audio system_prop:file { read };
+allow mtk_hal_audio untrusted_app:fifo_file { write };
+allow mtk_hal_audio vendor_default_prop:property_service { set };

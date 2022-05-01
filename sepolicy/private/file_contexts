@@ -17,3 +17,6 @@
 
 # VoLTE
 /system/bin/vtservice           u:object_r:vtservice_exec:s0
+
+# V4A Drivers
+/odm/etc/audio_effects.xml      u:object_r:vendor_configs_file:s0

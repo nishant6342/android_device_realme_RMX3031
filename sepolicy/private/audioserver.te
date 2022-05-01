@@ -1,0 +1,3 @@
+allow audioserver audioserver_tmpfs:file { read write execute };
+allow audioserver system_file:file { execmod };
+allow audioserver unlabeled:file { read write execute open getattr };
