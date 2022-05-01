@@ -403,6 +403,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.RMX3031
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilt/viper/libstdc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstdc++.so \
+    $(DEVICE_PATH)/prebuilt/viper/libv4a_fx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libv4a_fx.so
+
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \

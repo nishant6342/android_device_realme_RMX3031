@@ -1,0 +1,2 @@
+allow mediaserver mediaserver_tmpfs:file { read write execute };
+allow mediaserver system_file:file { execmod };
