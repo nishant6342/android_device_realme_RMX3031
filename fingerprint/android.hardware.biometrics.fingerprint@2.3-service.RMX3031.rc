@@ -18,7 +18,7 @@ on boot
     chown system system /sys/kernel/oppo_display/oppo_notify_fppress
     chown system system /sys/kernel/oppo_display/dimlayer_bl_en
 
-service fps_hal.RMX3031 /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX3031
+service vendor.fps_hal.RMX3031 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX3031
     class late_start
     user system
     group system input uhid
