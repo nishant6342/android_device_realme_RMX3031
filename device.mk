@@ -115,9 +115,14 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-aosp
+PRODUCT_PACKAGES += \
+    FrameworkResOverlay \
+    SystemUIOverlay \
+    SettingsOverlay \
+    TelephonyOverlay
+
+# Enforce RRO targets
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
 PRODUCT_COPY_FILES += \
