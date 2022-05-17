@@ -18,4 +18,4 @@ wakelock_use(hal_fingerprint_RMX3031)
 allow hal_fingerprint_RMX3031 sysfs:file { open write };
 
 # Allow sysfs fingerprint notify file to open and write
-allow hal_fingerprint_RMX3031 sysfs_fingerprint_notify:file { open write };
+allow hal_fingerprint_RMX3031 sysfs_fingerprint_notify:file { getattr setattr open write };
