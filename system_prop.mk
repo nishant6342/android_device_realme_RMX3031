@@ -44,6 +44,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.nfc.smartcard.recorder.enable=true \
     persist.sys.nfc.default=on
 
+# Officia Project-Elixir Stuff
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.elixir.maintainer=NishantKumar6342 \
+    org.elixir.device=Realme-X7-Max-5G
+
 # OMX
 PRODUCT_SYSTEM_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
