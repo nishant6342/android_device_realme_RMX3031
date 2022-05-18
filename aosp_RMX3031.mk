@@ -24,6 +24,17 @@ $(call inherit-product, device/realme/RMX3031/device.mk)
 # Inherit some common Pixel-Experience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Official-ify
+ELIXIR_MAINTAINER := NishantKumar6342
+ELIXIR_BUILD_TYPE := OFFICIAL
+IS_PHONE := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+EXTRA_UDFPS_ANIMATIONS := true
+FORCE_AOSP_DIALER := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_RMX3031
 PRODUCT_DEVICE := RMX3031
