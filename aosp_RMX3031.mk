@@ -30,6 +30,7 @@ IS_PHONE := true
 CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
 FORCE_LAWNCHAIR := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_RMX3031
