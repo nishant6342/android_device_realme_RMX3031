@@ -468,4 +468,8 @@
          provisioning, availability etc -->
     <bool name="config_carrier_wfc_ims_available">true</bool>
 
+	<!-- Whether device supports sensor based doze customizations -->
+    <bool name="config_dozePulsePickup">true</bool>
+    <bool name="config_dozePulseTilt">true</bool>
+    
 </resources>
