@@ -4,7 +4,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    ro.bluetooth.a2dp_offload.supported=false
 
 # Blurs
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -37,6 +39,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
+# Media Transcoding
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.fuse.transcode_default=false
 
 # NFC
 PRODUCT_SYSTEM_PROPERTIES += \
