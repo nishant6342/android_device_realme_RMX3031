@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# RMOverlayManager
+PRODUCT_PACKAGES += \
+    RMOverlayManager
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
