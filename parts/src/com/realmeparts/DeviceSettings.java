@@ -55,7 +55,6 @@ public class DeviceSettings extends PreferenceFragment
     public static final String PERF_PROFILE_SYSTEM_PROPERTY = "persist.perf_profile";
     public static final String KEY_GAME_SWITCH = "game";
     public static final String KEY_CHARGING_SWITCH = "smart_charging";
-    public static final String KEY_CHARGING_SPEED = "charging_speed";
     public static final String KEY_RESET_STATS = "reset_stats";
 	public static final String KEY_DT2W_SWITCH = "dt2w";
     public static final String KEY_DND_SWITCH = "dnd";
@@ -67,7 +66,6 @@ public class DeviceSettings extends PreferenceFragment
     private static final String KEY_CATEGORY_CHARGING = "charging";
     private static final String KEY_CATEGORY_GRAPHICS = "graphics";
     private static final String KEY_CATEGORY_REFRESH_RATE = "refresh_rate";
-    public static SecureSettingListPreference mChargingSpeed;
     public static TwoStatePreference mResetStats;
     public static TwoStatePreference mRefreshRate120Forced;
 	private static TwoStatePreference mDT2WModeSwitch;
@@ -131,10 +129,6 @@ public class DeviceSettings extends PreferenceFragment
         mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
         mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
 
-        mChargingSpeed = findPreference(KEY_CHARGING_SPEED);
-        mChargingSpeed.setEnabled(mSmartChargingSwitch.isChecked());
-        mChargingSpeed.setOnPreferenceChangeListener(this);
-
         mResetStats = findPreference(KEY_RESET_STATS);
         mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
         mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
@@ -170,16 +164,11 @@ public class DeviceSettings extends PreferenceFragment
 
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
 
-        isCoolDownAvailable();
+        isSmartChgAvailable();
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-        if (preference == mChargingSpeed) {
-            mChargingSpeed.setValue((String) newValue);
-            mChargingSpeed.setSummary(mChargingSpeed.getEntry());
-        }
 
         if (preference == mCABC) {
             mCABC.setValue((String) newValue);
@@ -200,14 +189,11 @@ public class DeviceSettings extends PreferenceFragment
         return true;
     }
 
-    // Remove Charging Speed preference if cool_down node is unavailable
-    private void isCoolDownAvailable() {
+    // Remove Smart Charging preference if cool_down node is unavailable
+    private void isSmartChgAvailable() {
         mPreferenceCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_CHARGING);
 
         if (Utils.fileWritable(SmartChargingService.mmi_charging_enable)) {
-            if (!Utils.fileWritable(SmartChargingService.cool_down)) {
-                mPreferenceCategory.removePreference(findPreference(KEY_CHARGING_SPEED));
-            }
         } else {
             getPreferenceScreen().removePreference(mPreferenceCategory);
         }

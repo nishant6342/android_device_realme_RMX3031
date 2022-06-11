@@ -36,7 +36,6 @@ public class SmartChargingService extends Service {
     private static final int Charging_Notification_Channel_ID = 0x110110;
     private static final boolean Debug = false;
     private static final boolean resetBatteryStats = false;
-    public static String cool_down = "/sys/class/power_supply/battery/cool_down";
     public static String current = "/sys/class/power_supply/battery/current_now";
     public static String mmi_charging_enable = "/sys/class/power_supply/battery/mmi_charging_enable";
     public static String battery_capacity = "/sys/class/power_supply/battery/capacity";
@@ -49,34 +48,14 @@ public class SmartChargingService extends Service {
         public void onReceive(Context context, Intent intent) {
             float battTemp = ((float) Integer.parseInt(Utils.readLine(battery_temperature))) / 10;
             int battCap = Integer.parseInt(Utils.readLine(battery_capacity));
-            int coolDown = Integer.parseInt(Utils.readLine(cool_down));
             int currentmA = -(Integer.parseInt(Utils.readLine(current)));
             int chargingLimit = Integer.parseInt(Utils.readLine(mmi_charging_enable));
             int userSelectedChargingLimit = sharedPreferences.getInt("seek_bar", 95);
-            int chargingSpeed = Settings.Secure.getInt(context.getContentResolver(), "charging_speed", 0);
 
-            Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "\n" + "Charging Speed: " + currentmA + " mA, " + "Cool Down: " + coolDown);
-
-            if (isCoolDownAvailable() && chargingLimit == 1) {
-                // Setting cool down values based on user selected charging speed
-                if (chargingSpeed != 0 && coolDown != chargingSpeed) {
-                    Utils.writeValue(cool_down, String.valueOf(chargingSpeed));
-                    Log.d("DeviceSettings", "Battery Temperature: " + battTemp + "\n" + "Battery Capacity: " + battCap + "%" + "\n");
-                } else if (chargingSpeed == 0) {
-                    // Setting cool down values based on battery temperature
-                    if (battTemp >= 39.5 && coolDown != 2 && coolDown == 0) {
-                        Utils.writeValue(cool_down, "2");
-                        Log.d("DeviceSettings", "Battery Temperature: " + battTemp + "\n" + "Battery Capacity: " + battCap + "%" + "\n" + "Applied cool down");
-                    } else if (battTemp <= 38.5 && coolDown != 0 && coolDown == 2) {
-                        Utils.writeValue(cool_down, "0");
-                        Log.d("DeviceSettings", "Battery Temperature: " + battTemp + "\n" + "Battery Capacity: " + battCap + "%" + "\n" + "No cool down applied");
-                    }
-                }
-            }
+            Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "\n" + "Charging Current: " + currentmA + " mA,");
 
             // Charging limit based on user selected battery percentage
             if (((userSelectedChargingLimit == battCap) || (userSelectedChargingLimit < battCap)) && chargingLimit != 0) {
-                if (isCoolDownAvailable()) Utils.writeValue(cool_down, "0");
                 Utils.writeValue(mmi_charging_enable, "0");
                 Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "User selected charging limit: " + userSelectedChargingLimit + "%. Stopped charging");
             } else if (userSelectedChargingLimit > battCap && chargingLimit != 1) {
@@ -107,10 +86,6 @@ public class SmartChargingService extends Service {
             }
         }
     };
-
-    public static boolean isCoolDownAvailable() {
-        return Utils.fileWritable(cool_down);
-    }
 
     public static void resetStats() {
         try {
