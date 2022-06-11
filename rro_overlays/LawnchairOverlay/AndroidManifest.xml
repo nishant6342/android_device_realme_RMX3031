@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.realme.app.lawnchair.overlay">
+
+    <application android:hasCode="false" />
+
+    <overlay android:targetPackage="app.lawnchair" />
+</manifest>
