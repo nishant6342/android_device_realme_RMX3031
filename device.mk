@@ -87,10 +87,6 @@ PRODUCT_PACKAGES += \
     init.mt6893.rc \
     perf_profile.sh
 
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
