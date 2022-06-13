@@ -29,14 +29,15 @@ import android.util.Log;
 public class HBMService extends Service {
 
     public BroadcastReceiver mHBMintent = new BroadcastReceiver() {
+        private static final boolean Debug = false;
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction() == Intent.ACTION_USER_PRESENT) {
                 Utils.writeValue(HBMModeSwitch.getFile(), "1");
-                Log.d("DeviceSettings", "HBM Enabled");
+                if (Debug) Log.d("DeviceSettings", "HBM Enabled");
             } else if (intent.getAction() == Intent.ACTION_SCREEN_OFF) {
                 Utils.writeValue(HBMModeSwitch.getFile(), "0");
-                Log.d("DeviceSettings", "HBM Disabled");
+                if (Debug) Log.d("DeviceSettings", "HBM Disabled");
             }
         }
     };

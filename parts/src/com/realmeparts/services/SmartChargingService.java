@@ -52,15 +52,15 @@ public class SmartChargingService extends Service {
             int chargingLimit = Integer.parseInt(Utils.readLine(mmi_charging_enable));
             int userSelectedChargingLimit = sharedPreferences.getInt("seek_bar", 95);
 
-            Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "\n" + "Charging Current: " + currentmA + " mA,");
+            if (Debug) Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "\n" + "Charging Current: " + currentmA + " mA,");
 
             // Charging limit based on user selected battery percentage
             if (((userSelectedChargingLimit == battCap) || (userSelectedChargingLimit < battCap)) && chargingLimit != 0) {
                 Utils.writeValue(mmi_charging_enable, "0");
-                Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "User selected charging limit: " + userSelectedChargingLimit + "%. Stopped charging");
+                if (Debug) Log.d("DeviceSettings", "Battery Temperature: " + battTemp + ", Battery Capacity: " + battCap + "%, " + "User selected charging limit: " + userSelectedChargingLimit + "%. Stopped charging");
             } else if (userSelectedChargingLimit > battCap && chargingLimit != 1) {
                 Utils.writeValue(mmi_charging_enable, "1");
-                Log.d("DeviceSettings", "Charging...");
+                if (Debug) Log.d("DeviceSettings", "Charging...");
             }
         }
     };
@@ -74,7 +74,7 @@ public class SmartChargingService extends Service {
                     context.getApplicationContext().registerReceiver(mBatteryInfo, batteryInfo);
                     mconnectionInfoReceiver = true;
                 }
-                Log.d("DeviceSettings", "Charger/USB Connected");
+                if (Debug) Log.d("DeviceSettings", "Charger/USB Connected");
             } else if (intent.getAction() == Intent.ACTION_POWER_DISCONNECTED) {
                 if (sharedPreferences.getBoolean("reset_stats", false) && sharedPreferences.getInt("seek_bar", 95) == battCap)
                     resetStats();
@@ -82,7 +82,7 @@ public class SmartChargingService extends Service {
                     context.getApplicationContext().unregisterReceiver(mBatteryInfo);
                     mconnectionInfoReceiver = false;
                 }
-                Log.d("DeviceSettings", "Charger/USB Disconnected");
+                if (Debug) Log.d("DeviceSettings", "Charger/USB Disconnected");
             }
         }
     };
