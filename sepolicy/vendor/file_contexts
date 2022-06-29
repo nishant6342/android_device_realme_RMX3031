@@ -22,3 +22,6 @@
 
 # Camera
 /mnt/vendor/persist/camera(/.*)?   u:object_r:persist_camera_file:s0
+
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.RMX3031  u:object_r:hal_lineage_touch_default_exec:s0

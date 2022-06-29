@@ -6,3 +6,4 @@ genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/state 
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/activate     u:object_r:sysfs_vibrator:s0
 
 genfscon proc  /fp_id u:object_r:proc_fingerprint:s0
+genfscon proc  /touchpanel  u:object_r:proc_tp:s0
