@@ -111,6 +111,7 @@ ro.mtk_perf_response_time=1
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 ro.vendor.mtk_telephony_add_on_policy=0
+ro.telephony.sim.count=2
 
 # Storage
 persist.sys.fuse.passthrough.enable=true

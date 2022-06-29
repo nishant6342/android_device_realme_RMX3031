@@ -252,7 +252,6 @@ ro.vendor.mtk_world_phone_policy=0
 ro.vendor.mtk_rild_read_imsi=1
 persist.vendor.mtk_sim_switch_policy=2
 ro.vendor.sim_me_lock_mode=3
-ro.telephony.sim.count=2
 telephony.active_modems.max_count=2
 ro.vendor.mtk_wappush_support=1
 ro.vendor.mtk_modem_monitor_support=1
