@@ -1,4 +1,4 @@
-# Unipinned blobs from RMX3031-user 13 TP1A.220905.001 1673625630299 release-keys
+# Unpinned blobs from RMX3031-user 13 TP1A.220905.001 1673625630299 release-keys
 
 # Extra
 odm/lib/libdapparamstorage.so
@@ -2193,6 +2193,11 @@ vendor/lib64/libOpenCL.so
 -priv-app/EngineerMode/EngineerMode.apk
 lib/libem_support_jni.so
 lib64/libem_support_jni.so
+
+# Hotword Enrollment
+-my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
+-my_product/priv-app/HotwordEnrollmentOKGoogleRISCV.apk:product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
+-my_product/priv-app/HotwordEnrollmentXGoogleRISCV.apk:product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
 
 # IMS
 bin/vtservice
