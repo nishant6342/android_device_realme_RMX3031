@@ -6,3 +6,4 @@ libarcsoft_dualcam_wt_calibration.so
 libarcsoft_dualcam_wt_verification.so
 libcalibverifyW_T.so
 libarcsoft_scbokeh_video.so
+libvpu.so
