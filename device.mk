@@ -78,11 +78,32 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ImsInit
 
-# Init
+# Rootdir
 PRODUCT_PACKAGES += \
+    factory_init.connectivity.common.rc \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
+    init.aee.rc \
+    init.ago.rc \
+    init.cgroup.rc \
+    init.connectivity.common.rc \
+    init.connectivity.rc \
+    init.modem.rc \
     init.mt6893.rc \
-    fstab.mt6893 \
-    perf_profile.sh
+    init.mt6893.usb.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    init_conninfra.rc \
+    meta_init.connectivity.common.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
+    fstab.emmc \
+    fstab.enableswap \
+    fstab.mt6893
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
