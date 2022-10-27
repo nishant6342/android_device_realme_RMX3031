@@ -18,7 +18,5 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),RMX3031)
 
-$(call add-radio-file,releasetools/dynamic-remove-oplus)
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
