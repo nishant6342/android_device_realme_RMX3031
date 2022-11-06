@@ -1,0 +1,8 @@
+libOpenCL.so
+libnir_neon_driver_ndk.mtk.vndk.so
+libcmdl_ndk.mtk.vndk.so
+libarmnn_ndk.mtk.vndk.so
+libarcsoft_dualcam_wt_calibration.so
+libarcsoft_dualcam_wt_verification.so
+libcalibverifyW_T.so
+libarcsoft_scbokeh_video.so
