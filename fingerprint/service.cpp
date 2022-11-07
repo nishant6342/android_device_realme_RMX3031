@@ -17,35 +17,27 @@
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.RMX3031"
 
 #include <android-base/logging.h>
-#include <hidl/HidlSupport.h>
 #include <hidl/HidlTransportSupport.h>
-#include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
+
 #include "BiometricsFingerprint.h"
 
-using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
-using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
+using android::sp;
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
-using android::sp;
-
-using android::OK;
-using android::status_t;
+using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
+using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
 
 int main() {
-    android::sp<IBiometricsFingerprint> service = new BiometricsFingerprint();
+    sp<IBiometricsFingerprint> bio = new BiometricsFingerprint();
 
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    status_t status = service->registerAsService();
-    if (status != OK) {
-        LOG(ERROR) << "Cannot register Biometrics 2.3 HAL service.";
+    if (bio->registerAsService() != android::OK) {
+        LOG(ERROR) << "Can't register BiometricsFingerprint HAL service";
         return 1;
     }
 
-    LOG(INFO) << "Biometrics 2.3 HAL service ready.";
-
     joinRpcThreadpool();
 
-    LOG(ERROR) << "Biometrics 2.3 HAL service failed to join thread pool.";
-    return 1;
+    return 0;  // should never get here
 }

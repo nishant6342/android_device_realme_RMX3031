@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,11 @@
  * limitations under the License.
  */
 
-#include <compositionengine/UdfpsExtension.h>
+#pragma once
 
-uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
-    return touched ? 0x41000033 : z;
-}
+#include <sys/ioctl.h>
 
-uint64_t getUdfpsUsageBits(uint64_t usageBits, bool /*touched*/) {
-    return usageBits;
-}
+#define OPLUS_PANEL_IOCTL_BASE 'o'
+
+#define PANEL_IOCTL_SET_DIMLAYER_HBM _IOW(OPLUS_PANEL_IOCTL_BASE, 0x1F, unsigned int)
+#define PANEL_IOCTL_SET_FP_PRESS _IOW(OPLUS_PANEL_IOCTL_BASE, 0x29, unsigned int)

@@ -11,14 +11,12 @@ on boot
 #add for silead
     chown system system /dev/silead_fp
     chmod 0666 /dev/silead_fp
-
-
     chmod 0660 /sys/kernel/oppo_display/oppo_notify_fppress
     chmod 0660 /sys/kernel/oppo_display/dimlayer_bl_en
     chown system system /sys/kernel/oppo_display/oppo_notify_fppress
     chown system system /sys/kernel/oppo_display/dimlayer_bl_en
 
-service vendor.fps_hal.RMX3031 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX3031
+service vendor.fps_hal_RMX3031 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.RMX3031
     class late_start
     user system
-    group system input uhid
+    group system
