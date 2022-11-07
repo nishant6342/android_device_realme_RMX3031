@@ -1,0 +1,180 @@
+# AAL
+ro.vendor.mtk_aal_support=1
+
+# ADB
+persist.adb.nonblocking_ffs=0
+
+# Audio
+ro.vendor.mtk_audio_alac_support=1
+ro.vendor.mtk_hifiaudio_support=1
+ro.vendor.mtk_audio_tuning_tool_ver=V2.2
+ro.vendor.mtk_audio_ape_support=1
+
+# Bluetooth
+vendor.bluetooth.ldac.abr=true
+
+# Camera
+camera.disable_zsl_mode=1
+vendor.camera.mdp.dre.enable=1
+vendor.camera.mdp.cz.enable=1
+vendor.mtk.camera.app.fd.video=1
+ro.vendor.camera.directfdyuv.support=1
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
+ro.vendor.camera.aishutter.support=1
+ro.vendor.camera3.zsl.default=260
+ro.vendor.camera3.zsl.project=-130
+ro.vendor.mtk_camera_app_version=3
+ro.vendor.mtk_cam_security_support=1
+ro.mtk_cam_dualzoom_support=1
+ro.vendor.mtk_cam_security_support=1
+ro.vendor.camera.isp.support.colorspace=0
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
+persist.vendor.camera3.pipeline.bufnum.base.imgo=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
+persist.vendor.camera3.pipeline.bufnum.base.lcso=4
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
+persist.vendor.camera3.pipeline.bufnum.base.rsso=5
+
+# Display
+debug.mediatek.disp_decompress=1
+ro.vendor.smvr.p2batch.vga=32
+ro.vendor.smvr.p2batch.hd=8
+ro.vendor.smvr.p2batch.fhd=4
+ro.vendor.mtk_pq_support=2
+ro.vendor.pq.mtk_pq_video_whitelist_support=1
+ro.vendor.pq.mtk_video_transition=1
+ro.vendor.pq.mtk_scltm_support=1
+ro.vendor.mml.mtk_mml_support=0
+ro.vendor.pq.mtk_ai_scence_pq_support=1
+ro.vendor.pq.mtk_hdr10_plus_recording_support=0
+ro.vendor.pq.mtk_ai_sdr_to_hdr_support=0
+ro.vendor.pq.mtk_ultra_resolution_support=1
+ro.vendor.pq.mtk_dc_support=1
+ro.vendor.pq.mtk_ds_support=1
+ro.vendor.pq.mtk_hfg_support=1
+ro.vendor.pq.mtk_caltm_support=1
+ro.vendor.pq.mtk_clearzoom_support=1
+ro.vendor.pq.mtk_mdp_ccorr_support=1
+ro.vendor.pq.mtk_pq_interface_support=0
+ro.vendor.pq.mtk_disp_c3d_support=0
+ro.vendor.pq.mtk_disp_tdshp_support=0
+ro.vendor.pq.mtk_disp_color_support=1
+ro.vendor.pq.mtk_disp_ccorr_support=1
+ro.vendor.pq.mtk_disp_gamma_support=1
+ro.vendor.pq.mtk_aal_support=1
+ro.vendor.pq.mtk_dre30_support=0
+ro.vendor.pq.mtk_disp_game_pq_support=1
+ro.vendor.pq.mtk_backlight_smooth_support=0
+ro.vendor.pq.mtk_ultra_dimming_support=0
+ro.vendor.pq.mtk_blulight_def_support=0
+ro.hardware.egl=meow
+
+# SurfaceFlinger
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Connectivity
+ro.vendor.connsys.dedicated.log.port=bt,wifi
+persist.vendor.connsys.coredump.mode=2
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsys.dynamic.dump=0
+vendor.connsys.driver.ready=no
+ro.vendor.connsys.dedicated.log=1
+persist.vendor.connsys.fm_chipid=mt6635
+
+# DRM
+drm.service.enabled=true
+ro.vendor.mtk_widevine_drm_l1_support=1
+ro.netflix.bsp_rev=MTK6893-32816-1
+
+# FRP
+ro.frp.pst=/dev/block/by-name/frp
+
+# GPS
+ro.vendor.mtk_agps_app=1
+ro.vendor.mtk_gps_support=1
+ro.vendor.gps.chrdev=gps_drv
+ro.vendor.mtk_log_hide_gps=0
+
+# Radio
+persist.vendor.radio.fd.counter=150
+persist.vendor.radio.fd.off.counter=50
+persist.vendor.radio.fd.r8.counter=150
+persist.vendor.radio.fd.off.r8.counter=50
+persist.vendor.radio.flashless.fsm=0
+persist.vendor.radio.flashless.fsm_cst=0
+persist.vendor.radio.flashless.fsm_rw=0
+persist.vendor.radio.mtk_ps2_rat=N/L/W/G
+persist.vendor.radio.mtk_ps3_rat=G
+persist.vendor.radio.mtk_dsbp_support=2
+persist.radio.multisim.config=dsds
+persist.vendor.radio.msimmode=dsds
+ro.vendor.radio.max.multisim=dsds
+persist.vendor.radio.smart.data.switch=1
+persist.vendor.radio.telecom.vibrate=0
+ro.vendor.mtk_sim_hot_swap_common_slot=1
+ro.vendor.mtk_sim_card_onoff=3
+persist.vendor.mtk_sim_switch_policy=2
+persist.vendor.mtk_sim_switch_policy=2
+ro.vendor.sim_me_lock_mode=3
+ro.vendor.mtk_external_sim_support=1
+ro.vendor.mtk_external_sim_only_slots=0
+persist.radio.multisim.config=dsds
+persist.vendor.radio.msimmode=dsds
+ro.vendor.radio.max.multisim=dsds
+ro.telephony.sim.count=2
+ro.vendor.md_prop_ver=1
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_ril_mode=c6m_1rild
+
+# IMS
+persist.vendor.ims_support=1
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.volte_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+ro.vendor.md_auto_setup_ims=1
+persist.vendor.mtk_ct_volte_support=3
+
+# SoC
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6893
+
+# Trustonic
+ro.hardware.kmsetkey=trustonic
+ro.vendor.mtk_trustonic_tee_support=1
+
+# Gatekeeper
+ro.hardware.gatekeeper=trustonic
+
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+
+# LMK
+ro.lmk.psi_complete_stall_ms=150
+ro.lmk.swap_free_low_percentage=20
+ro.lmk.thrashing_limit=10
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.swap_util_max=90
+ro.lmk.psi_complete_stall_ms_dup=70
+ro.lmk.kill_timeout_ms=100
+
+# WiFi
+ro.vendor.wlan.standalone.log=y
+ro.vendor.wlan.gen=gen4m
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.telephony.iwlan_operation_mode=AP-assisted
