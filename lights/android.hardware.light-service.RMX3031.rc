@@ -1,0 +1,6 @@
+service vendor.light-hal-2-0.RMX3031 /vendor/bin/hw/android.hardware.light-service.RMX3031
+    class hal
+    user system
+    group system
+    # shutting off lights while powering-off
+    shutdown critical
