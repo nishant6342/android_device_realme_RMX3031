@@ -285,6 +285,10 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     libcodec2_soft_common.vendor
 
+# Soundtrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
