@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_2_0.rc \
     init_conninfra.rc \
-    fstab.mt6893
+    fstab.mt6893 \
+    ueventd.oplus.rc
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
