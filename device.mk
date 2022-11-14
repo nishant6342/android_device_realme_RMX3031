@@ -289,6 +289,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.frameworks.sensorservice@1.0.vendor
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \

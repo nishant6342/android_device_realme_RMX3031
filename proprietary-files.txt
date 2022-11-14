@@ -4718,13 +4718,8 @@ vendor/etc/cust_color_21061_samsung.xml
 odm/etc/sensor/sensor_config.json
 
 # Sensors
-vendor/lib/android.hardware.sensors@1.0.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libSensorSave.so
-vendor/lib64/android.hardware.sensors@1.0.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
-vendor/lib64/android.hardware.sensors@2.0.so
-vendor/lib64/android.hardware.sensors@2.1.so
 vendor/lib64/hw/sensors.mt6893.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libSensorSave.so
@@ -5411,7 +5406,6 @@ vendor/lib/android.frameworks.cameraservice.device@2.1.so
 vendor/lib/android.frameworks.cameraservice.service@2.0.so
 vendor/lib/android.frameworks.cameraservice.service@2.1.so
 vendor/lib/android.frameworks.cameraservice.service@2.2.so
-vendor/lib/android.frameworks.sensorservice@1.0.so
 vendor/lib/android.hardware.cas.native@1.0.so
 vendor/lib/android.hardware.cas@1.0.so
 vendor/lib/android.hardware.cas@1.1.so
@@ -5739,7 +5733,6 @@ vendor/lib64/android.frameworks.cameraservice.device@2.1.so
 vendor/lib64/android.frameworks.cameraservice.service@2.0.so
 vendor/lib64/android.frameworks.cameraservice.service@2.1.so
 vendor/lib64/android.frameworks.cameraservice.service@2.2.so
-vendor/lib64/android.frameworks.sensorservice@1.0.so
 vendor/lib64/android.hardware.media.c2@1.0.so
 vendor/lib64/android.hardware.media.c2@1.1.so
 vendor/lib64/android.hardware.media.c2@1.2.so
