@@ -2648,10 +2648,8 @@ vendor/etc/cust_color_21061_samsung.xml
 odm/etc/sensor/sensor_config.json
 
 # Sensors
-vendor/lib/libsensorndkbridge.so
 vendor/lib/libSensorSave.so
 vendor/lib64/hw/sensors.mt6893.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libSensorSave.so
 vendor/lib64/libsensor_custom.so
 
