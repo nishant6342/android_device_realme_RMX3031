@@ -118,7 +118,8 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     init_conninfra.rc \
     fstab.mt6893 \
-    ueventd.oplus.rc
+    ueventd.oplus.rc \
+    ueventd.mtk.rc
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
