@@ -4697,18 +4697,6 @@ vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libSensorSave.so
 vendor/lib64/libsensor_custom.so
 
-# Soter
--system_ext/app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.trustonic.soter@1.0-service
-vendor/etc/init/vendor.trustonic.soter@1.0-service.rc
--vendor/etc/vintf/manifest/manifest_soter.xml
-vendor/lib/libSoterProvision.so
-vendor/lib/soter_attk_provision.so
-vendor/lib64/libMcTeeSoter.so
-vendor/lib64/libSoterProvision.so
-vendor/lib64/soter_attk_provision.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/thermal
