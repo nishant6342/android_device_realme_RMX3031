@@ -277,6 +277,14 @@ PRODUCT_PACKAGES += \
    android.hardware.health@2.1-service \
    android.hardware.health@2.1-impl
 
+# Media
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libavservices_minijail_vendor \
+    libstagefright_softomx_plugin.vendor \
+    libcodec2_soft_common.vendor
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
