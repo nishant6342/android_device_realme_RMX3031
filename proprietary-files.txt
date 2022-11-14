@@ -3559,7 +3559,6 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
@@ -3570,7 +3569,6 @@ vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
@@ -3780,8 +3778,6 @@ vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/mt6893/libmtk_drvb.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
@@ -4381,8 +4377,6 @@ vendor/bin/mnld
 vendor/bin/wifi_dump
 vendor/bin/wlan_assistant
 vendor/etc/fstab.enableswap
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
@@ -4429,10 +4423,6 @@ vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
 -vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk
 -vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk
 -vendor/app/TetheringResOverlay/TetheringResOverlay.apk
-vendor/bin/aeev
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_dumpstatev
 vendor/bin/AgentTest
 vendor/bin/applypatch
 vendor/bin/atci_service
@@ -4486,8 +4476,6 @@ vendor/data/model/scene_detection.dla
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/a2dp_in_audio_policy_configuration.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
-vendor/etc/aee-commit
-vendor/etc/aee-config
 vendor/etc/apdb/APDB_MT6885_S01__W2207
 vendor/etc/apdb/APDB_MT6885_S01__W2207_ENUM
 vendor/etc/armnn_app.config
