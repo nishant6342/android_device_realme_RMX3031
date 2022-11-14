@@ -239,6 +239,15 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor \
     libcamera2ndk_vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey \
+    libdrmclearkeyplugin.vendor \
+    libmockdrmcryptoplugin.vendor \
+    libclearkeycasplugin.vendor \
+    libdrm.vendor \
+    libdrm
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
