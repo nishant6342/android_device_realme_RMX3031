@@ -25,6 +25,8 @@ VENDOR_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/lib64 \
     $(TARGET_OUT_VENDOR)/lib/hw \
     $(TARGET_OUT_VENDOR)/lib64/hw \
+    $(TARGET_OUT_VENDOR)/lib/egl \
+    $(TARGET_OUT_VENDOR)/lib64/egl
 
 $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) echo "Making vendor symlinks"
@@ -38,6 +40,8 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf kmsetkey.trustonic.so $(TARGET_OUT_VENDOR)/lib64/hw/kmsetkey.trustonic.so
 	@ln -sf /vendor/lib/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/hw/vulkan.mt6893.so
 	@ln -sf /vendor/lib64/egl/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/hw/vulkan.mt6893.so
+	@ln -sf mt6893/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so
+	@ln -sf mt6893/libGLES_mali.so $(TARGET_OUT_VENDOR)/lib64/egl/libGLES_mali.so
 	@ln -sf mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 	@ln -sf mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 	@ln -sf mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
