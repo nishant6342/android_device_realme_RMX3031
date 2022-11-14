@@ -257,6 +257,16 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.0.vendor \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
