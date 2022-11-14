@@ -297,6 +297,17 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0.vendor
 
+# Keymaster
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster-V3-ndk_platform.vendor \
+   android.hardware.keymaster@3.0.vendor \
+   android.hardware.keymaster@4.0.vendor \
+   libkeymaster4.vendor:64 \
+   libkeymaster4support.vendor:64 \
+   libsoft_attestation_cert.vendor:64 \
+   libkeystore-wifi-hidl \
+   libkeystore-engine-wifi-hidl
+
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
