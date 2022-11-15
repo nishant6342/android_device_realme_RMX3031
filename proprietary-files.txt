@@ -1,3 +1,5 @@
+# All unpinned blobs are from RMX3031SP1A_210812_C.15
+
 
 # ADSP
 odm/lib64/libadsprpc.so
