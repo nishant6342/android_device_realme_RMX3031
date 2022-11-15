@@ -2742,7 +2742,6 @@ vendor/etc/fstab.enableswap
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
-vendor/etc/partition_permission.sh
 odm/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin
 odm/vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin
 odm/vendor/app/mcRegistry/04320000000000000000000000000000.tlbin
@@ -3291,8 +3290,6 @@ vendor/etc/slp_conf
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
 vendor/etc/task_profiles.json
-vendor/etc/throttle.sh
-vendor/etc/ueventd.rc
 vendor/etc/usb_audio_accessory_only_policy_configuration.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/VideoLog_dynamic.xml
