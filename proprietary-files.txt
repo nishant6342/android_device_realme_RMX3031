@@ -2196,6 +2196,21 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
+# Modules ( Kernel )
+vendor/lib/modules/bt_drv_6893.ko
+vendor/lib/modules/connfem.ko
+vendor/lib/modules/conninfra.ko
+vendor/lib/modules/fmradio_drv_connac2x.ko
+vendor/lib/modules/fpsgo.ko
+vendor/lib/modules/gps_drv.ko
+vendor/lib/modules/met.ko
+vendor/lib/modules/modules.alias
+vendor/lib/modules/modules.dep
+vendor/lib/modules/modules.load
+vendor/lib/modules/modules.softdep
+vendor/lib/modules/wlan_drv_gen4m.ko
+vendor/lib/modules/wmt_chrdev_wifi.ko
+
 # NFC
 odm/bin/hw/android.hardware.secure_element@1.2-service
 odm/bin/hw/vendor.nxp.hardware.nfc@1.2-service
