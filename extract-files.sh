@@ -65,6 +65,10 @@ function blob_fixup {
             ;;
         odm/lib*/libui)
             "$PATCHELF" --replace-needed android.hardware.graphics.common-V2-ndk_platform.so android.hardware.graphics.common-V2-ndk.so "$2"
+            ;;
+        vendor/lib64/libkeystore-engine-wifi-hidl.so)
+            "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
+            ;;
   esac
 }
 
