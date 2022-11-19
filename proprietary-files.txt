@@ -1811,7 +1811,7 @@ vendor/etc/smartpa_param/tfa98xx_voice.bin
 
 
 # GPS
-vendor/bin/hw/android.hardware.gnss-service.mediatek
+vendor/bin/hw/android.hardware.gnss-service.mediatek|bcc935f51d1a48e718e9c42dd3382b07be9fbd16
 vendor/bin/mtk_agpsd
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
@@ -1834,7 +1834,7 @@ vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 -vendor/etc/vintf/manifest/gnss@2.1-service.xml
 vendor/etc/gbe.cfg
 vendor/lib/hw/gps.default.so
-vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
+vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so|ae2daf9598bc7e4de9008ed2417de2c465ecb7bb
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/android.hardware.gnss.visibility_control@1.0.so
