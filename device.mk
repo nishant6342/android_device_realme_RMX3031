@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.RMX3031
-	
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
@@ -203,7 +203,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss-V1-ndk.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
