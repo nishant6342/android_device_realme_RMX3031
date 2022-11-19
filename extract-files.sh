@@ -63,6 +63,8 @@ function blob_fixup {
         vendor/lib*/libmtkcam_stdutils.so)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
+        odm/lib*/libui)
+            "$PATCHELF" --replace-needed android.hardware.graphics.common-V2-ndk_platform.so android.hardware.graphics.common-V2-ndk.so "$2"
   esac
 }
 
