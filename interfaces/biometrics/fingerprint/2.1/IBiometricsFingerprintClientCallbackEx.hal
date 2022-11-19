@@ -16,11 +16,7 @@
 
 package vendor.oplus.hardware.biometrics.fingerprint@2.1;
 
-import android.hardware.biometrics.fingerprint@2.1::types;
-import android.hardware.biometrics.fingerprint@2.3;
-import IBiometricsFingerprintClientCallbackEx;
-
-interface IBiometricsFingerprint extends @2.3::IBiometricsFingerprint {
-    setHalCallback(IBiometricsFingerprintClientCallbackEx clientCallback) generates (uint64_t deviceId);
-    sendFingerprintCmd(int32_t cmdId, vec<int8_t> in_buf) generates (RequestStatus debugErrno);
+interface IBiometricsFingerprintClientCallbackEx {
+    oneway onEngineeringInfoUpdated(uint32_t lenth, vec<uint32_t> keys, vec<string> values);
+    oneway onFingerprintCmd(int32_t cmdId, vec<uint32_t> result, uint32_t resultLen);
 };
