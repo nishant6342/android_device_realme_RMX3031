@@ -2063,7 +2063,6 @@ lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
--priv-app/ImsService
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -2080,6 +2079,9 @@ vendor/lib64/libmmagent.so
 vendor/lib64/libmmagent.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+
+# https://github.com/realme-mt6893-dev/ImsService
+-priv-app/ImsService|738b92467c052c0e95ee3fd748bde51ab0b90336
 
 # Keymaster
 odm/lib/android.hardware.keymaster-V3-ndk_platform.so
