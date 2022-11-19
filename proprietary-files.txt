@@ -1812,7 +1812,7 @@ vendor/etc/smartpa_param/tfa98xx_voice.bin
 
 # GPS
 vendor/bin/hw/android.hardware.gnss-service.mediatek|bcc935f51d1a48e718e9c42dd3382b07be9fbd16
-vendor/bin/mtk_agpsd
+vendor/bin/mtk_agpsd|81b24d1a79304879227fa3a82e82ccb48db9adc4
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml

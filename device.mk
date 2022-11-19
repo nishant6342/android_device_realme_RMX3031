@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-	
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.ago.rc \
@@ -95,7 +95,7 @@ PRODUCT_PACKAGES += \
     init_conninfra.rc \
     fstab.mt6893 \
     ueventd.oplus.rc \
-    ueventd.mtk.rc	
+    ueventd.mtk.rc
 
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
@@ -389,7 +389,8 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v32.so
 
 # WiFi
 PRODUCT_PACKAGES += \
