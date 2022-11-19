@@ -2150,8 +2150,8 @@ odm/lib64/librpmbengclient.so
 odm/lib64/libswresample.so
 odm/lib64/libswscale.so
 odm/lib64/oplus.sensors.ssc.so
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|ffd35b1f8ab37a12b93261d0431864a3cf5a7cd5
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|9d54bf494c5f024a0e80b41c625eb6ba31722632
 vendor/bin/jpegtool
 vendor/bin/recordevent
 vendor/bin/replayevent
