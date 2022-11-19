@@ -36,7 +36,8 @@ ndk::ScopedAStatus Vibrator::activate(int32_t timeoutMs) {
 }
 
 ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
-    *_aidl_return = IVibrator::CAP_ON_CALLBACK | IVibrator::CAP_PERFORM_CALLBACK;
+    *_aidl_return = IVibrator::CAP_ON_CALLBACK | IVibrator::CAP_PERFORM_CALLBACK |
+                    IVibrator::CAP_AMPLITUDE_CONTROL;
     return ndk::ScopedAStatus::ok();
 }
 
@@ -65,6 +66,23 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs, const std::shared_ptr<IVibrat
 ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, const std::shared_ptr<IVibratorCallback>& callback, int32_t* _aidl_return) {
     ndk::ScopedAStatus status;
     int32_t timeoutMs;
+    int32_t intensity;
+
+    switch (strength) {
+        case EffectStrength::LIGHT:
+            intensity = 2;
+            break;
+        case EffectStrength::MEDIUM:
+            intensity = 5;
+            break;
+        case EffectStrength::STRONG:
+            intensity = 9;
+            break;
+        default:
+            return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+    }
+
+    setAmplitude(intensity);
 
     switch (effect) {
         case Effect::CLICK:
@@ -132,8 +150,9 @@ ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_retu
     return ndk::ScopedAStatus::ok();
 }
 
-ndk::ScopedAStatus Vibrator::setAmplitude(float /*amplitude*/) {
-    return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+ndk::ScopedAStatus Vibrator::setAmplitude(float amplitude) {
+    write(VIBRATOR_INTENSITY, amplitude);
+    return ndk::ScopedAStatus::ok();
 }
 
 ndk::ScopedAStatus Vibrator::setExternalControl(bool /*enabled*/) {
