@@ -59,6 +59,7 @@ persist.vendor.camera3.pipeline.bufnum.base.rsso=5
 
 # Display
 debug.mediatek.disp_decompress=1
+debug.sf.enable_transaction_tracing=false
 ro.vendor.smvr.p2batch.vga=32
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.fhd=4
