@@ -2426,7 +2426,7 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 # PQ
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so
+vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so|fda73386cb46b51a6f830e78b648f32cc45846a8
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.10.so
@@ -2441,7 +2441,7 @@ vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
-vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so|5a7df9df32e18f6e791ef7deecc3e6a1c0a1f515
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
