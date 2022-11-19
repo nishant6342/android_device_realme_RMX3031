@@ -416,4 +416,5 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor \
+    android.system.keystore2-V1-ndk.vendor \
     android.hardware.wifi@1.0-service.RMX3031
