@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SCNTABLE>
-    <!--delete for powerhint freq opt-->
-    <!--<scenario powerhint="MTKPOWER_HINT_ACT_SWITCH">
+    <scenario powerhint="MTKPOWER_HINT_ACT_SWITCH">
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_2" param1="3000000"></data>
