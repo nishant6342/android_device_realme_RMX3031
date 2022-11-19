@@ -34,6 +34,12 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup {
+    case "$1" in
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+            "$PATCHELF" --replace-needed android.hardware.power-V2-ndk_platform.so android.hardware.power-V2-ndk.so "$2"
+            ;;
+
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 

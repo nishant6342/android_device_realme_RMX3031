@@ -2398,7 +2398,7 @@ odm/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
 odm/etc/init/vendor.oplus.hardware.orms.ormsHalService@1.0-service.rc
 
 # Power
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service|7be6a10783d9543b16e6f29a1e67eac005a8b789
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
