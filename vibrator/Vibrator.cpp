@@ -76,7 +76,6 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, con
         case Effect::TICK:
         case Effect::THUD:
         case Effect::POP:
-        case Effect::TEXTURE_TICK:
             timeoutMs = 80;
             break;
         case Effect::HEAVY_CLICK:
@@ -98,6 +97,9 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, con
         case Effect::RINGTONE_14:
         case Effect::RINGTONE_15:
             timeoutMs = 1000;
+            break;
+        case Effect::TEXTURE_TICK:
+            timeoutMs = 40;
             break;
         default:
             return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
