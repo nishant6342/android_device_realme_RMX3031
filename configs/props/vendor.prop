@@ -207,3 +207,4 @@ persist.log.tag.PowerHalMgrServiceImpl=S
 persist.log.tag.PowerHalWifiMonitor=S
 persist.log.tag.RILMUXD=S
 persist.log.tag.UxUtility=S
+persist.log.tag.gralloc4=S
