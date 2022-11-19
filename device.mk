@@ -357,6 +357,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.RMX3031
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.0.vendor \

@@ -8,6 +8,10 @@
 
 #include <aidl/android/hardware/vibrator/BnVibrator.h>
 
+#define VIBRATOR_STATE "/sys/class/leds/vibrator/state"
+#define VIBRATOR_DURATION "/sys/class/leds/vibrator/duration"
+#define VIBRATOR_ACTIVATE "/sys/class/leds/vibrator/activate"
+
 using ::aidl::android::hardware::vibrator::IVibratorCallback;
 using ::aidl::android::hardware::vibrator::Braking;
 using ::aidl::android::hardware::vibrator::Effect;
@@ -23,6 +27,7 @@ namespace vibrator {
 
 class Vibrator : public BnVibrator {
 public:
+    Vibrator();
     ndk::ScopedAStatus getCapabilities(int32_t* _aidl_return) override;
     ndk::ScopedAStatus off() override;
     ndk::ScopedAStatus on(int32_t timeoutMs, const std::shared_ptr<IVibratorCallback>& callback) override;
@@ -47,6 +52,8 @@ public:
     ndk::ScopedAStatus getPwleCompositionSizeMax(int32_t* _aidl_return) override;
     ndk::ScopedAStatus getSupportedBraking(std::vector<Braking>* _aidl_return) override;
     ndk::ScopedAStatus composePwle(const std::vector<PrimitivePwle>& composite, const std::shared_ptr<IVibratorCallback>& callback) override;
+private:
+    ndk::ScopedAStatus activate(int32_t timeoutMs);
 };
 
 } // namespace vibrator
