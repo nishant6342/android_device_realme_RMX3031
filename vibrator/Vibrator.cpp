@@ -24,7 +24,14 @@ static void write(const std::string& path, const T& value) {
     file << value << std::endl;
 }
 
+
+static bool fileExists(const std::string& path) {
+    std::ifstream file(path);
+    return (file.good());
+}
+
 Vibrator::Vibrator() {
+    mAmplitudeControl = fileExists(VIBRATOR_INTENSITY);
     write(VIBRATOR_STATE, 1);
 }
 
@@ -36,8 +43,11 @@ ndk::ScopedAStatus Vibrator::activate(int32_t timeoutMs) {
 }
 
 ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
-    *_aidl_return = IVibrator::CAP_ON_CALLBACK | IVibrator::CAP_PERFORM_CALLBACK |
-                    IVibrator::CAP_AMPLITUDE_CONTROL;
+    *_aidl_return = IVibrator::CAP_ON_CALLBACK | IVibrator::CAP_PERFORM_CALLBACK;
+
+    if (mAmplitudeControl)
+        *_aidl_return |= IVibrator::CAP_AMPLITUDE_CONTROL;
+
     return ndk::ScopedAStatus::ok();
 }
 
@@ -151,7 +161,8 @@ ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_retu
 }
 
 ndk::ScopedAStatus Vibrator::setAmplitude(float amplitude) {
-    write(VIBRATOR_INTENSITY, amplitude);
+    if (mAmplitudeControl)
+        write(VIBRATOR_INTENSITY, amplitude);
     return ndk::ScopedAStatus::ok();
 }
 

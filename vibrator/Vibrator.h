@@ -55,6 +55,7 @@ public:
     ndk::ScopedAStatus composePwle(const std::vector<PrimitivePwle>& composite, const std::shared_ptr<IVibratorCallback>& callback) override;
 private:
     ndk::ScopedAStatus activate(int32_t timeoutMs);
+    bool mAmplitudeControl;
 };
 
 } // namespace vibrator
