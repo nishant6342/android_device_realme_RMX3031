@@ -101,9 +101,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_USES_METADATA_PARTITION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata
 
-# Network Routing
-TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
@@ -131,7 +128,7 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 # Partitions (Dynamic)
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_MAIN_SIZE := 10196353024
-BOARD_MAIN_PARTITION_LIST := system system_ext product vendor odm
+BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
 BOARD_SUPER_PARTITION_SIZE := 10200547328
 BOARD_SUPER_PARTITION_GROUPS := main
 
@@ -155,8 +152,8 @@ TARGET_USES_MKE2FS := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
-# Treble
-BOARD_VNDK_VERSION := current
+# SPL
+VENDOR_SECURITY_PATCH := 2022-11-05
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
