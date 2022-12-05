@@ -157,3 +157,6 @@ VENDOR_SECURITY_PATCH := 2022-11-05
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
+# Wi-Fi
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
