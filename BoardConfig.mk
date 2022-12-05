@@ -70,6 +70,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Display
+TARGET_SCREEN_DENSITY := 480
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U
 
 # UDFPS
