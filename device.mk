@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     init_conninfra.rc \
     fstab.mt6893 \
+    fstab.mt6893.ramdisk \
     ueventd.oplus.rc \
     ueventd.mtk.rc
 
