@@ -33,7 +33,6 @@ on init
     # Reset stune group setting for NNAPI HAL processes
     write /dev/stune/nnapi-hal/schedtune.boost 0
     write /dev/stune/nnapi-hal/schedtune.prefer_idle 0
-    write /dev/stune/top-app/schedtune.boost 1 
 
     # create an stune group for camera-specific processes
     mkdir /dev/stune/camera-daemon
