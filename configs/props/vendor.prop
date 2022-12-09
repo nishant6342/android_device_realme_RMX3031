@@ -33,17 +33,19 @@ camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
 vendor.mtk.camera.app.fd.video=1
-ro.vendor.camera.directfdyuv.support=1
-persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=6
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
 ro.vendor.camera.aishutter.support=1
 ro.vendor.camera3.zsl.default=260
 ro.vendor.camera3.zsl.project=-130
 ro.vendor.mtk_camera_app_version=3
-ro.vendor.mtk_cam_security_support=1
+ro.vendor.camera.directfdyuv.support=1
 ro.mtk_cam_dualzoom_support=1
+ro.vendor.mtk_slow_motion_support=1
+ro.vendor.mtk_zsdhdr_support=1
 ro.vendor.mtk_cam_security_support=1
 ro.vendor.camera.isp.support.colorspace=0
+ro.vendor.camera.directfdyuv.support=1
+persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=6
+persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
@@ -56,6 +58,17 @@ persist.vendor.camera3.pipeline.bufnum.base.lcso=4
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
+
+# Connectivity
+vendor.connsys.driver.ready=no
+ro.vendor.connsys.dedicated.log=1
+ro.vendor.bt.platform=6893
+ro.vendor.connsys.dedicated.log.port=bt,wifi
+persist.vendor.connsys.coredump.mode=2
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.fm_chipid=mt6635
 
 # Display
 debug.mediatek.disp_decompress=1
@@ -93,32 +106,24 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=0
 ro.hardware.egl=meow
 
-# SurfaceFlinger
-ro.surface_flinger.primary_display_orientation=ORIENTATION_0
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-
-# Crypto
-ro.crypto.volume.filenames_mode=aes-256-cts
-
-# Connectivity
-ro.vendor.bt.platform=6893
-ro.vendor.connsys.dedicated.log.port=bt,wifi
-persist.vendor.connsys.coredump.mode=2
-persist.vendor.connsys.chipid=-1
-persist.vendor.connsys.patch.version=-1
-persist.vendor.connsys.dynamic.dump=0
-vendor.connsys.driver.ready=no
-ro.vendor.connsys.dedicated.log=1
-persist.vendor.connsys.fm_chipid=mt6635
+# Dram
+ro.vendor.mtk_config_max_dram_size=0x800000000
 
 # DRM
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
+ro.vendor.mtk_sec_video_path_support=1
 ro.netflix.bsp_rev=MTK6893-32816-1
+
+# Fm
+ro.vendor.fm.platform=connac2x
+persist.vendor.connsys.fm_chipid=mt6635
 
 # FRP
 ro.frp.pst=/dev/block/by-name/frp
+
+# Gatekeeper
+ro.hardware.gatekeeper=trustonic
 
 # GPS
 ro.vendor.mtk_agps_app=1
@@ -126,7 +131,47 @@ ro.vendor.mtk_gps_support=1
 ro.vendor.gps.chrdev=gps_drv
 ro.vendor.mtk_log_hide_gps=0
 
+# IMS
+ro.vendor.md_auto_setup_ims=1
+persist.vendor.ims_support=1
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.volte_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+persist.vendor.mtk_ct_volte_support=3
+
+# LMK
+ro.lmk.psi_complete_stall_ms=150
+ro.lmk.swap_free_low_percentage=20
+ro.lmk.thrashing_limit=10
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.swap_util_max=90
+ro.lmk.psi_complete_stall_ms_dup=70
+ro.lmk.kill_timeout_ms=100
+
+# Media
+ro.vendor.jpeg_decode_sw_opt=2
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.mtk.vdec.waitkeyframeforplay=15
+media.c2.dmabuf.padding=3072
+
+# Neural Network
+ro.vendor.mtk_nn_baseline_support=1
+debug.mtk_tflite.target_nnapi=29
+
+# Platform
+ro.vendor.mediatek.platform=MT6893
+
 # Radio
+vendor.connsys.driver.ready=no
+telephony.lteOnCdmaDevice=1
+telephony.active_modems.max_count=2
+ro.telephony.default_network=33,33,33,33
+persist.vendor.log.tel_log_ctrl=1
+persist.vendor.mims_support=2
+persist.vendor.factory.GB2312=yes
 persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
 persist.vendor.radio.fd.r8.counter=150
@@ -139,34 +184,50 @@ persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.mtk_dsbp_support=2
 persist.radio.multisim.config=dsds
 persist.vendor.radio.msimmode=dsds
-ro.vendor.radio.max.multisim=dsds
 persist.vendor.radio.smart.data.switch=1
 persist.vendor.radio.telecom.vibrate=0
-ro.vendor.mtk_sim_hot_swap_common_slot=1
-ro.vendor.mtk_sim_card_onoff=3
 persist.vendor.mtk_sim_switch_policy=2
-persist.vendor.mtk_sim_switch_policy=2
-ro.vendor.sim_me_lock_mode=3
-ro.vendor.mtk_external_sim_support=1
-ro.vendor.mtk_external_sim_only_slots=0
 persist.radio.multisim.config=dsds
 persist.vendor.radio.msimmode=dsds
+persist.vendor.radio.telecom.vibrate=0
+persist.vendor.md_c2k_cap_dep_check=0
+ro.vendor.mtk_md_world_mode_support=1
+ro.vendor.num_md_protocol=2
+ro.vendor.radio.max.multisim=dsds
+ro.vendor.mtk_data_config=1
+ro.vendor.mtk_modem_monitor_support=1
+ro.vendor.mtk_log_hide_gps=0
+ro.vendor.mtk_sim_hot_swap_common_slot=1
+ro.vendor.mtk_mvpu_security_support=0
+ro.vendor.mtk_fd_support=1
+ro.vendor.mtk_single_bin_modem_support=1
+ro.vendor.mtk_wapi_support=1
+ro.vendor.mtk_embms_support=1
+ro.vendor.mtk_sim_card_onoff=3
+ro.vendor.sim_me_lock_mode=3
+ro.vendor.mtk_external_sim_support=1
+ro.vendor.mtk_world_phone_policy=0
+ro.vendor.mtk_external_sim_only_slots=0
 ro.vendor.radio.max.multisim=dsds
 ro.telephony.sim.count=2
 ro.vendor.md_prop_ver=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_ril_mode=c6m_1rild
+ro.vendor.gps.chrdev=gps_drv
+ro.vendor.mtk_protocol1_rat_config=N/C/Lf/Lt/W/G
+ro.vendor.mtk_c2k_lte_mode=2
+ro.vendor.mtk_c2k_support=1
+ro.vendor.mtk_ps1_rat=N/C/Lf/Lt/W/G
+ro.vendor.mtk_lte_support=1
+ro.vendor.mtk_c2k_support=1
 
-# IMS
-persist.vendor.ims_support=1
-persist.vendor.mtk_dynamic_ims_switch=1
-persist.vendor.mtk_wfc_support=1
-persist.vendor.volte_support=1
-persist.vendor.mtk.volte.enable=1
-persist.vendor.vilte_support=1
-persist.vendor.viwifi_support=1
-ro.vendor.md_auto_setup_ims=1
-persist.vendor.mtk_ct_volte_support=3
+# SurfaceFlinger
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Sensors
+ro.vendor.mtk.sensor.support=yes
 
 # SoC
 ro.soc.manufacturer=MediaTek
@@ -177,29 +238,28 @@ debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiagl
 
 # Trustonic
+ro.mtk_key_manager_support=1
 ro.hardware.kmsetkey=trustonic
 ro.vendor.mtk_trustonic_tee_support=1
+ro.vendor.mtk_tee_gp_support=1
 
-# Gatekeeper
-ro.hardware.gatekeeper=trustonic
-
-# Sensors
-ro.vendor.mtk.sensor.support=yes
-
-# LMK
-ro.lmk.psi_complete_stall_ms=150
-ro.lmk.swap_free_low_percentage=20
-ro.lmk.thrashing_limit=10
-ro.lmk.thrashing_limit_decay=50
-ro.lmk.swap_util_max=90
-ro.lmk.psi_complete_stall_ms_dup=70
-ro.lmk.kill_timeout_ms=100
+# Volume
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.vendor.mtk_f2fs_enable=1
+ro.vendor.mtk_emmc_support=1
+ro.vendor.mtk_ufs_support=1
 
 # WiFi
+ro.vendor.wfd.dummy.enable=0
+ro.vendor.wfd.iframesize.level=0
+ro.vendor.ap_info_monitor=0
 ro.vendor.wlan.standalone.log=y
 ro.vendor.wlan.gen=gen4m
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.telephony.iwlan_operation_mode=AP-assisted
+ro.vendor.mtk_wappush_support=1
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.incremental.enable=yes
 
 # Logging
 persist.log.tag.DCT=S
