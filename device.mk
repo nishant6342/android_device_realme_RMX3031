@@ -213,6 +213,10 @@ PRODUCT_PACKAGES += \
    libkeystore-wifi-hidl \
    libkeystore-engine-wifi-hidl
 
+# KPOC
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.RMX3031
