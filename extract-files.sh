@@ -72,6 +72,9 @@ function blob_fixup {
         vendor/lib/libMtkOmxVdecEx.so)
             "$PATCHELF" --replace-needed "libui.so" "libui-v32.so" "$2"
             ;;
+        vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc)
+            sed -i '/vts/Q' "$2"
+            ;;
   esac
 }
 
