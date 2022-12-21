@@ -69,6 +69,9 @@ function blob_fixup {
         vendor/lib64/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
             ;;
+        vendor/lib/libMtkOmxVdecEx.so)
+            "$PATCHELF" --replace-needed "libui.so" "libui-v32.so" "$2"
+            ;;
   esac
 }
 
