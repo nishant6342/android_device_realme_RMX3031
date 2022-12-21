@@ -1812,7 +1812,7 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 -vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
--vendor/etc/vintf/manifest/gnss@2.1-service.xml
+-vendor/etc/vintf/manifest/gnss@2.1-service.xml:vendor/etc/vintf/manifest/gnss@2.1-service-mtk.xml
 vendor/etc/gbe.cfg
 vendor/lib/hw/gps.default.so
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so|ae2daf9598bc7e4de9008ed2417de2c465ecb7bb
