@@ -173,7 +173,7 @@ ro.soc.model=MT6893
 
 # SkiaGL
 debug.hwui.renderer=skiagl
-debug.renderengine.backend=threaded
+debug.renderengine.backend=skiagl
 
 # Trustonic
 ro.hardware.kmsetkey=trustonic
