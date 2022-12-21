@@ -2642,7 +2642,7 @@ vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/libwapi.so
-vendor/lib64/libwifi-hal.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwpfa.so
 vendor/lib64/meta_wifi_data.so
