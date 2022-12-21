@@ -2179,7 +2179,7 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libacdk.so
 vendor/lib64/libadpcmdec_mtk.so
-vendor/lib64/libcodec2_hidl@1.0.so
+vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl-mtk@1.0.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
