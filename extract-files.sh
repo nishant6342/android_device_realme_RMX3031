@@ -53,6 +53,7 @@ function blob_fixup {
             ;&
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
            "$PATCHELF" --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "$2"
+           "$PATCHELF" --replace-needed libcodec2_vndk.so libcodec2_vndk-mtk.so "$2"
             ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
