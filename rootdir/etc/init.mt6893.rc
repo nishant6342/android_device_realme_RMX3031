@@ -1187,4 +1187,9 @@ service fuelgauged_nvram /vendor/bin/fuelgauged_nvram
     user system
     group system
     oneshot
-#endif
+
+on property:persist.sys.dt2w=0
+    write /proc/touchpanel/double_tap_enable 0
+
+on property:persist.sys.dt2w=1
+    write /proc/touchpanel/double_tap_enable 1
