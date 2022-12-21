@@ -27,6 +27,10 @@ vendor/lib64/libapu_mdw_batch.so
 vendor/lib64/libapusys.so
 vendor/lib64/libapusys_edma.so
 
+# APTX ( Bluetooth )
+lib64/libaptXHD_encoder.so
+lib64/libaptX_encoder.so
+
 # Audio
 vendor/lib/hw/audio.primary.mt6893.so
 vendor/lib/hw/audio.r_submix.mt6893.so
