@@ -236,8 +236,14 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster-V3-ndk_platform.vendor \
    android.hardware.keymaster@3.0.vendor \
    android.hardware.keymaster@4.0.vendor \
+   android.hardware.keymaster@4.1.vendor \
    libkeymaster4.vendor:64 \
    libkeymaster4support.vendor:64 \
+   libkeymaster4_1support.vendor:64 \
+   libkeymaster41.vendor:64 \
+   libkeymaster_messages.vendor:64 \
+   libkeymaster_portable.vendor:64 \
+   libpuresoftkeymasterdevice.vendor:64 \
    libsoft_attestation_cert.vendor:64 \
    libkeystore-wifi-hidl \
    libkeystore-engine-wifi-hidl
