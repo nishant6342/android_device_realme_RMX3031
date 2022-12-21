@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+		<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2020 The Android Open Source Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -27,5 +27,11 @@
 
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">102</integer>
+
+    <!-- The width/height of the unlock icon view on keyguard. -->
+    <dimen name="keyguard_indication_margin_bottom">95dp</dimen>
+
+    <!-- The text size for battery level -->
+    <dimen name="battery_level_text_size">05sp</dimen>
 
 </resources>
