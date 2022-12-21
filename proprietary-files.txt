@@ -2668,6 +2668,11 @@ vendor/bin/hw/hostapd
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/hw/wpa_supplicant
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
+vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
+vendor/bin/hw/hostapd
+vendor/etc/init/hostapd.android.rc
+vendor/bin/hostapd_cli
 vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/wlan_assistant
