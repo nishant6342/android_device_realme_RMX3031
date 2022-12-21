@@ -37,4 +37,7 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
+    <!-- Whether to show Smooth Display feature in Settings Options -->
+    <bool name="config_show_refresh_rate_controls">true</bool>
+
 </resources>
