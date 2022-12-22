@@ -400,6 +400,7 @@ PRODUCT_PACKAGES += \
     init.mt6893.usb.rc \
     init.project.rc \
     init.sensor_2_0.rc \
+    init.target.rc \
     init_conninfra.rc \
     fstab.mt6893 \
     fstab.mt6893.ramdisk \
