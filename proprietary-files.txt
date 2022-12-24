@@ -1,3 +1,5 @@
+# Unipinned blobs from RMX3031-user 12 SP1A.210812.016 1663769087038 release-keys
+
 # AAL
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_key.so
