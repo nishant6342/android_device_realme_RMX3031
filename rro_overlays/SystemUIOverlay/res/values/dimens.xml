@@ -18,13 +18,13 @@
 <resources>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">13dp</dimen>
+    <dimen name="status_bar_padding_top">12dp</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">1dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">16dp</dimen>
+    <dimen name="status_bar_padding_end">3dp</dimen>
 
     <!-- The minimum bottom margin of the keyguard security container -->
     <dimen name="kg_security_container_min_bottom_margin">469px</dimen>
