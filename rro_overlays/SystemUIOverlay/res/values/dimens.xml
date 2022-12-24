@@ -17,6 +17,9 @@
 -->
 <resources>
 
+    <!-- Bottom margin size when fingerprint in display is active -->
+    <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">120dp</dimen>
+
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">12dp</dimen>
 
@@ -29,7 +32,11 @@
     <!-- The minimum bottom margin of the keyguard security container -->
     <dimen name="kg_security_container_min_bottom_margin">469px</dimen>
 
-    <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">25dp</dimen>
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">976px</dimen>
+
+    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
+    <dimen name="physical_volume_up_button_center_screen_location_y">710px</dimen>
+    <dimen name="physical_volume_down_button_center_screen_location_y">910px</dimen>
 
 </resources>
