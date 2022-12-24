@@ -10,3 +10,6 @@ fi
 MTK_SEPOLICY=device/mediatek/sepolicy_vndr/SEPolicy.mk
 if ! [-a $MTK_SEPOLICY]; then git clone https://github.com/Project-Elixir/device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 fi
+PARTS=packages/apps/RealmeParts/parts.mk
+if ! [-a $PARTS]; then git clone https://github.com/nishant6342/packages_apps_RealmeParts packages/apps/RealmeParts
+fi
