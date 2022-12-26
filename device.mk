@@ -31,6 +31,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 $(call inherit-product, vendor/realme/RMX3031/RMX3031-vendor.mk)
 $(call inherit-product-if-exists, packages/apps/prebuilt-apps/prebuilt-apps.mk)
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+$(call inherit-product-if-exists, packages/apps/PocketMode/pocket_mode.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
