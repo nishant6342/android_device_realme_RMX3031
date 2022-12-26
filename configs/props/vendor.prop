@@ -233,9 +233,9 @@ ro.vendor.mtk.sensor.support=yes
 ro.soc.manufacturer=MediaTek
 ro.soc.model=MT6893
 
-# SkiaGL
-debug.hwui.renderer=skiagl
-debug.renderengine.backend=skiagl
+# Render
+debug.hwui.renderer=opengl
+debug.renderengine.backend=threaded
 
 # Trustonic
 ro.mtk_key_manager_support=1
