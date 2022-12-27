@@ -34,6 +34,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 EXTRA_UDFPS_ANIMATIONS := true
 FORCE_AOSP_DIALER := true
+TARGET_REMOVE_APERTURE_CAM := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_RMX3031
