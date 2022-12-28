@@ -29,7 +29,7 @@
     <integer name="config_udfpsEnrollProgressBar" translatable="false">102</integer>
 
     <!-- The width/height of the unlock icon view on keyguard. -->
-    <dimen name="keyguard_indication_margin_bottom">95dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">100dp</dimen>
 
     <!-- The text size for battery level -->
     <dimen name="battery_level_text_size">05sp</dimen>
