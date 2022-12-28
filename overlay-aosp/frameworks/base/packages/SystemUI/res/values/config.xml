@@ -39,29 +39,44 @@
 
     <!-- Array of brightness-alpha lut for framework dimming -->
     <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
-          <item>0,255</item>
-          <item>1,224</item>
-          <item>2,214</item>
-          <item>3,213</item>
-          <item>4,207</item>
-          <item>5,203</item>
-          <item>6,201</item>
-          <item>8,197</item>
-          <item>10,193</item>
-          <item>15,182</item>
-          <item>20,172</item>
-          <item>30,157</item>
-          <item>45,130</item>
-          <item>70,108</item>
-          <item>100,86</item>
-          <item>120,71</item>
-          <item>140,58</item>
-          <item>160,47</item>
-          <item>180,34</item>
-          <item>200,22</item>
-          <item>220,14</item>
-          <item>240,6</item>
-          <item>260,0</item>
+        <item>0,255</item>
+        <item>190,238</item>
+        <item>260,229</item>
+        <item>320,228</item>
+        <item>390,220</item>
+        <item>460,210</item>
+        <item>530,202</item>
+        <item>600,194</item>
+        <item>670,184</item>
+        <item>740,176</item>
+        <item>810,171</item>
+        <item>880,165</item>
+        <item>950,160</item>
+        <item>1020,152</item>
+        <item>1090,146</item>
+        <item>1160,139</item>
+        <item>1230,133</item>
+        <item>1300,128</item>
+        <item>1370,121</item>
+        <item>1440,116</item>
+        <item>1510,111</item>
+        <item>1580,106</item>
+        <item>1650,99</item>
+        <item>1720,94</item>
+        <item>1790,89</item>
+        <item>1860,83</item>
+        <item>1930,80</item>
+        <item>2000,74</item>
+        <item>2047,69</item>
     </string-array>
+
+    <!-- The scale factor for framework dimming -->
+    <integer name="config_udfpsDimmingBrightnessMin">649</integer>
+    <integer name="config_udfpsDimmingBrightnessMax">2047</integer>
+
+    <!-- The amount of delay to add when disabling the dimming.
+         This is used to prevent flickers due to the dimming being disabled
+         before the screen has had chance to switch out of HBM mode -->
+     <integer name="config_udfpsDimmingDisableDelay">10</integer>
 
 </resources>
