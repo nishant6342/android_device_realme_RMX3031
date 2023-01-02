@@ -2739,3 +2739,12 @@ vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
 vendor/lib64/vendor.oplus.hardware.wifi.supplicant@2.0.so
+
+# AudioConfigs
+vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml
+vendor/etc/audio_policy_configuration_a2dp_offload_disabled_cg_enabled.xml
+vendor/etc/audio_policy_configuration_a2dp_offload_enable_cg_enable.xml
+vendor/etc/bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml
+vendor/etc/bluetooth_offload_audio_policy_configuration.xml
+vendor/etc/bluetooth_ums_offload_audio_policy_configuration.xml
+vendor/etc/default_volume_tables.xml
