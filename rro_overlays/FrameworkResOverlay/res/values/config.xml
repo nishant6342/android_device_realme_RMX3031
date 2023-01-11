@@ -441,4 +441,7 @@
     <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
     <bool name="config_telephony5gNonStandalone">true</bool>
 
+    <!-- Enforce DisplayModeDirector to select user preferred resolution -->
+    <bool name="config_forceToUseSelectedResolution">true</bool>
+
 </resources>

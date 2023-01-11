@@ -39,10 +39,13 @@ camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
 vendor.mtk.camera.app.fd.video=1
+ro.mtk_cam_stereo_camera_support=1
 ro.vendor.camera.aishutter.support=1
 ro.vendor.camera3.zsl.default=260
-ro.vendor.camera3.zsl.project=-130
 ro.vendor.mtk_camera_app_version=3
+ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn.option=A,B,E,F,Z
+ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.camera.directfdyuv.support=1
 ro.mtk_cam_dualzoom_support=1
 ro.vendor.mtk_slow_motion_support=1
@@ -50,6 +53,8 @@ ro.vendor.mtk_zsdhdr_support=1
 ro.vendor.mtk_cam_security_support=1
 ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.camera.directfdyuv.support=1
+ro.opengles.version=196610
+ro.oplus.image.vendor.version=.5db9bdd4
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.fdyuv=6
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=6
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
@@ -64,8 +69,10 @@ persist.vendor.camera3.pipeline.bufnum.base.lcso=4
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
 persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 persist.vendor.camera3.pipeline.bufnum.base.rsso=5
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,android,com.oplus.camera
 vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+
+ro.gfx.driver.0=com.mediatek.mt6893.gamedriver
 
 # Connectivity
 vendor.connsys.driver.ready=no
@@ -80,8 +87,11 @@ persist.vendor.connsys.fm_chipid=mt6635
 
 # Display
 debug.mediatek.disp_decompress=1
+debug.mediatek.appgamepq_compress=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
+debug.sf.enable_hwc_vds=0
+ro.vendor.composer_version=2.3
 ro.vendor.smvr.p2batch.vga=32
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.fhd=4
@@ -113,6 +123,7 @@ ro.vendor.pq.mtk_backlight_smooth_support=0
 ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_blulight_def_support=0
 ro.hardware.egl=meow
+ro.hardware.vulkan=mali
 
 # Dram
 ro.vendor.mtk_config_max_dram_size=0x800000000
@@ -121,6 +132,7 @@ ro.vendor.mtk_config_max_dram_size=0x800000000
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_svp_on_mtee_support=1
 ro.netflix.bsp_rev=MTK6893-32816-1
 
 # Fm
@@ -164,6 +176,11 @@ ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=15
 media.c2.dmabuf.padding=3072
+
+# Mediatek
+ro.vendor.mtk_pq_color_mode=3
+ro.vendor.mtk_prefer_64bit_proc=0
+ro.vendor.mtk_hdr_video_support=1
 
 # Neural Network
 ro.vendor.mtk_nn_baseline_support=1
@@ -281,3 +298,4 @@ persist.log.tag.PowerHalWifiMonitor=S
 persist.log.tag.RILMUXD=S
 persist.log.tag.UxUtility=S
 persist.log.tag.gralloc4=S
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt

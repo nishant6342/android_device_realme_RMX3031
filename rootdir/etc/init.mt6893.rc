@@ -36,6 +36,9 @@ on early-init && property:ro.build.type=userdebug
 on init
     write /proc/bootprof "INIT:init"
 
+    # symlink odm to oplus camera app Dir
+	symlink /odm /data/user/0/com.oplus.camera/files/odm
+	
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
 

@@ -833,6 +833,7 @@
         <interface>
             <name>IOrmsHalService</name>
             <instance>default</instance>
+            <instance>ORMS_HAL_PROXY</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
