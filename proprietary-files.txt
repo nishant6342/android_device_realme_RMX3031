@@ -1744,6 +1744,7 @@ vendor/firmware/BT_FW.cfg
 vendor/firmware/WIFI_RAM_CODE_soc3_0_1a_1.bin
 vendor/firmware/conninfra.cfg
 vendor/firmware/fm_cust.cfg
+vendor/firmware/gt1151_default_firmware2.img
 vendor/firmware/gt9886_cfg_6781v01.bin
 vendor/firmware/gt9886_cfg_6785v96.bin
 vendor/firmware/gt9886_cfg_6785v99.bin
@@ -1773,6 +1774,7 @@ vendor/firmware/gt9886_firmware_6885v01.bin
 vendor/firmware/gt9886_firmware_6893v01.bin
 vendor/firmware/gt9896s_cfg_6781v01_1080x2280.bin
 vendor/firmware/gt9896s_cfg_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_cfg_6789v01.bin
 vendor/firmware/gt9896s_cfg_6833v01.bin
 vendor/firmware/gt9896s_cfg_6853v01.bin
 vendor/firmware/gt9896s_cfg_6855v01.bin
@@ -1789,6 +1791,7 @@ vendor/firmware/gt9896s_cfg_6895v01.bin
 vendor/firmware/gt9896s_cfg_6983v01.bin
 vendor/firmware/gt9896s_firmware_6781v01_1080x2280.bin
 vendor/firmware/gt9896s_firmware_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_firmware_6789v01.bin
 vendor/firmware/gt9896s_firmware_6833v01.bin
 vendor/firmware/gt9896s_firmware_6853v01.bin
 vendor/firmware/gt9896s_firmware_6855v01.bin
@@ -1804,6 +1807,8 @@ vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
 vendor/firmware/lib3a.ccu
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
 vendor/firmware/mt6635_fm_v1_coeff.bin
 vendor/firmware/mt6635_fm_v1_patch.bin
 vendor/firmware/novatek_ts_fw.bin
@@ -1811,6 +1816,12 @@ vendor/firmware/novatek_ts_fw_144.bin
 vendor/firmware/novatek_ts_fw_jdi.bin
 vendor/firmware/novatek_ts_fw_tm.bin
 vendor/firmware/remoteproc_scp
+vendor/firmware/soc2_2_ram_bt_1_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_1a_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1a_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1a_1_hdr.bin
 vendor/firmware/soc3_0_patch_wmmcu_1a_1_hdr.bin
 vendor/firmware/soc3_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin
@@ -1820,6 +1831,9 @@ vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
 vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin
 vendor/firmware/valhall-1691526.wa
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1a_1.bin
+vendor/firmware/WMT_SOC.cfg
 
 # Firmware ( Haptics )
 odm/firmware/aw8697_haptic.bin
