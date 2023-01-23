@@ -99,6 +99,8 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, con
             break;
         case Effect::DOUBLE_CLICK:
             timeoutMs = 50;
+            activate(timeoutMs);
+            usleep(150000);
             break;
         case Effect::TICK:
         case Effect::THUD:
