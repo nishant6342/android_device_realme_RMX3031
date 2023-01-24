@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 The LineageOS Project
+ * Copyright (C) 2022-2023 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -23,7 +23,6 @@ static void write(const std::string& path, const T& value) {
     std::ofstream file(path);
     file << value << std::endl;
 }
-
 
 static bool fileExists(const std::string& path) {
     std::ifstream file(path);
@@ -76,23 +75,23 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs, const std::shared_ptr<IVibrat
 ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, const std::shared_ptr<IVibratorCallback>& callback, int32_t* _aidl_return) {
     ndk::ScopedAStatus status;
     int32_t timeoutMs;
-    int32_t intensity;
+    float amplitude;
 
     switch (strength) {
         case EffectStrength::LIGHT:
-            intensity = 2;
+            amplitude = AMPLITUDE_LIGHT;
             break;
         case EffectStrength::MEDIUM:
-            intensity = 5;
+            amplitude = AMPLITUDE_MEDIUM;
             break;
         case EffectStrength::STRONG:
-            intensity = 9;
+            amplitude = AMPLITUDE_STRONG;
             break;
         default:
             return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
 
-    setAmplitude(intensity);
+    setAmplitude(amplitude);
 
     switch (effect) {
         case Effect::CLICK:
@@ -161,8 +160,20 @@ ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_retu
 }
 
 ndk::ScopedAStatus Vibrator::setAmplitude(float amplitude) {
+    int32_t intensity;
+
+    if (amplitude <= 0.0f || amplitude > 1.0f)
+        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_ILLEGAL_ARGUMENT));
+
+    LOG(DEBUG) << "Setting amplitude: " << amplitude;
+
+    intensity = amplitude * INTENSITY_MAX;
+
+    LOG(DEBUG) << "Setting intensity: " << intensity;
+
     if (mAmplitudeControl)
-        write(VIBRATOR_INTENSITY, amplitude);
+        write(VIBRATOR_INTENSITY, intensity);
+
     return ndk::ScopedAStatus::ok();
 }
 

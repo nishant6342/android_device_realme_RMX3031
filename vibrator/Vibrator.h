@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 The LineageOS Project
+ * Copyright (C) 2022-2023 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -12,6 +12,12 @@
 #define VIBRATOR_DURATION "/sys/class/leds/vibrator/duration"
 #define VIBRATOR_ACTIVATE "/sys/class/leds/vibrator/activate"
 #define VIBRATOR_INTENSITY "/sys/kernel/thunderquake_engine/level"
+#define INTENSITY_MIN 0
+#define INTENSITY_MAX 9
+
+#define AMPLITUDE_LIGHT 0.3
+#define AMPLITUDE_MEDIUM 0.6
+#define AMPLITUDE_STRONG 1
 
 using ::aidl::android::hardware::vibrator::IVibratorCallback;
 using ::aidl::android::hardware::vibrator::Braking;
