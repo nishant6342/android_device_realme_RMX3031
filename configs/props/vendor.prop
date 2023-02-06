@@ -276,6 +276,7 @@ ro.vendor.mtk.sensor.support=yes
 
 # Surface Flinger
 ro.surface_flinger.protected_contents=true
+debug.sf.disable_client_composition_cache=1
 
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=1
