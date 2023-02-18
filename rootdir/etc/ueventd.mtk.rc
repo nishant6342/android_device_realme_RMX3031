@@ -1,26 +1,3 @@
-#Runsheng.Pei@ANDROID.STORAGE.3612, 2017/12/29, Add for new reserve partition
-#yanghao@PSW.KERNEL.Stability. change the owner from system to root for Android P kernel can access the partition
-/dev/block/bootdevice/by-name/oplusreserve1               0660   root     system
-/dev/block/sdf6   0660   root     system
-
-#Fuchun.Liao@BSP.CHG.Basic 2020/08/07 add for opporeserve3 access
-/dev/block/by-name/oplusreserve3               0660   root     system
-/dev/block/sdc6           0660   root     system
-
-#Runsheng.Pei@ANDROID.STORAGE.3612, 2018/10/17, Add for new reserve partition
-/dev/block/platform/bootdevice/by-name/reserve1               0660   system     system
-/dev/block/sdc4   0660   system     system
-/dev/block/by-name/oplusreserve1               0660   system     system
-#Xuefeng.Peng@ANDROID.STORAGE.3612, 2018/10/17, Add for new reserve partition
-/dev/block/mmcblk0p4 0660 system system
-/dev/block/mmcblk0p7 0660 root system
-
-#Jinke.zhou modify for engineermode to access by-name/reserve_exp1
-/dev/block/platform/bootdevice/by-name/reserve_exp1              0660   system     radio
-
-#Canjie.Zheng add for critical log
-/dev/block/platform/bootdevice/by-name/reserve2               0660   system     system
-
 #change partition permission
 # eMMC only
 /dev/block/mmcblk0                               0660    root    system
@@ -249,6 +226,3 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
-
-subsystem adf
-    devname uevent_devname

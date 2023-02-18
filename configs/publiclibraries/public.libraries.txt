@@ -6,9 +6,3 @@ libarcsoft_dualcam_wt_calibration.so
 libarcsoft_dualcam_wt_verification.so
 libcalibverifyW_T.so
 libarcsoft_scbokeh_video.so
-libAPSClient-jni.so
-libAPSClient-jni.trustonic.so
-libHeifEncoderWrapper.so
-libNativeWinBuffExchange.so
-liboplusheifwriter.so
-libApsFaceBeautyPreviewProductJni.so

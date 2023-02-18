@@ -1,15 +1,55 @@
-<!--
-    Input:
-        oplus_framework_compatibility_matrix.xml
-        device_framework_matrix.xml
--->
-<compatibility-matrix version="4.0" type="framework">
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>android.hardware.biometrics.face</name>
+        <interface>
+            <name>IFace</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.biometrics.face</name>
+        <interface>
+            <name>IFace</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.camera.provider</name>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.media.c2</name>
         <version>1.0</version>
         <interface>
             <name>IComponentStore</name>
             <instance>ozoaudio</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>ozoaudio</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.media.c2</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComponentStore</name>
+            <instance>default1</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -51,6 +91,136 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.config</name>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.data</name>
+        <interface>
+            <name>IRadioData</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.messaging</name>
+        <interface>
+            <name>IRadioMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.modem</name>
+        <interface>
+            <name>IRadioModem</name>
+            <instance>imsSlot1</instance>
+            <instance>imsSlot2</instance>
+            <instance>imsSlot3</instance>
+            <instance>imsSlot4</instance>
+            <instance>se1</instance>
+            <instance>se2</instance>
+            <instance>se3</instance>
+            <instance>se4</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.network</name>
+        <interface>
+            <name>IRadioNetwork</name>
+            <instance>imsSlot1</instance>
+            <instance>imsSlot2</instance>
+            <instance>imsSlot3</instance>
+            <instance>imsSlot4</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.sim</name>
+        <interface>
+            <name>IRadioSim</name>
+            <instance>imsSlot1</instance>
+            <instance>imsSlot2</instance>
+            <instance>imsSlot3</instance>
+            <instance>imsSlot4</instance>
+            <instance>se1</instance>
+            <instance>se2</instance>
+            <instance>se3</instance>
+            <instance>se4</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.voice</name>
+        <interface>
+            <name>IRadioVoice</name>
+            <instance>imsSlot1</instance>
+            <instance>imsSlot2</instance>
+            <instance>imsSlot3</instance>
+            <instance>imsSlot4</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>arm.mali.platform</name>
+        <interface>
+            <name>ICompression</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.display.PanelChaplin</name>
+        <version>1.0</version>
+        <interface>
+            <name>IPanelChaplin</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.display.PanelChaplin</name>
+        <version>1.0</version>
+        <interface>
+            <name>IPanelChaplin</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby.hardware.dms</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby.hardware.dms</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.dolby_v3_6.hardware.dms360</name>
         <version>2.0</version>
@@ -60,11 +230,26 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.mediatek.hardware.aee</name>
-        <version>1.1</version>
+        <name>vendor.dolby_v3_6.hardware.dms360</name>
+        <version>2.0</version>
         <interface>
-            <name>IAee</name>
-            <instance>AEE</instance>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby_v3_7.hardware.dms370</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby_v3_7.hardware.dms370</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -81,6 +266,13 @@
         <version>1.0</version>
         <version>2.0</version>
         <version>2.1</version>
+        <interface>
+            <name>INeuronApusys</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.apuware.apusys</name>
         <interface>
             <name>INeuronApusys</name>
             <instance>default</instance>
@@ -122,10 +314,16 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.bluetooth.audio</name>
-        <version>2.1</version>
-        <version>2.2</version>
+        <version>2.0-2</version>
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.aovservice</name>
+        <interface>
+            <name>IAovService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -155,10 +353,18 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.camera.isphal</name>
-        <version>1.1</version>
+        <version>1.0-1</version>
         <interface>
             <name>IISPModule</name>
             <instance>internal/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true"> 
+        <name>android.hardware.secure_element</name> 
+        <version>1.0-2</version> 
+        <interface>
+            <name>ISecureElement</name> 
+            <instance>SIM1</instance> 
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -217,20 +423,18 @@
             <instance>EmHidlServer</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.mediatek.hardware.camera.isphal</name>
-        <version>1.0</version>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.engineermode</name>
         <interface>
-            <name>IISPModule</name>
-            <instance>internal/0</instance>
+            <name>IEmds</name>
+            <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true"> 
-        <name>android.hardware.secure_element</name> 
-        <version>1.0-2</version> 
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.gnss.batching</name>
         <interface>
-            <name>ISecureElement</name> 
-            <instance>SIM1</instance> 
+            <name>IMtkGnssBatching</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -243,7 +447,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.hdmi</name>
-        <version>1.0</version>
+        <version>1.3</version>
         <interface>
             <name>IMtkHdmiService</name>
             <instance>default</instance>
@@ -304,6 +508,7 @@
             <instance>mtk_debugService2agpsd</instance>
             <instance>mtk_debugService2mnld</instance>
             <instance>mtk_framework2agps</instance>
+            <instance>mtk_jam2mnl</instance>
             <instance>mtk_lbs_log_v2s</instance>
             <instance>mtk_lppe_socket_agps</instance>
             <instance>mtk_lppe_socket_bt</instance>
@@ -313,6 +518,7 @@
             <instance>mtk_lppe_socket_sensor</instance>
             <instance>mtk_lppe_socket_wlan</instance>
             <instance>mtk_meta2mnld</instance>
+            <instance>mtk_mnl2jam</instance>
             <instance>mtk_mnld2debugService</instance>
             <instance>mtk_mnld2mtklogger</instance>
             <instance>mtk_mnld2nlputils</instance>
@@ -347,9 +553,17 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mmlpq</name>
+        <version>2</version>
+        <interface>
+            <name>IMmlpq</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.mms</name>
-        <version>1.6</version>
+        <version>1.6-7</version>
         <interface>
             <name>IMms</name>
             <instance>default</instance>
@@ -372,6 +586,13 @@
         </interface>
         <interface>
             <name>IMtkPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkpower_applist</name>
+        <interface>
+            <name>IMtkpower_applist</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -457,6 +678,86 @@
             <instance>mtkSmartRatSwitch4</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.data</name>
+        <interface>
+            <name>IMtkRadioExData</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.ims</name>
+        <interface>
+            <name>IMtkRadioExIms</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.messaging</name>
+        <interface>
+            <name>IMtkRadioExMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.modem</name>
+        <interface>
+            <name>IMtkRadioExModem</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.network</name>
+        <interface>
+            <name>IMtkRadioExNetwork</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.rcs</name>
+        <interface>
+            <name>IMtkRadioExRcs</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.sim</name>
+        <interface>
+            <name>IMtkRadioExSim</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkradioex.voice</name>
+        <interface>
+            <name>IMtkRadioExVoice</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.netdagent</name>
         <version>1.0</version>
@@ -507,9 +808,16 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.pq</name>
-        <version>2.3-13</version>
+        <version>2.3-15</version>
         <interface>
             <name>IPictureQuality</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.mediatek.hardware.pq_aidl</name>
+        <interface>
+            <name>IPictureQuality_AIDL</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -602,6 +910,54 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.nxp.hardware.nfc</name>
+        <version>1.1</version>
+        <interface>
+            <name>INqNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.hardware.nfc</name>
+        <version>1.1</version>
+        <interface>
+            <name>INqNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpese</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpEse</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpese</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpEse</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpnfc</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.nxp.nxpnfc</name>
+        <version>1.0</version>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.appradio</name>
         <version>1.0</version>
         <interface>
@@ -643,10 +999,50 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.camera.slogan</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISlogan</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cameraextension</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cameraextension</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraExtensionService</name>
+            <instance>cameraextensionservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.cammidasservice</name>
         <version>1.0</version>
         <interface>
             <name>IMIDASService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cammidasservice</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMIDASService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.charger</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICharger</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -667,10 +1063,50 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cryptoeng</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICryptoeng</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cwb</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICwbService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.cwb</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICwbService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.displaypanelfeature</name>
         <version>1.0</version>
         <interface>
             <name>IDisplayPanelFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.displaypanelfeature</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayPanelFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.eid</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEidDevice</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -691,6 +1127,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.engcamera</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEngCamera</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.engineer</name>
         <version>1.0</version>
         <interface>
@@ -699,10 +1143,32 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.esim</name>
+        <name>vendor.oplus.hardware.engineer</name>
         <version>1.0</version>
         <interface>
+            <name>IEngineer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.esim</name>
+        <interface>
             <name>IOplusEsim</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.esim</name>
+        <interface>
+            <name>IOplusEsim</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.extcamera</name>
+        <version>1.0</version>
+        <interface>
+            <name>IExtCamera</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -723,10 +1189,50 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.felica</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFelicaDevice</name>
+            <instance>oplusStor1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.fido.fido2ca</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFidoDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.fido.fido2ca</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFidoDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.fido.fidoca</name>
         <version>1.0</version>
         <interface>
             <name>IFidoDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.fido.fidoca</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFidoDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.gameopt</name>
+        <version>1.0</version>
+        <interface>
+            <name>IGameOptHalService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -747,28 +1253,43 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.hdcp</name>
+        <name>vendor.oplus.hardware.handlefactory</name>
         <version>1.0</version>
         <interface>
-            <name>IHdcp</name>
+            <name>IHandleFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.hdcp</name>
-        <version>1.1</version>
+        <version>1.0-1</version>
         <interface>
             <name>IHdcp</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.hdcp</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IHdcp</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.ims</name>
-        <version>1.0</version>
         <interface>
-            <name>IOplusImsRadio</name>
-            <instance>oplusimsradio0</instance>
-            <instance>oplusimsradio1</instance>
+            <name>IImsStable</name>
+            <instance>OplusImsRadio0</instance>
+            <instance>OplusImsRadio1</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.ims</name>
+        <interface>
+            <name>IImsStable</name>
+            <instance>OplusImsRadio0</instance>
+            <instance>OplusImsRadio1</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -776,6 +1297,22 @@
         <version>1.0</version>
         <interface>
             <name>ILinearMotorVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.lmvibrator</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILinearMotorVibrator</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.midasdev</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMidasDev</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -796,10 +1333,34 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.misc</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusMisc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.mmdisplayfeature</name>
         <version>1.0</version>
         <interface>
             <name>IMMDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.mmdisplayfeature</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMMDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.mtkmodemaci</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMtkModemAci</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -820,6 +1381,54 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.nfc</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.nfc.esepower</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEsePower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.nfc.esepower</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEsePower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.olc</name>
+        <version>2.0</version>
+        <interface>
+            <name>IOplusLogCore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.olc</name>
+        <version>2.0</version>
+        <interface>
+            <name>IOplusLogCore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.oplusSensor</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.oplusSensor</name>
         <version>1.0</version>
         <interface>
@@ -833,7 +1442,36 @@
         <interface>
             <name>IOrmsHalService</name>
             <instance>default</instance>
-            <instance>ORMS_HAL_PROXY</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.orms.ormsHalService</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOrmsHalService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.ormsHalService</name>
+        <interface>
+            <name>IOrmsAidlHalService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.ormsHalService</name>
+        <interface>
+            <name>IOrmsAidlHalService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.performance</name>
+        <version>1.0</version>
+        <interface>
+            <name>IPerformance</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -853,12 +1491,35 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.radio</name>
-        <version>1.0-1</version>
+        <name>vendor.oplus.hardware.power.powermonitor</name>
+        <version>1.0</version>
         <interface>
-            <name>IOplusRadio</name>
-            <instance>oplus_slot1</instance>
-            <instance>oplus_slot2</instance>
+            <name>IPowerMonitor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.radio</name>
+        <interface>
+            <name>IRadioStable</name>
+            <instance>OplusRadio0</instance>
+            <instance>OplusRadio1</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.radio</name>
+        <interface>
+            <name>IRadioStable</name>
+            <instance>OplusRadio0</instance>
+            <instance>OplusRadio1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.rpmh</name>
+        <version>2.0</version>
+        <interface>
+            <name>IRpmh</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -886,16 +1547,45 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.subsys</name>
+        <name>vendor.oplus.hardware.stability.oplus_project</name>
         <version>1.0</version>
+        <interface>
+            <name>IOplusProject</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.stability.oplus_project</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusProject</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.subsys_interface.subsys</name>
         <interface>
             <name>ISubsys</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.subsys_radio</name>
-        <version>1.0</version>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.subsys_interface.subsys</name>
+        <interface>
+            <name>ISubsys</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.subsys_interface.subsys_radio</name>
+        <interface>
+            <name>ISubsysRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.subsys_interface.subsys_radio</name>
         <interface>
             <name>ISubsysRadio</name>
             <instance>slot1</instance>
@@ -907,6 +1597,22 @@
         <version>1.0</version>
         <interface>
             <name>IThermalMntCfg</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.thermalmntcfg</name>
+        <version>1.0</version>
+        <interface>
+            <name>IThermalMntCfg</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.touch</name>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusTouch</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -927,6 +1633,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.transfer</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITransfer</name>
+            <instance>ATMWiFiHidlServer</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.transmessage</name>
         <version>1.0</version>
         <interface>
@@ -935,10 +1649,50 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.ufsplus</name>
+        <name>vendor.oplus.hardware.transmessage</name>
         <version>1.0</version>
         <interface>
-            <name>IUfsplus</name>
+            <name>ITransmessge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.virtual_device.audio</name>
+        <version>1.0</version>
+        <interface>
+            <name>IStatusProvider</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.virtual_device.audio</name>
+        <version>1.0</version>
+        <interface>
+            <name>IStatusProvider</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.virtual_device.camera.manager</name>
+        <version>1.0</version>
+        <interface>
+            <name>IVirtualCameraManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.virtual_device.camera.manager</name>
+        <version>1.0</version>
+        <interface>
+            <name>IVirtualCameraManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.wifi</name>
+        <version>1.1</version>
+        <interface>
+            <name>IOplusWifiService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -958,9 +1712,39 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.wifi.supplicant</name>
+        <interface>
+            <name>IOplusSupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.wifi.supplicant</name>
+        <version>2.0</version>
+        <interface>
+            <name>IOplusSupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.wifi.supplicant</name>
+        <interface>
+            <name>IOplusSupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.pixelworks.hardware.display</name>
-        <version>1.1</version>
+        <version>1.0-2</version>
+        <interface>
+            <name>IIris</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.pixelworks.hardware.display</name>
+        <version>1.0-2</version>
         <interface>
             <name>IIris</name>
             <instance>default</instance>
@@ -971,6 +1755,22 @@
         <version>1.0</version>
         <interface>
             <name>IIrisFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.pixelworks.hardware.feature</name>
+        <version>1.0</version>
+        <interface>
+            <name>IIrisFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.soter</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISoter</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1007,11 +1807,19 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.lineage.touch</name>
+        <name>vendor.zeku.hardware.explorer</name>
         <version>1.0</version>
         <interface>
-            <name>ITouchscreenGesture</name>
-            <instance>default</instance>
+            <name>IMmsProvider</name>
+            <instance>mms/explorer</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.zeku.hardware.explorer</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMmsProvider</name>
+            <instance>mms/explorer</instance>
         </interface>
     </hal>
 </compatibility-matrix>

@@ -89,3 +89,9 @@ geteuid32: 1
 getgid32: 1
 getegid32: 1
 getgroups32: 1
+#ifdef OPLUS_FEATURE_VIDEO_LOG
+#dongdong.ge@MULTIMEDIA.MMSERVER.PLAYER, 2021/01/24, Add for Video Input Dump arm
+unlinkat: 1
+mkdirat: 1
+flock: 1
+#endif /*OPLUS_FEATURE_VIDEO_LOG*/

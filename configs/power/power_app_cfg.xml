@@ -5,31 +5,38 @@ any software that is unrelated to enhancing end-user experience. -->
 <WHITELIST>
     <Package name="com.tencent.lolm">
         <Activity name="Common">
-            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_THRM_LIMIT_CPU" param1="7"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_THRM_TEMP_TH" param1="30"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP" param1="20"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP_90" param1="20"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP_120" param1="20"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF" param1="-10000000"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF_90" param1="-10000000"></data>
-            <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF_120" param1="-10000000"></data>
-            <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2400000"></data>
-            <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ" param1="2650000"></data>
-            <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2400000"></data>
-            <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2650000"></data>
+            <FPS value="Common">
+                <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_THRM_LIMIT_CPU" param1="7"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_THRM_TEMP_TH" param1="30"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP" param1="20"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP_90" param1="20"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP_120" param1="20"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF" param1="-10000000"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF_90" param1="-10000000"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_CM_TDIFF_120" param1="-10000000"></data>
+                <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2400000"></data>
+                <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ" param1="2650000"></data>
+                <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2400000"></data>
+                <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2650000"></data>
+                <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+                <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+                <data cmd="PERF_RES_NET_MD_HSR_MODE" param1="1"></data>
+            </FPS>
         </Activity>
     </Package>
     <Package name="com.ztgame.bob">
         <Activity name="Common">
-            <data cmd="PERF_RES_FPS_FPSGO_FORCE_ONOFF" param1="2"></data>
-            <data cmd="PERF_RES_CFP_ENABLE" param1="0"></data>
-            <data cmd="PERF_RES_FPS_FBT_BHR" param1="0"></data>
-            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="0"></data>
-            <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1250000"></data>
-            <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="1162000"></data>
-            <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="659000"></data>
-            <data cmd="PERF_RES_FPS_FBT_MINITOP_ENABLE" param1="0"></data>
+            <FPS value="Common">
+                <data cmd="PERF_RES_FPS_FPSGO_FORCE_ONOFF" param1="2"></data>
+                <data cmd="PERF_RES_CFP_ENABLE" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="0"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="1250000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="1162000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_2" param1="659000"></data>
+                <data cmd="PERF_RES_FPS_FBT_MINITOP_ENABLE" param1="0"></data>
+            </FPS>
         </Activity>
     </Package>
     <Package name="cn.wsds.gamemaster">
@@ -60,9 +67,6 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FPSGO_ADJ_CNT" param1="10"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_ADJ_DEBNC_CNT" param1="60"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING_TIMEDIFF" param1="500000"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_TIME" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ" param1="2300000"></data>
@@ -74,6 +78,11 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FPSGO_THRM_LIMIT_CPU" param1="7"></data>
                 <data cmd="PERF_RES_FPS_FPSGO_THRM_SUB_CPU" param1="6"></data>
                 <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="3"></data>
+                <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="55000"></data>
+                <data cmd="PERF_RES_FRS_PTIME" param1="5"></data>
+                <data cmd="PERF_RES_FRS_OT_PTIME" param1="1"></data>
+
             </FPS>
             <FPS value="90">
                 <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="50"></data>
@@ -155,9 +164,6 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
                 <data cmd="PERF_RES_NET_MD_HSR_MODE" param1="1"></data>
                 <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
                 <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_FPS_GBE2_TIMER2_MS" param1="3000"></data>
                 <data cmd="PERF_RES_FPS_GBE2_MAX_BOOST_CNT" param1="2"></data>
@@ -175,6 +181,10 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FPSGO_THRM_SUB_CPU" param1="6"></data>
                 <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_ENABLE" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_RESCUE_SECOND_TIME" param1="1"></data>
+                <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="55000"></data>
+                <data cmd="PERF_RES_FRS_PTIME" param1="5"></data>
+                <data cmd="PERF_RES_FRS_OT_PTIME" param1="1"></data>
             </FPS>
             <FPS value="60">
                 <data cmd="PERF_RES_FPS_FPSGO_CM_BIG_CAP" param1="90"></data>
@@ -206,23 +216,34 @@ any software that is unrelated to enhancing end-user experience. -->
     </Package>
     <Package name="com.tencent.ig">
         <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_FORCE_ONOFF" param1="2"></data>
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="130"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
+            <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
+            <data cmd="PERF_RES_POWER_SYSLIMITER_60" param1="2200000"></data>
+            <data cmd="PERF_RES_FPS_FBT_LIMIT_CFREQ_M" param1="2200000"></data>
+            <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2300000"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_THRM_LIMIT_CPU" param1="7"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_THRM_TEMP_TH" param1="30"></data>
+        </Activity>
+    </Package>
+    <Package name="com.riotgames.league.wildrift">
+        <Activity name="Common">
             <FPS value="Common">
-                <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
-                <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="130"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
-                <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
-                <data cmd="PERF_RES_FPS_GBE2_ENABLE" param1="1"></data>
-                <data cmd="PERF_RES_FPS_FBT_MINITOP_ENABLE" param1="0"></data>
-            </FPS>
-            <FPS value="60">
-                <data cmd="PERF_RES_POWER_SYSLIMITER" param1="2300000"></data>
-            </FPS>
-            <FPS value="90">
-                <data cmd="PERF_RES_POWER_SYSLIMITER" param1="2650000"></data>
-            </FPS>
-            <FPS value="120">
-                <data cmd="PERF_RES_POWER_SYSLIMITER" param1="2650000"></data>
+                 <data cmd="PERF_RES_POWERHAL_WHITELIST_APP_LAUNCH_TIME_COLD" param1="25000"></data>
+                 <data cmd="PERF_RES_GPU_GED_DVFS_LOADING_MODE" param1="1"></data>
+                 <data cmd="PERF_RES_NET_WIFI_LOW_LATENCY" param1="1"></data>
+                 <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+                 <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+                 <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="8333333"></data>
+                 <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="80"></data>
+                 <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="80"></data>
+                 <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
+                 <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="50"></data>
+                 <data cmd="PERF_RES_GPU_GED_LOADING_BASE_DVFS_STEP" param1="16"></data>
             </FPS>
         </Activity>
     </Package>
@@ -657,6 +678,19 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
         </Activity>
     </Package>
+    <Package name="com.happyelements.AndroidAnimal">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+                <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
+                <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="100"></data>
+                <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="100"></data>
+                <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="100"></data>
+                <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
     <Package name="com.happyelements.AndroidAnimal.qq">
         <Activity name="Common">
             <FPS value="Common">
@@ -954,14 +988,6 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
         </Activity>
     </Package>
-    <Package name="com.autonavi.minimap">
-        <Activity name="Common">
-            <FPS value="Common">
-                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
-                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="40"></data>
-            </FPS>
-        </Activity>
-    </Package>
     <Package name="com.tencent.tmgp.wdsj666">
         <Activity name="Common">
             <FPS value="Common">
@@ -990,20 +1016,16 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FBT_LIMIT_RFREQ_M" param1="2600000"></data>
                 <data cmd="PERF_RES_FPS_FBT_MINITOP_ENABLE" param1="0"></data>
                 <data cmd="PERF_RES_NET_BT_AUDIO_LOW_LATENCY" param1="1"></data>
+                <data cmd="PERF_RES_FRS_ENABLE" param1="1"></data>
+                <data cmd="PERF_RES_FRS_TARGET_TEMP" param1="55000"></data>
+                <data cmd="PERF_RES_FRS_PTIME" param1="5"></data>
+                <data cmd="PERF_RES_FRS_OT_PTIME" param1="1"></data>
             </FPS>
         </Activity>
     </Package>
     <Package name="com.tencent.tmgp.sskgame">
         <Activity name="Common">
             <FPS value="Common">
-                <data cmd="PERF_RES_FPS_FBT_BOOST_TA" param1="1"></data>
-            </FPS>
-        </Activity>
-    </Package>
-    <Package name="com.sina.weibo">
-        <Activity name="com.sina.weibo.MainTabActivity">
-            <FPS value="Common">
-                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="12"></data>
                 <data cmd="PERF_RES_FPS_FBT_BOOST_TA" param1="1"></data>
             </FPS>
         </Activity>
@@ -1021,6 +1043,7 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FPSGO_EMA_DIVIDEND" param1="5"></data>
                 <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_2" param1="0"></data>
                 <data cmd="PERF_RES_SCHED_ISOLATION_CPU" param1="128"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="1"></data>
             </FPS>
             <FPS value="60">
                 <data cmd="PERF_RES_POWER_SYSLIMITER" param1="1800000"></data>
@@ -1263,21 +1286,35 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
         </Activity>
     </Package>
-    <Package name="com.tencent.qqlive">
-         <Activity name="com.tencent.qqlive.ona.activity.VideoDetailActivity">
-            <FPS value="Common">
-                <data cmd="PERF_RES_FPS_FBT_BHR" param1="30"></data>
-                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
-                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1500000"></data>
-                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1000000"></data>
-            </FPS>
-         </Activity>
-    </Package>
     <Package name="com.lemon.faceu">
         <Activity name="com.lemon.faceu.business.mainpage.MainActivity">
             <FPS value="Common">
                 <data cmd="PERF_RES_SCHED_ISOLATION_CPU" param1="128"></data>
                 <data cmd="PERF_RES_POWER_SYSLIMITER" param1="2400000"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.autonavi.minimap">
+        <Activity name="Common">
+            <FPS value="Common">
+            <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+            <!-- <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+            <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_2" param1="0"></data>
+            <data cmd="PERF_RES_SCHED_ISOLATION_CPU" param1="40"></data> -->
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.sina.weibo">
+        <Activity name="Common">
+            <FPS value="Common">
+            <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            </FPS>
+        </Activity> 
+        <Activity name="com.sina.weibo.MainTabActivity">
+            <FPS value="Common">
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="12"></data>
+                <data cmd="PERF_RES_FPS_FBT_BOOST_TA" param1="1"></data>
             </FPS>
         </Activity>
     </Package>
@@ -1294,6 +1331,13 @@ any software that is unrelated to enhancing end-user experience. -->
             <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
             </FPS>
         </Activity>
+        <Activity name="com.tencent.qqlive.ona.activity.VideoDetailActivity">
+            <FPS value="Common">
+                <data cmd="PERF_RES_FPS_FBT_BHR" param1="30"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+            </FPS>
+         </Activity>
+
     </Package>
     <Package name="com.ss.android.ugc.aweme">
         <Activity name="Common">
@@ -1334,6 +1378,15 @@ any software that is unrelated to enhancing end-user experience. -->
         <Activity name="Common">
             <FPS value="Common">
             <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.taobao.taobao">
+        <Activity name="com.taobao.browser.BrowserActivity">
+            <FPS value="Common">
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="40"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_FG" param1="40"></data>
             </FPS>
         </Activity>
     </Package>
@@ -1399,6 +1452,34 @@ any software that is unrelated to enhancing end-user experience. -->
             <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
             </FPS>
         </Activity>
+    </Package>
+    <Package name="com.dragon.read">
+        <Activity name="Common">
+            <FPS value="Common">
+            <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ss.android.article.news">
+        <Activity name="Common">
+            <FPS value="Common">
+            <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.android.gallery3d">
+         <Activity name="com.android.gallery3d.app.MovieActivity">
+            <FPS value="Common">
+            <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            </FPS>
+         </Activity>
+    </Package>
+    <Package name="com.coloros.gallery3d">
+         <Activity name="Common">
+            <FPS value="Common">
+            <data cmd="PERF_RES_GPU_POWER_ONOFF_INTERVAL" param1="7"></data>
+            </FPS>
+         </Activity>
     </Package>
     <Package name="com.gamestar.perfectpiano">
         <Activity name="Common">

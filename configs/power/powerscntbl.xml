@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SCNTABLE>
-    <scenario powerhint="MTKPOWER_HINT_ACT_SWITCH">
+    <!--delete for powerhint freq opt-->
+    <!--<scenario powerhint="MTKPOWER_HINT_ACT_SWITCH">
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_2" param1="3000000"></data>
@@ -21,21 +22,11 @@
         <data cmd="PERF_RES_POWER_HINT_EXT_HINT" param1="30"></data>
         <data cmd="PERF_RES_POWER_HINT_EXT_HINT_HOLD_TIME" param1="1500"></data>
     </scenario>
-    <scenario powerhint="INTERACTION">
-        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="1075000"></data>
-        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1162000"></data>
-        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
-        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
-        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="50"></data>
-        <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_DURATION" param1="100000"></data>
-        <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_EAS_BOOST" param1="50"></data>
-    </scenario>
     <scenario powerhint="LAUNCH">
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_2" param1="3000000"></data>
         <data cmd="PERF_RES_CPUCORE_PERF_MODE" param1="1"></data>
-        <data cmd="PERF_RES_SCHED_BOOST" param1="3"></data>
         <data cmd="PERF_RES_DRAM_OPP_MIN" param1="1"></data>
         <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
         <data cmd="PERF_RES_PERF_TASK_TURBO" param1="15"></data>
@@ -129,6 +120,11 @@
         <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
     </scenario>
 <!--
+	<scenario powerhint="MTKPOWER_HINT_UX_MOVE_SCROLLING">
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="600000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="2400000"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="25"></data>
+    </scenario>
     <scenario powerhint="MTKPOWER_HINT_UX_SCROLLING">
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1=" 1075000"></data>
         <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1=" 1162000"></data>
