@@ -1,3 +1,4 @@
+echo start cloning repos
 VT=vendor/realme/RMX3031/RMX3031-vendor.mk
 if ! [ -a $VT ]; then git clone https://gitlab.com/nishant6342/vendor_realme_rmx3031 -b S vendor/realme/RMX3031
 fi
@@ -22,3 +23,10 @@ fi
 CAM=device/oplus/camera/camera.mk
 if ! [ -a $CAM ]; then git clone https://gitlab.com/nishant6342/device_oplus_camera device/oplus/camera
 fi
+COMPACT=hardware/lineage/compat/Android.bp
+if ! [ -a $COMPACT ]; then git clone https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
+fi
+MTK=hardware/mediatek/Android.bp
+if ! [ -a $MTK ]; then git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-20 hardware/mediatek
+fi
+echo end cloning
