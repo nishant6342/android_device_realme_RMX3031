@@ -3043,4 +3043,14 @@ vendor/lib64/libolc_vnd.so
 vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
 -vendor/priv-app/GpuGameDriver.mt6893/GpuGameDriver.mt6893.apk
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-framework/oplus-framework.jar
+etc/public.libraries-mtk.txt
+etc/public.libraries-trustonic.txt
+system_ext/etc/public.libraries-oplus.txt
+lib/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
+lib/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
+lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
+lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
+lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
+lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
+system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
+system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
