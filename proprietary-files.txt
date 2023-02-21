@@ -2324,7 +2324,6 @@ vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtk_platform_codecs_config.xml
 -vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl-mtk@1.0.so
 -vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-mtk.so
-vendor/lib/vndk/libstagefright_foundation.so
 vendor/lib/AV1SecureVdecCA.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so

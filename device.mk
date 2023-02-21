@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
     libhapticgenerator \
     audio.r_submix.default \
     audio.usb.default \
-    audio_policy.stub
+    audio_policy.stub \
+    libstagefright_foundation
 
 # Audio
 PRODUCT_COPY_FILES += \
