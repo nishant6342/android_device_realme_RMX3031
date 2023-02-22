@@ -2214,6 +2214,8 @@ etc/init/init.vtservice.rc
 -framework/mediatek-telecom-common.jar
 -framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
+-system_ext/framework/oplus-telephony-common-ext.jar:system/framework/oplus-telephony-common-ext.jar
+-system_ext/framework/oplus-telephony-common.jar:system/framework/oplus-telephony-common.jar
 lib/libmtk_vt_wrapper.so
 lib/libmtkperf_client.so
 lib/libvcodec_cap.so

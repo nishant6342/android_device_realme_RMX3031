@@ -420,7 +420,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     mediatek-carrier-config-manager \
-    mediatek-ims-extension-plugin
+    mediatek-ims-extension-plugin \
+    oplus-telephony-common
 
 # Thermal
 PRODUCT_PACKAGES += \
