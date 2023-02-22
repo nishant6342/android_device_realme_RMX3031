@@ -1,4 +1,4 @@
-# Unipinned blobs from RMX3031-user 12 SP1A.210812.016 1663769087038 release-keys
+# Unipinned blobs from RMX3031-user 13 TP1A.220905.001 1673625630299 release-keys
 
 # Extra
 odm/lib/libdapparamstorage.so
@@ -1966,8 +1966,8 @@ vendor/etc/smartpa_param/tfa98xx_ringtone.bin
 vendor/etc/smartpa_param/tfa98xx_voice.bin
 
 # GPS
-vendor/bin/hw/android.hardware.gnss-service.mediatek|bcc935f51d1a48e718e9c42dd3382b07be9fbd16
-vendor/bin/mtk_agpsd|81b24d1a79304879227fa3a82e82ccb48db9adc4
+vendor/bin/hw/android.hardware.gnss-service.mediatek
+vendor/bin/mtk_agpsd
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml
@@ -1990,7 +1990,7 @@ vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/gbe.cfg
 vendor/lib/hw/gps.default.so
 vendor/lib/libviagpsrpc.so
-vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so|ae2daf9598bc7e4de9008ed2417de2c465ecb7bb
+vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 
@@ -2257,8 +2257,8 @@ vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
-# https://github.com/realme-mt6893-dev/ImsService
--priv-app/ImsService/ImsService.apk|738b92467c052c0e95ee3fd748bde51ab0b90336
+# https://github.com/nishant6342/ImsService
+-priv-app/ImsService/ImsService.apk|1e6321e9f1f1207d3988eafbe6b4cc27357ec385
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
@@ -2310,8 +2310,8 @@ odm/lib64/librpmbengclient.so
 odm/lib64/libswresample.so
 odm/lib64/libswscale.so
 odm/lib64/oplus.sensors.ssc.so
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b|9d54bf494c5f024a0e80b41c625eb6ba31722632
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|ffd35b1f8ab37a12b93261d0431864a3cf5a7cd5
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/jpegtool
 vendor/bin/recordevent
 vendor/bin/replayevent
@@ -2563,7 +2563,7 @@ vendor/lib/liboppo_arcSoftBokehEngine.so
 vendor/lib64/liboppo_arcSoftBokehEngine.so
 
 # Power
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service|7be6a10783d9543b16e6f29a1e67eac005a8b789
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
