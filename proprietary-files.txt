@@ -2202,6 +2202,7 @@ lib64/libem_support_jni.so
 # IMS
 bin/vtservice
 etc/init/init.vtservice.rc
+-framework/mediatek-carrier-config-manager.jar
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
 -framework/mediatek-gwsd.jar

@@ -407,15 +407,20 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek
 
-# Telephony
+# IMS
 PRODUCT_BOOT_JARS += \
+    mediatek-gwsd \
+    mediatek-gwsdv2 \
     mediatek-common \
+    mediatek-services \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common
+    mediatek-telephony-common \
+    mediatek-carrier-config-manager \
+    mediatek-ims-extension-plugin
 
 # Thermal
 PRODUCT_PACKAGES += \
