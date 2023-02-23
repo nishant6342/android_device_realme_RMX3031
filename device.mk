@@ -419,7 +419,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    mediatek-carrier-config-manager
+    mediatek-carrier-config-manager \
+    oplus-framework
 
 # Thermal
 PRODUCT_PACKAGES += \
