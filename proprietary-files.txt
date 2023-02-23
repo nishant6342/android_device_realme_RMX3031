@@ -2265,9 +2265,7 @@ vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
-
-# https://github.com/nishant6342/ImsService
--priv-app/ImsService/ImsService.apk|1e6321e9f1f1207d3988eafbe6b4cc27357ec385
+-priv-app/ImsService/ImsService.apk
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
