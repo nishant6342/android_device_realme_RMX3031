@@ -49,21 +49,13 @@ def OTA_InstallEnd(info, incremental):
   AddImage(info, "vbmeta_system.img", "/dev/block/by-name/vbmeta_system", incremental)
   AddImage(info, "vbmeta_vendor.img", "/dev/block/by-name/vbmeta_vendor", incremental)
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental)
+  AddImage(info, "recovery.img", "/dev/block/by-name/recovery", incremental)
 
   bin_map = {
       'logo': ['logo']
       }
 
-  img_map = {
-      'md1img': ['md1img']
-      }
-
   fw_cmd = 'ui_print("Patching radio images unconditionally...");\n'
-
-  for img in img_map.keys():
-    AddImageOnly(info, '{}.img'.format(img), incremental, True)
-    for part in img_map[img]:
-      fw_cmd += 'package_extract_file("{}.img", "/dev/block/by-name/{}");\n'.format(img, part)
 
   for _bin in bin_map.keys():
     AddImageOnly(info, '{}.bin'.format(_bin), incremental, True)
