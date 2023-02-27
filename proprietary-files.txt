@@ -2988,6 +2988,22 @@ vendor/lib64/libneuron_wrapper.so
 vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libtflite_mtk.so
 
+# NFC
+odm/etc/init/init.SN100x.nfc.rc
+odm/etc/init/init.SN100x.se.rc
+odm/etc/nfc/nfc_conf_ref
+odm/etc/nfc/nfc_fw_ref
+odm/etc/nfc/libnfc-mtp-SN100.conf_20662:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/libnfc-nci.conf_20662:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf
+odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57
+odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68
+odm/lib/libpn553_fw.so
+odm/lib/libpn557_fw.so
+odm/lib/libpnscr2.so
+odm/lib/libsn100u_fw.so
+odm/lib64/libpnscr2.so
+
 # Nvram
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/fuelgauged_nvram
@@ -3354,7 +3370,6 @@ lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 odm/bin/hw/vendor.oplus.hardware.stability.oplus_project@1.0-service
 odm/etc/devices_config/devices_config.json
 odm/etc/init/vendor.oplus.hardware.stability.oplus_project@1.0-service.rc
--odm/etc/vintf/manifest/manifest_oplus_nfc.xml
 odm/etc/media_codecs_ffmpeg.xml
 odm/etc/media_codecs_vendor_oplus.xml
 odm/lib/android.hardware.keymaster-V3-ndk_platform.so

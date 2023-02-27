@@ -1171,3 +1171,20 @@ on property:persist.sys.dt2w=0
 on property:persist.sys.dt2w=1
     write /proc/touchpanel/double_tap_enable 1
 
+on property:ro.boot.product.hardware.sku=dsds
+    start vendor.nfc_hal_service
+    start mtk_secure_element_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    disabled
+    class hal
+    user nfc
+    group nfc
+
+service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+    override
+    disabled
+    class hal
+    user secure_element
+    group secure_element
