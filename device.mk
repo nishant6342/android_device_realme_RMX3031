@@ -361,6 +361,7 @@ PRODUCT_PACKAGES += \
     init.ago.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
+    init.recovery.mt6893.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6893.rc \
