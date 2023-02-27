@@ -1271,14 +1271,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.lineage.touch</name>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchscreenGesture</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.mtkradioex</name>
         <transport>hwbinder</transport>
         <version>3.0</version>
