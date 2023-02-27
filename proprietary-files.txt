@@ -1141,6 +1141,7 @@ odm/lib64/libmegface_rt_bokeh.so
 odm/lib64/libmindroid-app.so
 odm/lib64/libmindroid-framework.so
 odm/lib64/libml_util.so
+odm/lib64/libmotionblur.so
 odm/lib64/libmpbase.so
 odm/lib64/libnp-loader.so
 odm/lib64/libocam_common.so
@@ -1160,6 +1161,7 @@ odm/lib64/libstfd_mobile_api.so
 odm/lib64/libtfavib.so
 odm/lib64/libtflite_mtk_static.so
 odm/lib64/libui.so
+odm/lib64/libVideoEnhance.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/ov02b10_mipi_raw_20615_tuning.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
