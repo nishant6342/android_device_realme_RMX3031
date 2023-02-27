@@ -358,7 +358,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.ago.rc \
     init.cgroup.rc \
     init.connectivity.common.rc \
     init.recovery.mt6893.rc \
