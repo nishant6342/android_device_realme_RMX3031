@@ -2616,7 +2616,6 @@ vendor/etc/VideoLog_dynamic.xml
 vendor/etc/slp_conf
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
-vendor/etc/task_profiles.json
 vendor/etc/usb_audio_accessory_only_policy_configuration.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
