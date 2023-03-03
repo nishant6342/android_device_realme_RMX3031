@@ -529,6 +529,8 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/libcdsprpc.so
 
 # Camera
+odm/lib/libYTCommon.so
+odm/lib64/libYTCommon.so
 -framework/oplus-support-wrapper.jar
 lib/vendor.oplus.hardware.cameraextension@1.0.so
 -lib/vendor.oplus.hardware.cammidasservice@1.0.so
