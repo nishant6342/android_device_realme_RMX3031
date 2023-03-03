@@ -827,7 +827,6 @@ odm/lib/libocam_common.so
 odm/lib/libop-ai-beauty-body-detection.so
 odm/lib/libop-ai-beauty-faceretouch-cn.so
 odm/lib/liboplus_platform_hwi.so
-odm/lib/libosensehalclient.so
 odm/lib/libstagefrightdolby.so
 odm/lib/libstblur_api.so
 odm/lib/libstblur_capture_api.so
@@ -1151,7 +1150,6 @@ odm/lib64/libop-ai-beauty-body-detection.so
 odm/lib64/libop-ai-beauty-faceretouch-cn.so
 odm/lib64/liboplus_platform_hwi.so
 odm/lib64/liboplusblur_capture_api.so
-odm/lib64/libosensehalclient.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/libstblur_api.so
