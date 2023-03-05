@@ -172,7 +172,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # SPL
-VENDOR_SECURITY_PATCH := 2022-11-05
+VENDOR_SECURITY_PATCH := 2022-12-05
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
