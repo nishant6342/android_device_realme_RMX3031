@@ -529,6 +529,8 @@ vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/libcdsprpc.so
 
 # Camera
+odm/lib/libPreviewDecisionOld.so
+odm/lib64/libPreviewDecisionOld.so
 odm/lib/libYTCommon.so
 odm/lib64/libYTCommon.so
 -framework/oplus-support-wrapper.jar
@@ -562,6 +564,7 @@ my_product/lib64/libsingle_camera_bokeh_native.so:system_ext/lib64/libsingle_cam
 -my_product/product_overlay/framework/com.oplus.camera.unit.sdk.jar:system_ext/framework/com.oplus.camera.unit.sdk.jar
 odm/bin/hw/vendor.oplus.hardware.cammidasservice@1.0-service
 odm/etc/init/vendor.oplus.hardware.cammidasservice@1.0-service.rc
+odm/etc/init/init.camera_update.rc
 -odm/etc/vintf/manifest/manifest_oplus_cammidasservice.xml
 odm/lib/libAlgoProcess.so:system_ext/lib/libAlgoProcess.so
 odm/lib/android.hardware.graphics.allocator@2.0.so
@@ -1162,6 +1165,7 @@ odm/lib64/libtfavib.so
 odm/lib64/libtflite_mtk_static.so
 odm/lib64/libui.so
 odm/lib64/libVideoEnhance.so
+odm/lib64/libvideoautozoom.arcsoft.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/ov02b10_mipi_raw_20615_tuning.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
