@@ -79,4 +79,7 @@
          before the screen has had chance to switch out of HBM mode -->
      <integer name="config_udfpsDimmingDisableDelay">10</integer>
 
+    <!-- Allow devices override audio panel location to the left side -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
+
 </resources>
