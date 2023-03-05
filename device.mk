@@ -135,10 +135,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V2-ndk.vendor \
     disable_configstore
 
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-RMX3031
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
