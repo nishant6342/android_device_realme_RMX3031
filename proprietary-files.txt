@@ -2790,8 +2790,8 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# Pin ImsService from RMX3031_C.14
--priv-app/ImsService/ImsService.apk|25f8091cfc95ddba6cbf5eac2afb73f1fbbdb7f7
+# Pin Patched ImsService from RMX3031_C.14
+-priv-app/ImsService/ImsService.apk|3df0955b6d9b895de567b50d1100574849d954da
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
