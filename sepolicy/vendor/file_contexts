@@ -3,3 +3,6 @@
 
 # Vibrator
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.RMX3031                              u:object_r:hal_vibrator_default_exec:s0
+
+# Sensors
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.RMX3031                 u:object_r:mtk_hal_sensors_exec:s0
