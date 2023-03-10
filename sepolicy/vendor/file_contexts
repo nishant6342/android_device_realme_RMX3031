@@ -1,1 +1,5 @@
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RMX3031  u:object_r:hal_light_default_exec:s0
+# Light
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RMX3031                                  u:object_r:hal_light_default_exec:s0
+
+# Vibrator
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.RMX3031                              u:object_r:hal_vibrator_default_exec:s0
