@@ -6,3 +6,19 @@
 
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.RMX3031                 u:object_r:mtk_hal_sensors_exec:s0
+
+# Fingerprint
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                                 u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.RMX3031                          u:object_r:hal_fingerprint_default_exec:s0
+/sys/kernel/oplus_display/oplus_notify_fppress          u:object_r:sysfs_fingerprint_notify:s0
+/dev/fingerprint_dev              u:object_r:fingerprintd_device:s0
+/mnt/vendor/persist/fingerprint/silead(/.*)?         u:object_r:oplus_fingerprint_file:s0
+/mnt/vendor/persist/fingerprint/jiiov(/.*)?	  u:object_r:factorytestreport_vendor_data_file:s0
+/data/vendor/optical_fingerprint(/.*)?    u:object_r:oplus_fingerprint_file:s0
+/mnt/vendor/persist/fingerprint(/.*)?    u:object_r:oplus_fingerprint_file:s0
+/data/vendor/fingerprint(/.*)?    u:object_r:oplus_fingerprint_file:s0
+/data/vendor/silead(/.*)?         u:object_r:oplus_fingerprint_file:s0
+/data/gf_data(/.*)?		u:object_r:fingerprintd_data_file:s0
+
+# Camera
+/mnt/vendor/persist/camera(/.*)?   u:object_r:persist_camera_file:s0

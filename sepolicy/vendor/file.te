@@ -1,0 +1,9 @@
+# Camera
+type persist_camera_file, file_type;
+
+# Fingerprint
+type factorytestreport_vendor_data_file, data_file_type, file_type;
+type oplus_fingerprint_file, data_file_type, file_type;
+type sysfs_fingerprint_notify, data_file_type, file_type;
+type proc_fingerprint, fs_type, proc_type;
+type vendor_proc_fingerprint, fs_type, proc_type;

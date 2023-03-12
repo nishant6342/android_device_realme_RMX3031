@@ -1,0 +1,3 @@
+# Fingerprint
+persist.vendor.fingerprint.                 u:object_r:vendor_fingerprint_prop:s0
+vendor.fingerprint.                         u:object_r:vendor_fingerprint_prop:s0
