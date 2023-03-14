@@ -30,6 +30,3 @@ MTK=hardware/mediatek/Android.bp
 if ! [ -a $MTK ]; then git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-20 hardware/mediatek
 fi
 echo end cloning
-echo start cherry-picking required commit in FWB
-cd frameworks/base && git fetch https://github.com/Project-Elixir/frameworks_base 67c76722b74d5e5dbdc5fc8975a12524c322cded && git cherry-pick FETCH_HEAD >/dev/null 2>&1; git cherry-pick --abort >/dev/null 2>&1; cd ../..
-echo Done cherry-pick, Returned to root directory of ROM
