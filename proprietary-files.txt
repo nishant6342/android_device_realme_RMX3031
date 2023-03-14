@@ -48,10 +48,6 @@ vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
 
-# APTX ( Bluetooth )
-lib64/libaptXHD_encoder.so
-lib64/libaptX_encoder.so
-
 # Audio
 lib/vendor.oplus.hardware.performance@1.0.so
 lib64/vendor.oplus.hardware.performance@1.0.so
