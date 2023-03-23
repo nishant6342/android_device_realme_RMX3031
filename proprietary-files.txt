@@ -1,4 +1,4 @@
-# Unpinned blobs from RMX3031-user 13 TP1A.220905.001 1673625630299 release-keys
+# Unpinned blobs from RMX3031_11_F12 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1677828988354 release-keys)
 
 # Extra
 odm/lib/libdapparamstorage.so
