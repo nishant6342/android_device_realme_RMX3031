@@ -10,5 +10,6 @@
   <hidden-api-whitelisted-app package="com.oplus.appplatform" />
   <hidden-api-whitelisted-app package="com.oplus.exsystemservice" />
   <hidden-api-whitelisted-app package="com.coloros.gallery3d" />
+  <hidden-api-whitelisted-app package="com.oneplus.gallery" />
 
 </config>
