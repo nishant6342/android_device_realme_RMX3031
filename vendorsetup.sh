@@ -27,6 +27,6 @@ COMPACT=hardware/lineage/compat/Android.bp
 if ! [ -a $COMPACT ]; then git clone https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
 fi
 MTK=hardware/mediatek/Android.bp
-if ! [ -a $MTK ]; then git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-20 hardware/mediatek
+if ! [ -a $MTK ]; then git clone https://github.com/nishant6342/android_hardware_mediatek -b lineage-20 hardware/mediatek
 fi
 echo end cloning
