@@ -29,4 +29,7 @@ fi
 MTK=hardware/mediatek/Android.bp
 if ! [ -a $MTK ]; then git clone https://github.com/nishant6342/android_hardware_mediatek -b lineage-20 hardware/mediatek
 fi
+CLANG17=prebuilts/clang/host/linux-x86/clang-r487747/bin/clang
+if ! [ -a $CLANG17 ]; then git clone https://gitlab.com/projectelixiros/android_prebuilts_clang_host_linux-x86_clang-r487747 -b Tiramisu prebuilts/clang/host/linux-x86/clang-r487747
+fi
 echo end cloning
