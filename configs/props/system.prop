@@ -1,44 +1,19 @@
-ro.product.property_source_order=odm,vendor,product,system
-vendor.rild.libpath=mtk-ril.so
-vendor.rild.libargs=-d /dev/ttyC0
-wifi.interface=wlan0
-ro.mediatek.wlan.wsc=1
-ro.mediatek.wlan.p2p=1
-mediatek.wlan.ctia=0
-
-# Display
-ro.opengles.version=196610 
-
-# IMS
-persist.dbg.volte_avail_ovr=1 
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
+# AEE
+ro.vendor.have_aee_feature=1
 
 # Kernel
-wifi.tethering.interface=ap0
-ro.opengles.version=196610
-wifi.direct.interface=p2p0
-ro.sys.usb.mtp.whql.enable=0
-sys.ipo.pwrdncap=2
-ro.sys.usb.storage.type=mtp
-# USB BICR function
-ro.sys.usb.bicr=no
-# USB Charge only function
-ro.sys.usb.charging.only=yes
-ro.camera.sound.forced=0
-ro.audio.silent=0
-ro.zygote.preload.enable=0
 ro.kernel.zio=38,108,105,16
-ro.mtk_perf_simple_start_win=1
-ro.mtk_perf_fast_start_win=1
-ro.mtk_perf_response_time=1
-sys.ipo.disable=1
+
+# Audio
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+
+# Brand
 Build.BRAND=MTK
-ro.vendor.qti.va_aosp.support=0
+
+# Dalvik
 dalvik.vm.ps-min-first-save-ms=150000
-debug.stagefright.c2inputsurface=-1
-debug.atrace.tags.enableflags=0
-persist.traced.enable=1
 dalvik.vm.image-dex2oat-Xms=64m
 dalvik.vm.image-dex2oat-Xmx=64m
 dalvik.vm.dex2oat-Xms=64m
@@ -49,6 +24,12 @@ dalvik.vm.dexopt.secondary=true
 dalvik.vm.dexopt.thermal-cutoff=2
 dalvik.vm.appimageformat=lz4
 ro.dalvik.vm.native.bridge=0
+dalvik.vm.dex2oat-resolve-startup-strings=true
+dalvik.vm.dex2oat-max-image-block-size=524288
+dalvik.vm.minidebuginfo=true
+dalvik.vm.dex2oat-minidebuginfo=true
+
+# Dexopt
 pm.dexopt.first-boot=verify
 pm.dexopt.boot-after-ota=verify
 pm.dexopt.post-boot=extract
@@ -63,35 +44,9 @@ pm.dexopt.ab-ota=speed-profile
 pm.dexopt.inactive=verify
 pm.dexopt.cmdline=verify
 pm.dexopt.shared=speed
-dalvik.vm.dex2oat-resolve-startup-strings=true
-dalvik.vm.dex2oat-max-image-block-size=524288
-dalvik.vm.minidebuginfo=true
-dalvik.vm.dex2oat-minidebuginfo=true
-ro.iorapd.enable=false
-ro.config.per_app_memcg=false
-persist.log.tag.BufferQueueDump=I
-persist.log.tag.BufferQueueProducer=I
-ro.mediatek.version.branch=alps-mp-t0.mssi1.tc16sp-pr1
-ro.mediatek.version.release=alps-mp-t0.mp1.tc16sp-pr1-V1
-ro.mediatek.version.build.branch=
-ro.vendor.mtk_omacp_support=1
-ro.vendor.mtk_flv_playback_support=1
-ro.vendor.mtk_cta_set=1
-persist.vendor.pms_removable=1
-ro.vendor.mtk_telephony_add_on_policy=0
-persist.vendor.vzw_device_type=0
-persist.vendor.wfc.sys_wfc_support=1
-ro.vendor.customer_logpath=/data
-ro.vendor.have_aee_feature=1
-persist.vendor.mdlog.flush_log_ratio=0
-vendor.mtk.hbt.enabled=0
-hbt.debug=off
-ro.base_build=noah
-ro.vendor.mtk_gwsd_support=1
-media.stagefright.thumbnail.prefer_hw_codecs=true
-vendor.mtk_thumbnail_optimization=true
-ro.audio.usb.period_us=16000
-persist.sys.fuse.passthrough.enable=true
+
+# Display
+ro.opengles.version=196610 
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=30000000
 debug.sf.late.app.duration=24000000
@@ -103,4 +58,77 @@ debug.sf.hwc.min.duration=21000000
 debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
+
+# IMS
+persist.dbg.volte_avail_ovr=1 
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# IPO
+sys.ipo.pwrdncap=2
+sys.ipo.disable=1
+
+# iorapd
+ro.iorapd.enable=false
+
+# Media
+ro.vendor.mtk_flv_playback_support=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.mtk_thumbnail_optimization=true
+
+# Memory
+ro.config.per_app_memcg=false
+
+# Misc
+persist.vendor.pms_removable=1
+persist.vendor.vzw_device_type=0
+ro.vendor.mtk_gwsd_support=1
+persist.vendor.mdlog.flush_log_ratio=0
+ro.mediatek.version.branch=alps-mp-t0.mssi1.tc16sp-pr1
+ro.mediatek.version.release=alps-mp-t0.mp1.tc16sp-pr1-V1
+ro.mediatek.version.build.branch=
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_cta_set=1
+ro.vendor.qti.va_aosp.support=0
+debug.stagefright.c2inputsurface=-1
+debug.atrace.tags.enableflags=0
+persist.traced.enable=1
+persist.vendor.vzw_device_type=0
+ro.vendor.customer_logpath=/data
+persist.vendor.mdlog.flush_log_ratio=0
+vendor.mtk.hbt.enabled=0
+hbt.debug=off
+ro.base_build=noah
+ro.vendor.mtk_gwsd_support=1
 ro.vendor.mtk_power_off_alarm_test=1
+
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# RIL
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+ro.vendor.mtk_telephony_add_on_policy=0
+
+# Storage
+persist.sys.fuse.passthrough.enable=true
+
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+
+# WiFi
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+persist.vendor.wfc.sys_wfc_support=1
+
+# Zygote
+ro.zygote.preload.enable=0
