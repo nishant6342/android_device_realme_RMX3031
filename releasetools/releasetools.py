@@ -50,7 +50,6 @@ def OTA_InstallEnd(info, incremental):
   AddImage(info, "vbmeta_system.img", "/dev/block/by-name/vbmeta_system", incremental)
   AddImage(info, "vbmeta_vendor.img", "/dev/block/by-name/vbmeta_vendor", incremental)
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental)
-  AddImage(info, "recovery.img", "/dev/block/by-name/recovery", incremental)
 
   bin_map = {
       'logo': ['logo']
