@@ -1,0 +1,12 @@
+device/realme
+kernel/realme
+packages/apps/prebuilt-apps
+device/mediatek/sepolicy_vndr
+packages/apps/RealmeParts
+vendor/realme
+packages/apps/PocketMode
+hardware/lineage/compat
+device/oplus
+hardware/mediatek
+prebuilts/clang/host/linux-x86/clang-r487747
+
