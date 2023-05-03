@@ -196,7 +196,7 @@ ro.vendor.mtk_gamehdr_support=1
 
 # Misc
 ro.oem_unlock_supported=1
-ro.vendor.mtk_aod_support=1
+ro.vendor.mtk_aod_support=0
 ro.vendor.mtk_ovl_bringup=0
 dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 dalvik.vm.heapsize=512m
