@@ -95,7 +95,7 @@
         <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
         <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
         <data cmd="PERF_RES_POWER_HINT_INSTALL_MAX_DURATION" param1="90000"></data>
-    </scenario>-->
+    </scenario>
     <scenario powerhint="MTKPOWER_HINT_APP_TOUCH">
         <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_NOTIFY_FBC" param1="1"></data>
     </scenario>
