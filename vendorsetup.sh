@@ -21,7 +21,7 @@ FW=vendor/realme/RMX3031-firmware/Android.mk
 if ! [ -a $FW ]; then git clone https://github.com/nishant6342/vendor_realme_RMX3031-firmware vendor/realme/RMX3031-firmware
 fi
 CAM=device/oplus/camera/camera.mk
-if ! [ -a $CAM ]; then git clone https://gitlab.com/nishant6342/device_oplus_camera device/oplus/camera
+if ! [ -a $CAM ]; then git clone --depth=1 https://gitlab.com/nishant6342/device_oplus_camera device/oplus/camera
 fi
 COMPACT=hardware/lineage/compat/Android.bp
 if ! [ -a $COMPACT ]; then git clone https://github.com/LineageOS/android_hardware_lineage_compat -b lineage-20.0 hardware/lineage/compat
@@ -31,5 +31,8 @@ if ! [ -a $MTK ]; then git clone https://github.com/nishant6342/android_hardware
 fi
 CLANG17=prebuilts/clang/host/linux-x86/clang-r487747/bin/clang
 if ! [ -a $CLANG17 ]; then git clone https://gitlab.com/projectelixiros/android_prebuilts_clang_host_linux-x86_clang-r487747 -b Tiramisu prebuilts/clang/host/linux-x86/clang-r487747
+fi
+OPLUS=hardware/oplus/Android.mk
+if ! [ -a $OPLUS ]; then git clone https://github.com/nishant6342/android_hardware_oplus hardware/oplus
 fi
 echo end cloning

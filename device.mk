@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.RMX3031
+    android.hardware.biometrics.fingerprint@2.3-service.oplus
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
@@ -399,7 +399,8 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay \
     DozeOverlaySystem \
-    DozeOverlaySystemUI
+    DozeOverlaySystemUI \
+    OplusDozeOverlay
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
@@ -437,7 +438,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/mediatek
+    hardware/mediatek \
+    hardware/oplus
 
 # IMS
 PRODUCT_BOOT_JARS += \
@@ -462,7 +464,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.RMX3031
+    vendor.lineage.touch@1.0-service.oplus
 
 # USB
 PRODUCT_PACKAGES += \
