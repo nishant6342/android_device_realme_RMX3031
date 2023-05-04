@@ -287,6 +287,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/APU_SYS.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/APU_SYS.xml \
     $(DEVICE_PATH)/configs/sysconfig/hiddenapi-package-whitelist-oplus-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-oplus-system.xml
 
+# OplusDoze
+PRODUCT_PACKAGES += \
+    OplusDoze
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
