@@ -55,7 +55,7 @@ debug.sf.early.app.duration=24000000
 debug.sf.earlyGl.sf.duration=30000000
 debug.sf.earlyGl.app.duration=24000000
 debug.sf.hwc.min.duration=21000000
-debug.sf.latch_unsignaled=true
+debug.sf.auto_latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
 

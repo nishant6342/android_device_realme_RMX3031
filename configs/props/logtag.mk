@@ -4,7 +4,7 @@ else
 VENDOR_LOG_LEVEL=S
 endif
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.RILMUXD=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RfxMclDisThread=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RfxCloneMgr=$(VENDOR_LOG_LEVEL) \

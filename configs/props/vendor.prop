@@ -39,7 +39,6 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 vendor.bluetooth.ldac.abr=true
-vendor.bluetooth.ldac.abr=true
 ro.vendor.bt.platform=6893
 
 # Camera
@@ -171,8 +170,6 @@ ro.vendor.mtk_video_hevc_enc_support=1
 debug.mediatek.appgamepq_compress=1
 ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_color_mode=3
-ro.vendor.mtk_pq_color_mode=3
-ro.vendor.mtk_pq_support=2
 ro.vendor.pq.mtk_pq_video_whitelist_support=1
 ro.vendor.pq.mtk_video_transition=1
 ro.vendor.pq.mtk_scltm_support=1
@@ -208,7 +205,6 @@ ro.vendor.mtk_nn.option=A,B,E,F,Z
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_baseline_support=1
 debug.mtk_tflite.target_nnapi=29
-ro.vendor.mtk_nn_quant_preferred=1
 
 # Priv-app Permissions
 ro.control_privapp_permissions=enforce
@@ -246,11 +242,9 @@ telephony.lteOnCdmaDevice=1
 ro.telephony.default_network=33,33,33,33
 ro.vendor.mtk_ps1_rat=N/C/Lf/Lt/W/G
 ro.vendor.mtk_lte_support=1
-ro.vendor.mtk_c2k_support=1
 persist.vendor.mtk_sim_switch_policy=2
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.mtk_rild_read_imsi=1
-persist.vendor.mtk_sim_switch_policy=2
 ro.vendor.sim_me_lock_mode=3
 telephony.active_modems.max_count=2
 ro.vendor.mtk_wappush_support=1
