@@ -2716,7 +2716,8 @@ vendor/lib64/libOpenCL.so
 # EngineerMode
 lib/libem_support_jni.so
 lib64/libem_support_jni.so
--priv-app/EngineerMode/EngineerMode.apk
+# Pin patched activity exported engineer mode
+-priv-app/EngineerMode/EngineerMode.apk|9c90462d8caf098ce923bb947a58e49ca13be579
 
 # Hotword Enrollment
 -my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
