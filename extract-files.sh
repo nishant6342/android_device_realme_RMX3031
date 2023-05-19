@@ -55,10 +55,6 @@ function blob_fixup {
         odm/lib*/libui)
             "$PATCHELF" --replace-needed android.hardware.graphics.common-V2-ndk_platform.so android.hardware.graphics.common-V2-ndk.so "$2"
             ;;
-        vendor/bin/hw/android.hardware.gnss-service.mediatek|\
-        vendor/lib*/hw/android.hardware.gnss-impl-mediatek.so)
-           "$PATCHELF" --replace-needed android.hardware.gnss-V1-ndk_platform.so android.hardware.gnss-V1-ndk.so "$2"
-            ;;
         vendor/lib*/libkeystore-engine-wifi-hidl.so)
             "$PATCHELF" --replace-needed android.system.keystore2-V1-ndk_platform.so android.system.keystore2-V1-ndk.so "$2"
             ;;
