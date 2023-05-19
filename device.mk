@@ -168,8 +168,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.0.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk.vendor
+    android.hardware.gnss@2.1.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-service.mediatek
 
 # HIDL
 PRODUCT_PACKAGES += \
