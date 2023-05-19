@@ -2126,7 +2126,6 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/memtrack.default.so
 vendor/lib/mt6893/arm.graphics-V1-ndk_platform.so
 vendor/lib/mt6893/libaiselector.so
 vendor/lib/mt6893/libdpframework.so
@@ -2160,7 +2159,6 @@ vendor/lib/libudf.so
 vendor/lib64/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6893.so
-vendor/lib64/hw/memtrack.default.so
 vendor/lib64/mt6893/arm.graphics-V1-ndk_platform.so
 vendor/lib64/mt6893/libDR.so
 vendor/lib64/mt6893/libaiselector.so
