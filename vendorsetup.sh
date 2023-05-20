@@ -35,4 +35,7 @@ fi
 OPLUS=hardware/oplus/Android.mk
 if ! [ -a $OPLUS ]; then git clone https://github.com/nishant6342/android_hardware_oplus hardware/oplus
 fi
+WLAN=hardware/mediatek/wlan/Android.mk
+if ! [ -a $WLAN ]; then git clone https://github.com/nishant6342/android_hardware_mediatek_wlan hardware/mediatek/wlan
+fi
 echo end cloning
