@@ -1,4 +1,4 @@
-# Unpinned blobs from RMX3031_11_F12 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1677828988354 release-keys)
+# Unpinned blobs from RMX3031_11_F13 (sys_mssi_64_cn_armv82-user 13 TP1A.220905.001 1681707284842 release-keys)
 
 # Extra
 odm/lib/libdapparamstorage.so
@@ -3354,7 +3354,6 @@ odm/lib64/vendor.oplus.hardware.felica@1.0-impl.so
 odm/lib64/vendor.oplus.hardware.felica@1.0.so
 odm/lib64/vendor.oplus.hardware.gameopt@1.0.so
 odm/lib64/vendor.oplus.hardware.misc@1.0.so
-odm/lib64/vendor.oplus.hardware.olc@2.0.so
 odm/lib64/vendor.oplus.hardware.rpmh@2.0.so
 odm/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
 odm/lib64/vendor.oplus.hardware.subsys-V1-ndk_platform.so
@@ -3469,12 +3468,10 @@ vendor/lib/libainrcore.so
 vendor/lib/libaispq.so
 vendor/lib/libcustomer_testvision.so
 vendor/lib/libmidasserviceintf.so
-vendor/lib/libolc_vnd.so
 vendor/lib/librpc.so
 vendor/lib/libwpa_client.so
 vendor/lib/ov50a_mipi_raw_21127_IdxMgr.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
-vendor/lib/vendor.oplus.hardware.olc@2.0.so
 vendor/lib64/hw/mt6893/vulkan.mali.so
 vendor/lib64/mt6893/arm.graphics-ndk_platform.so
 vendor/lib64/audio_common-aidl-cpp.so
@@ -3490,12 +3487,10 @@ vendor/lib64/imx766_mipi_raw_21305_IdxMgr.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libcustomer_testvision.so
-vendor/lib64/libolc_vnd.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
-vendor/lib64/vendor.oplus.hardware.olc@2.0.so
 -vendor/priv-app/GpuGameDriver.mt6893/GpuGameDriver.mt6893.apk
