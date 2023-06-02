@@ -2687,8 +2687,6 @@ lib64/libvsim-adaptor-client.so
 lib64/libvt_avsync.so
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
--system_ext/framework/oplus-telephony-common-ext.jar
--system_ext/framework/oplus-telephony-common.jar
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
