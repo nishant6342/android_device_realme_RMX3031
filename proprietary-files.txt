@@ -2614,6 +2614,7 @@ vendor/lib64/hw/libMcGatekeeper.so
 vendor/lib64/hw/libSoftGatekeeper.so
 
 # Graphics
+vendor/lib/hw/mt6893/vulkan.mali.so
 vendor/lib/egl/mt6893/libGLES_mali.so
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_meow.so
@@ -2622,6 +2623,7 @@ vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
 vendor/lib/libOpenCL.so
+vendor/lib64/hw/mt6893/vulkan.mali.so
 vendor/lib64/egl/mt6893/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
@@ -2630,9 +2632,14 @@ vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/libOpenCL.so
 
+
 # EngineerMode
 lib/libem_support_jni.so
 lib64/libem_support_jni.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 
 # Pin patched activity exported engineer mode
 -priv-app/EngineerMode/EngineerMode.apk|9c90462d8caf098ce923bb947a58e49ca13be579
@@ -3275,7 +3282,6 @@ odm/etc/wifi/wifi.cfg
 odm/etc/wifi/wifi_active_channel.cfg
 odm/etc/wifi/wifi_passive_channel.cfg
 vendor/bin/hw/tetheroffloadservice
-vendor/bin/hostapd_cli
 vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/wifi_dump
@@ -3307,7 +3313,6 @@ lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
 lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
 lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
-odm/etc/devices_config/devices_config.json
 odm/etc/media_codecs_ffmpeg.xml
 odm/etc/media_codecs_vendor_oplus.xml
 odm/lib/android.hardware.keymaster-V3-ndk_platform.so
@@ -3316,16 +3321,8 @@ odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib64/libfasteningPlugin.so
 odm/lib64/libneuron_runtime.so
 odm/lib64/libtrustonic_keybox_ca.so
-odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so
-odm/lib64/vendor.oplus.hardware.engcamera@1.0.so
 odm/lib64/vendor.oplus.hardware.engineer@1.0.so
-odm/lib64/vendor.oplus.hardware.felica@1.0-impl.so
-odm/lib64/vendor.oplus.hardware.felica@1.0.so
-odm/lib64/vendor.oplus.hardware.gameopt@1.0.so
-odm/lib64/vendor.oplus.hardware.misc@1.0.so
-odm/lib64/vendor.oplus.hardware.rpmh@2.0.so
 odm/lib64/vendor.oplus.hardware.subsys-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.transmessage@1.0.so
 odm/init.oplus.face.rc
 odm/init.oplus.seccommon.rc
 system_ext/etc/public.libraries-oplus.txt
@@ -3342,7 +3339,6 @@ vendor/bin/fuelgauged
 vendor/bin/gbe
 vendor/bin/ipsec_mon
 vendor/bin/loghidlvendorservice
-vendor/bin/meta_tst
 vendor/data/model/scene_detection.dla
 vendor/etc/apdb/APDB_MT6885_S01__W2238_ENUM
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Rakuten.xml
@@ -3411,9 +3407,6 @@ vendor/etc/cust_silky_brightness.xml
 vendor/etc/factory.ini
 vendor/etc/media_codecs_mediatek_audio.xml
 vendor/etc/nhw
-vendor/etc/oplus_avb.pubkey
-vendor/lib/hw/mt6893/vulkan.mali.so
-vendor/lib/modules/trace_mmstat.ko
 vendor/lib/mt6893/arm.graphics-ndk_platform.so
 vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/gc02m1_mipi_raw_21127_IdxMgr.so
@@ -3436,7 +3429,6 @@ vendor/lib/libmidasserviceintf.so
 vendor/lib/librpc.so
 vendor/lib/ov50a_mipi_raw_21127_IdxMgr.so
 vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
-vendor/lib64/hw/mt6893/vulkan.mali.so
 vendor/lib64/mt6893/arm.graphics-ndk_platform.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/gc02m1_mipi_raw_21127_IdxMgr.so
@@ -3452,8 +3444,4 @@ vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libcustomer_testvision.so
 vendor/lib64/ov50a_mipi_raw_21127_IdxMgr.so
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 -vendor/priv-app/GpuGameDriver.mt6893/GpuGameDriver.mt6893.apk
