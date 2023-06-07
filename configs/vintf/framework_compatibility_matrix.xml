@@ -1121,22 +1121,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.stability.oplus_project</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOplusProject</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oplus.hardware.stability.oplus_project</name>
-        <version>1.0</version>
-        <interface>
-            <name>IOplusProject</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.subsys_interface.subsys</name>
         <interface>

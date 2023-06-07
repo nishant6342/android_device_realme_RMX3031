@@ -3307,14 +3307,11 @@ lib/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
 lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
 lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
-odm/bin/hw/vendor.oplus.hardware.stability.oplus_project@1.0-service
 odm/etc/devices_config/devices_config.json
-odm/etc/init/vendor.oplus.hardware.stability.oplus_project@1.0-service.rc
 odm/etc/media_codecs_ffmpeg.xml
 odm/etc/media_codecs_vendor_oplus.xml
 odm/lib/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib/libtrustonic_keybox_ca.so
-odm/lib/vendor.oplus.hardware.stability.oplus_project@1.0.so
 odm/lib64/android.hardware.keymaster-V3-ndk_platform.so
 odm/lib64/libfasteningPlugin.so
 odm/lib64/libneuron_runtime.so
@@ -3327,7 +3324,6 @@ odm/lib64/vendor.oplus.hardware.felica@1.0.so
 odm/lib64/vendor.oplus.hardware.gameopt@1.0.so
 odm/lib64/vendor.oplus.hardware.misc@1.0.so
 odm/lib64/vendor.oplus.hardware.rpmh@2.0.so
-odm/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
 odm/lib64/vendor.oplus.hardware.subsys-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.transmessage@1.0.so
 odm/init.oplus.face.rc
@@ -3335,9 +3331,7 @@ odm/init.oplus.seccommon.rc
 system_ext/etc/public.libraries-oplus.txt
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so
 system_ext/lib/vendor.oplus.hardware.camera.slogan@1.0.so
-system_ext/lib/vendor.oplus.hardware.stability.oplus_project@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
-system_ext/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so
 vendor/bin/dconfig
 vendor/bin/dexecutor
 vendor/bin/doeapp-memtester

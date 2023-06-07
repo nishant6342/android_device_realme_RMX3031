@@ -563,16 +563,6 @@
     </hal>
 
     <hal format="hidl">
-        <name>vendor.oplus.hardware.stability.oplus_project</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOplusProject</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IOplusProject/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
