@@ -3398,11 +3398,7 @@ vendor/etc/MNL_Config.xml
 vendor/etc/aurisys_config_rv.xml
 vendor/etc/cgroups.json
 vendor/etc/cust_color.xml
-vendor/etc/cust_color_20171_boe_nt37701_boe.xml
-vendor/etc/cust_color_20171_tm_nt37701_tm42.xml
-vendor/etc/cust_color_21015_boe_nt37701.xml
-vendor/etc/cust_color_21015_tianma_ili7838.xml
-vendor/etc/cust_color_21015_tianma_nt37701_42.xml
+vendor/etc/cust_color_20615_samsung_amsye04_1080p_dsi_cmd.xml
 vendor/etc/cust_silky_brightness.xml
 vendor/etc/factory.ini
 vendor/etc/media_codecs_mediatek_audio.xml
