@@ -2737,13 +2737,9 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib/hw/sound_trigger.primary.default.so
 vendor/lib64/hw/sound_trigger.primary.default.so
 
-# Media blobs kanged From xiaomi ares
-vendor/lib/libcodec2_mtk_c2store.so|1652c358f462f19f5432f8c086630cf2e6ca850e
+# MTK VDEC blobs kanged From xiaomi ares
 vendor/lib/libcodec2_mtk_vdec.so|e078f47185b62fc9cdf753bc38e564faeb0628b0
-vendor/lib/libcodec2_mtk_venc.so|4cd5f3f4cc5eec905ab79fbbb68519a51a239859
-vendor/lib64/libcodec2_mtk_c2store.so|b2d8121e1dec553ced292834b4e7fb097e064cd2
 vendor/lib64/libcodec2_mtk_vdec.so|3a3639e3de12923e80763bad68ebf1d53a1801b1
-vendor/lib64/libcodec2_mtk_venc.so|854c27c82a7e4c789efb248af6021855c3df8efc
 
 # Media
 odm/lib/libavcodec.so
@@ -2794,6 +2790,8 @@ vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libJpgEncPipe.so
+vendor/lib/libcodec2_mtk_c2store.so
+vendor/lib/libcodec2_mtk_venc.so
 vendor/lib/libcodec2_soft_mtk_alacdec.so
 vendor/lib/libcodec2_soft_mtk_apedec.so
 vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
@@ -2840,6 +2838,8 @@ vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libacdk.so
 vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_soft_mtk_alacdec.so
 vendor/lib64/libcodec2_soft_mtk_apedec.so
 vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
