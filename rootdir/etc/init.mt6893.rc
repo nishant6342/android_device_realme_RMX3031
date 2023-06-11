@@ -162,6 +162,16 @@ on charger
 
 on early-fs
     write /proc/bootprof "INIT:early-fs"
+service swap_enable_init /vendor/bin/sh /vendor/bin/swap_enable.sh configure_memory_parameters
+    user root
+    group system
+    disabled
+    oneshot
+
+service readahead_init /vendor/bin/sh /vendor/bin/swap_enable.sh configure_read_ahead_kb_values
+    user root
+    disabled
+    oneshot
 
 on fs
     write /proc/bootprof "INIT:fs"
@@ -189,10 +199,9 @@ on fs
     write /proc/sys/vm/direct_swappiness 50
     write /sys/kernel/mm/swap/vma_ra_enabled false
     swapon_all /vendor/etc/fstab.mt6893
-
-on fs
-
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
+    mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
+    chmod +x /vendor/bin/swap_enable.sh
+    start swap_enable_init
 
 on late-fs
     write /proc/bootprof "INIT:late-fs"
@@ -268,9 +277,6 @@ on post-fs-data
     write /proc/bootprof "INIT:post-fs-data"
     wait_for_prop vendor.all.modules.ready 1
     write /proc/bootprof "modprobe: Load_Module_DONE"
-
-    # zram
-    #swapon_all /vendor/etc/fstab.enableswap
 
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
