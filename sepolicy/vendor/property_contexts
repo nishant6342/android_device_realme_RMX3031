@@ -1,3 +1,15 @@
+# Audio
+persist.vendor.audio.tuning.def_path        u:object_r:vendor_audio_tuning_prop:s0
+
 # Fingerprint
-persist.vendor.fingerprint.                 u:object_r:vendor_fingerprint_prop:s0
-vendor.fingerprint.                         u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fingerprint.     u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fp.              u:object_r:vendor_fingerprint_prop:s0
+vendor.flash.locked             u:object_r:vendor_fingerprint_prop:s0
+vendor.fingerprint.             u:object_r:vendor_fingerprint_prop:s0
+
+# Camera
+vendor.oplus.camera.               u:object_r:vendor_oplus_prop:s0
+persist.vendor.camera.privapp.list u:object_r:vendor_oplus_prop:s0
+vendor.debug.cameralog.enable      u:object_r:vendor_oplus_prop:s0
+vendor.debug.tpi.                  u:object_r:vendor_oplus_prop:s0
+

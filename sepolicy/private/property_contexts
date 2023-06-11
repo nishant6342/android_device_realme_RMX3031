@@ -1,0 +1,25 @@
+# Camera
+oplus.camera.                u:object_r:exported_system_prop:s0
+persist.sys.camera.log.      u:object_r:exported_system_prop:s0
+oplus.camera.debug.          u:object_r:exported_system_prop:s0
+demo.hole                    u:object_r:exported_system_prop:s0
+demo.near                    u:object_r:exported_system_prop:s0
+demo.far                     u:object_r:exported_system_prop:s0
+demo.fb                      u:object_r:exported_system_prop:s0
+ro.oplus.camera.             u:object_r:system_oplus_camera_prop:s0
+ro.oplus.market.name         u:object_r:system_oplus_camera_prop:s0
+ro.oplus.system.camera.      u:object_r:system_oplus_camera_prop:s0
+
+# Fingerprint
+oplus.fingerprint.    u:object_r:system_fingerprint_prop:s0
+gf.debug.             u:object_r:system_fingerprint_prop:s0
+oplus.optical.        u:object_r:system_fingerprint_prop:s0
+
+# Oplus
+sys.oplus.mm.         u:object_r:system_oplus_audio_prop:s0
+audio.tuning.def_path u:object_r:system_oplus_audio_prop:s0
+
+# Version
+ro.separate.soft      u:object_r:system_oplus_project_prop:s0
+ro.oplus.version.     u:object_r:system_oplus_project_prop:s0
+ro.oplus.image.       u:object_r:system_oplus_project_prop:s0

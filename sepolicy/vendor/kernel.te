@@ -1,0 +1,2 @@
+r_dir_file(kernel, vendor_firmware_file)
+allow kernel oplus_block_device:blk_file rw_file_perms;

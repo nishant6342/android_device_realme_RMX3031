@@ -1,0 +1,2 @@
+allow mtk_hal_power vendor_proc_display:dir search;
+allow mtk_hal_power vendor_proc_display:file rw_file_perms;

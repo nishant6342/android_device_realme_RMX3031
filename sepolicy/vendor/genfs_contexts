@@ -1,9 +1,61 @@
-genfscon sysfs /kernel/thunderquake_engine/level                          u:object_r:sysfs_vibrator:s0
+# Charging
+genfscon sysfs /devices/platform/charger/power_supply/ac                                    u:object_r:vendor_sysfs_ac_supply:s0
+genfscon sysfs /devices/platform/charger/power_supply/battery                               u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/charger/power_supply/usb                                   u:object_r:vendor_sysfs_usb_supply:s0
+genfscon proc /batt_param_noplug                                                            u:object_r:vendor_proc_batt_param:s0
+genfscon proc /charger                                                                      u:object_r:vendor_proc_charger:s0
+genfscon proc /charger_critical_log                                                         u:object_r:vendor_proc_charger:s0
+genfscon proc /charger_cycle                                                                u:object_r:vendor_proc_charger:s0
+genfscon proc /charger_log                                                                  u:object_r:vendor_proc_charger:s0
+genfscon proc /devinfo/fastchg                                                              u:object_r:vendor_proc_devinfo_fastchg:s0
+genfscon proc /fastchg_fw_update                                                            u:object_r:vendor_proc_fw_update:s0
+genfscon proc /tbatt_pwroff                                                                 u:object_r:vendor_proc_tbatt_pwroff:s0
+genfscon proc /ui_soc_decimal                                                               u:object_r:vendor_proc_decimal:s0
+genfscon proc /wireless                                                                     u:object_r:vendor_proc_wireless:s0
+genfscon sysfs /class/oplus_chg                                                             u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/virtual/oplus_chg                                                   u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/platform/extcon_usb/extcon                                          u:object_r:sysfs_extcon:s0
 
+# Display
+genfscon proc /devinfo/lcd                          u:object_r:vendor_proc_display:s0
+genfscon proc /touchpanel                           u:object_r:vendor_proc_display:s0
+genfscon sysfs /kernel/oplus_display                u:object_r:vendor_sysfs_graphics:s0
+
+# Fingerprint
+genfscon proc /fp_id                                u:object_r:vendor_proc_fingerprint:s0
+genfscon proc /fp_kernel_event                      u:object_r:vendor_proc_fingerprint:s0
+
+# NFC
+genfscon proc /oplus_nfc/chipset                    u:object_r:vendor_proc_nfc_chipset:s0
+
+# OTG
+genfscon sysfs /devices/virtual/oplus_chg/usb/otg_switch u:object_r:vendor_sysfs_otg_switch:s0
+
+# Sensors
+genfscon proc /oplusSensorFeature                   u:object_r:vendor_proc_oplus_sensor_feature:s0
+genfscon proc /oplusCustom/Sensor                   u:object_r:vendor_proc_oplus_sensor_feature:s0
+genfscon proc /mag_soft_parameter.json              u:object_r:vendor_proc_oplus_sensor_param:s0
+genfscon proc /sensor/als_cali                      u:object_r:vendor_proc_oplus_sensor_cali:s0
+genfscon sysfs /devices/virtual/oplus_sensor        u:object_r:vendor_sysfs_oplus_virtual_sensor:s0
+genfscon sysfs /class/oplus_sensor                  u:object_r:vendor_sysfs_oplus_virtual_sensor:s0
+
+# Oplus
+genfscon proc /oplusVersion                         u:object_r:vendor_proc_oplus_version:s0
+
+# Performance
+genfscon proc /sys/vm/dirty_writeback_centisecs     u:object_r:proc_vm_dirty:s0
+genfscon proc /sys/kernel/sched_stune_task_threshold u:object_r:proc_sched_stune:s0 
+genfscon proc /sys/kernel/sched_assist_enabled       u:object_r:proc_sched_assist:s0
+genfscon proc /sys/kernel/sched_assist_scene         u:object_r:proc_sched_assist:s0
+
+# Wakeup
+genfscon sysfs /devices/platform/usb0/wakeup/wakeup124                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/battery/wakeup179                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/ac/wakeup177                          u:object_r:sysfs_wakeup:s0
+
+# Vibrator
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/duration  u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/trigger   u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/state     u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/activate     u:object_r:sysfs_vibrator:s0
 
-genfscon proc  /fp_id u:object_r:proc_fingerprint:s0
-genfscon proc  /touchpanel  u:object_r:proc_tp:s0

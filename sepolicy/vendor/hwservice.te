@@ -1,0 +1,17 @@
+# Camera
+type hal_camera_oplus_hwservice, hwservice_manager_type;
+
+# Charging
+type hal_charger_oplus_hwservice, hwservice_manager_type;
+
+# CommonDcs
+type hal_commondcs_oplus_hwservice, hwservice_manager_type;
+
+# Fingerprint
+type hal_fingerprint_oplus_hwservice, hwservice_manager_type;
+
+# Orms
+type hal_orms_oplus_hwservice, hwservice_manager_type;
+
+# Performance
+type hal_performance_oplus_hwservice, hwservice_manager_type;

@@ -1,17 +1,33 @@
+# Camera
+/data/vendor/camera_update(/.*)?                                                                                       u:object_r:vendor_camera_update_data_file:s0
+/mnt/vendor/persist/camera(/.*)?                                                                                       u:object_r:persist_camera_file:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.engcamera@1\.0-service                                               u:object_r:mtk_hal_camera_exec:s0
+
+# Charging
+/dev/oplus_chg                                                                                                         u:object_r:oplus_charger_device:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.charger@1\.0-service                                                 u:object_r:hal_charger_oplus_exec:s0
+
+# Display
+/dev/oplus_display                                                                                                     u:object_r:oplus_display_device:s0
+
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RMX3031                                  u:object_r:hal_light_default_exec:s0
 
-# Vibrator
-/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.RMX3031                              u:object_r:hal_vibrator_default_exec:s0
-
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.RMX3031                 u:object_r:mtk_hal_sensors_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                                             u:object_r:mtk_hal_sensors_exec:s0
+/dev/m_virtual_sensor_misc                                                                                             u:object_r:virtual_sensor_device:s0
+/dev/block/sdc4                                                                                                        u:object_r:oplus_block_device:s0
+/dev/block/platform/soc/11270000.ufshci/by-name/oplusreserve.*                                                         u:object_r:oplus_block_device:s0
+/dev/block/platform/bootdevice/by-name/oplusreserve.*                                                                  u:object_r:oplus_block_device:s0
+/dev/block/sdc7                                                                                                        u:object_r:oplus_block_device:s0
+/dev/block/platform/soc/11270000.ufshci/by-name/oplus_custom                                                           u:object_r:oplus_block_device:s0
+/dev/block/platform/bootdevice/by-name/oplus_custom                                                                    u:object_r:oplus_block_device:s0
 
 # Fingerprint
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                                 u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.RMX3031                          u:object_r:hal_fingerprint_default_exec:s0
-/sys/kernel/oplus_display/oplus_notify_fppress          u:object_r:sysfs_fingerprint_notify:s0
-/dev/fingerprint_dev              u:object_r:fingerprintd_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oplus                          u:object_r:hal_fingerprint_default_exec:s0
+/dev/goodix_fp                                                                                                         u:object_r:fingerprint_device:s0
 /mnt/vendor/persist/fingerprint/silead(/.*)?         u:object_r:oplus_fingerprint_file:s0
 /mnt/vendor/persist/fingerprint/jiiov(/.*)?	  u:object_r:factorytestreport_vendor_data_file:s0
 /data/vendor/optical_fingerprint(/.*)?    u:object_r:oplus_fingerprint_file:s0
@@ -20,8 +36,12 @@
 /data/vendor/silead(/.*)?         u:object_r:oplus_fingerprint_file:s0
 /data/gf_data(/.*)?		u:object_r:fingerprintd_data_file:s0
 
-# Camera
-/mnt/vendor/persist/camera(/.*)?   u:object_r:persist_camera_file:s0
+# Firmwares
+/odm/vendor/firmware(/.*)?                                                                                             u:object_r:vendor_firmware_file:s0
+/odm/firmware(/.*)?                                                                                                    u:object_r:vendor_firmware_file:s0
 
 # Touch
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.RMX3031  u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.oplus                                      u:object_r:hal_lineage_touch_default_exec:s0
+
+# Vibrator
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.RMX3031                              u:object_r:hal_vibrator_default_exec:s0

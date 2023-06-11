@@ -1,5 +1,39 @@
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
+
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint_default oplus_fingerprint_file:dir { create_dir_perms rw_dir_perms };
+allow hal_fingerprint_default oplus_fingerprint_file:file { create_file_perms rw_file_perms };
+allow hal_fingerprint_default factorytestreport_vendor_data_file:dir create_dir_perms;
+allow hal_fingerprint_default factorytestreport_vendor_data_file:file create_file_perms;
+allow hal_fingerprint_default oplus_display_device:chr_file rw_file_perms;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default mobicore_user_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_sysfs_graphics:file w_file_perms;
+
+# Allow Goodix HAL to find calibration data
+allow hal_fingerprint_default mnt_vendor_file:dir search;
+allow hal_fingerprint_default persist_data_file:dir search;
+allow hal_fingerprint_default persist_data_file:file r_file_perms;
+
 r_dir_file(hal_fingerprint_default, vendor_proc_fingerprint)
-get_prop(hal_fingerprint_default, vendor_fingerprint_prop)
-allow hal_fingerprint_default vendor_fingerprint_prop:file { map };
-allow hal_fingerprint_default proc:file { write };
+r_dir_file(hal_fingerprint_default, vendor_sysfs_graphics)
+
+allow hal_fingerprint_default vendor_proc_fingerprint:file w_file_perms;
+
+allow hal_fingerprint_default vendor_proc_display:dir r_dir_perms;
+allow hal_fingerprint_default vendor_proc_display:file rw_file_perms;
+
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+allow hal_fingerprint_default vendor_sysfs_battery_supply:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_battery_supply:file r_file_perms;
+
+allow hal_fingerprint_default hal_commondcs_oplus_hwservice:hwservice_manager find;
+allow hal_fingerprint_default hal_orms_oplus_hwservice:hwservice_manager find;
+allow hal_fingerprint_default hal_performance_oplus_hwservice:hwservice_manager find;
+
+add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
+
+get_prop(hal_fingerprint_default, system_oplus_project_prop)
+set_prop(hal_fingerprint_default, system_fingerprint_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)

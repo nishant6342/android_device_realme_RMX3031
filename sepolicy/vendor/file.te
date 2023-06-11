@@ -1,10 +1,48 @@
 # Camera
+type vendor_proc_flash, fs_type, proc_type;
+type vendor_camera_update_data_file, file_type, data_file_type;
 type persist_camera_file, file_type;
+
+# Charging
+type vendor_sysfs_ac_supply, fs_type, sysfs_type;
+type vendor_sysfs_battery_supply, fs_type, sysfs_type;
+type vendor_sysfs_usb_supply, fs_type, sysfs_type;
+type vendor_proc_batt_param, fs_type, proc_type;
+type vendor_proc_charger, fs_type, proc_type;
+type vendor_proc_decimal, fs_type, proc_type;
+type vendor_proc_devinfo_fastchg, fs_type, proc_type;
+type vendor_proc_fw_update, fs_type, proc_type;
+type vendor_proc_tbatt_pwroff, fs_type, proc_type;
+type vendor_proc_wireless, fs_type, proc_type;
+type vendor_firmware_file, vendor_file_type, file_type;
+
+# Display
+type vendor_sysfs_graphics, fs_type, sysfs_type;
+type vendor_proc_display, fs_type, proc_type;
 
 # Fingerprint
 type factorytestreport_vendor_data_file, data_file_type, file_type;
 type oplus_fingerprint_file, data_file_type, file_type;
-type sysfs_fingerprint_notify, data_file_type, file_type;
 type proc_fingerprint, fs_type, proc_type;
 type vendor_proc_fingerprint, fs_type, proc_type;
-type proc_tp, fs_type, proc_type;
+
+# NFC
+type vendor_proc_nfc_chipset, fs_type, proc_type;
+
+# OTG
+type vendor_sysfs_otg_switch, fs_type, sysfs_type;
+
+# Sensors
+type vendor_proc_oplus_sensor_feature, fs_type, proc_type;
+type vendor_proc_oplus_sensor_param, fs_type, proc_type;
+type vendor_sysfs_oplus_virtual_sensor, fs_type, sysfs_type;
+type vendor_proc_oplus_sensor_cali, fs_type, proc_type;
+type vendor_proc_oplus_sensor_als, fs_type, proc_type;
+
+# Oplus
+type vendor_proc_oplus_version, fs_type, proc_type;
+
+# Performance
+type proc_vm_dirty, fs_type, proc_type;
+type proc_sched_stune, fs_type, proc_type;
+type proc_sched_assist, fs_type, proc_type;
