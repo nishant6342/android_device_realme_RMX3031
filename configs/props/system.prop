@@ -47,17 +47,6 @@ pm.dexopt.shared=speed
 
 # Display
 ro.opengles.version=196610 
-debug.sf.use_phase_offsets_as_durations=1
-debug.sf.late.sf.duration=30000000
-debug.sf.late.app.duration=24000000
-debug.sf.early.sf.duration=30000000
-debug.sf.early.app.duration=24000000
-debug.sf.earlyGl.sf.duration=30000000
-debug.sf.earlyGl.app.duration=24000000
-debug.sf.hwc.min.duration=21000000
-debug.sf.auto_latch_unsignaled=true
-debug.sf.predict_hwc_composition_strategy=0
-debug.sf.enable_transaction_tracing=false
 
 # IMS
 persist.dbg.volte_avail_ovr=1 
