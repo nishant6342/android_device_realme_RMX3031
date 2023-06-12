@@ -383,7 +383,6 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6893.rc \
-    init.safailnet.rc \
     init.mt6893.usb.rc \
     init.project.rc \
     init.sensor_2_0.rc \
