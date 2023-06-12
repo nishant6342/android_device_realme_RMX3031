@@ -13,5 +13,8 @@ type hal_fingerprint_oplus_hwservice, hwservice_manager_type;
 # Orms
 type hal_orms_oplus_hwservice, hwservice_manager_type;
 
+# OSense
+type hal_osense_oplus_hwservice, hwservice_manager_type;
+
 # Performance
 type hal_performance_oplus_hwservice, hwservice_manager_type;

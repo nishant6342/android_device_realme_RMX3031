@@ -4,3 +4,5 @@ set_prop(rild, vendor_mtk_mdrsra_v2_support_prop)
 set_prop(rild, vendor_mtk_xfrm_support_prop)
 set_prop(rild, vendor_mtk_md_prop)
 allow rild vendor_default_prop:property_service { set };
+allow rild default_prop:file rw_file_perms;
+allow rild default_android_service:service_manager { add find };

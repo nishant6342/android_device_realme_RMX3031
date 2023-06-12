@@ -18,3 +18,5 @@ allow mtk_hal_sensors persist_data_file:dir search;
 
 r_dir_file(mtk_hal_sensors, sysfs_leds)
 r_dir_file(mtk_hal_sensors, vendor_sysfs_graphics)
+allow mtk_hal_sensors oplus_sensor_file:dir r_dir_perms;
+allow mtk_hal_sensors oplus_sensor_file:file r_file_perms;

@@ -1,0 +1,2 @@
+allow vtservice radio_service:service_manager find;
+allow vtservice vtservice_service:service_manager add;

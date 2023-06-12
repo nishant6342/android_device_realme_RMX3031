@@ -39,3 +39,8 @@ r_dir_file(hal_charger_oplus, vendor_proc_oplus_version)
 r_dir_file(hal_charger_oplus, sysfs_batteryinfo)
 
 get_prop(hal_charger_oplus, hwservicemanager_prop)
+
+allow hal_charger_oplus vendor_sysfs_ac_supply:dir rw_dir_perms;
+allow hal_charger_oplus vendor_sysfs_ac_supply:file rw_file_perms;
+allow hal_charger_oplus oplus_block_device:dir search;
+allow hal_charger_oplus oplus_block_device:file r_file_perms;

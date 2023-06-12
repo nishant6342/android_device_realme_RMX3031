@@ -1,3 +1,8 @@
+# Camera
+genfscon proc /boost_pool/camera                                                            u:object_r:vendor_proc_cam:s0
+genfscon proc /boost_pool/camera_low                                                        u:object_r:vendor_proc_cam:s0
+genfscon proc /boost_pool/camera_stat                                                       u:object_r:vendor_proc_cam:s0
+
 # Charging
 genfscon sysfs /devices/platform/charger/power_supply/ac                                    u:object_r:vendor_sysfs_ac_supply:s0
 genfscon sysfs /devices/platform/charger/power_supply/battery                               u:object_r:vendor_sysfs_battery_supply:s0
@@ -17,9 +22,9 @@ genfscon sysfs /devices/virtual/oplus_chg                                       
 genfscon sysfs /devices/platform/extcon_usb/extcon                                          u:object_r:sysfs_extcon:s0
 
 # Display
-genfscon proc /devinfo/lcd                          u:object_r:vendor_proc_display:s0
-genfscon proc /touchpanel                           u:object_r:vendor_proc_display:s0
-genfscon sysfs /kernel/oplus_display                u:object_r:vendor_sysfs_graphics:s0
+genfscon proc /devinfo/lcd                                                   u:object_r:vendor_proc_display:s0
+genfscon proc /touchpanel                                                    u:object_r:vendor_proc_display:s0
+genfscon sysfs /kernel/oplus_display                                         u:object_r:vendor_sysfs_graphics:s0
 
 # Fingerprint
 genfscon proc /fp_id                                u:object_r:vendor_proc_fingerprint:s0
@@ -51,7 +56,21 @@ genfscon proc /sys/kernel/sched_assist_scene         u:object_r:proc_sched_assis
 # Wakeup
 genfscon sysfs /devices/platform/usb0/wakeup/wakeup124                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/battery/wakeup179                     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup178                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/charger/power_supply/ac/wakeup177                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19031000.vpu_core1/wakeup/wakeup170                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup132                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1a000000.camsys/wakeup/wakeup112                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19030000.vpu_core0/wakeup/wakeup169                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup130                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup/wakeup110                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0038/wakeup/wakeup175                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11d04000.i2c8/i2c-8/8-0028/wakeup/wakeup139                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/19032000.vpu_core2/wakeup/wakeup171                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11f00000.i2c5/i2c-5/5-004e/wakeup/wakeup131                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10800000.adsp_core0/wakeup/wakeup13                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup/wakeup111                    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0038/wakeup/wakeup176                u:object_r:sysfs_wakeup:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/duration  u:object_r:sysfs_vibrator:s0
@@ -59,3 +78,8 @@ genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/trigge
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/state     u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/activate     u:object_r:sysfs_vibrator:s0
 
+# Swap
+genfscon proc /sys/vm/direct_swappiness           u:object_r:proc_swappiness:s0
+
+# TEE
+genfscon proc /tee_bind_core                      u:object_r:vendor_proc_fingerprint:s0

@@ -1,0 +1,2 @@
+allow ccci_mdinit vendor_proc_oplus_version:dir search;
+allow ccci_mdinit vendor_proc_oplus_version:file rw_file_perms;

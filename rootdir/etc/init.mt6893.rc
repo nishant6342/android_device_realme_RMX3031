@@ -1183,9 +1183,6 @@ on property:vendor.mtk.md1.status=reset
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 
-on property:sys.oplus.vm.swaplow=*
-    exec_background /system/bin/lmkd --update swaplow ${sys.oplus.vm.swaplow}
-
 # FPSGO FBT Game
 on boot
     insmod /vendor/lib/modules/fpsgo.ko

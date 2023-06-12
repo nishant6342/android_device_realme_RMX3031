@@ -1,0 +1,2 @@
+# System Suspend
+type vendor_sysfs_usb_supply, fs_type, sysfs_type;

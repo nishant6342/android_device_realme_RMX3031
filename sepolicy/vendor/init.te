@@ -1,0 +1,34 @@
+binder_use(init)
+hwbinder_use(init)
+allow proc_perfmgr proc:filesystem associate ;
+allow proc_cpufreq proc:filesystem associate ;
+allow vendor_proc_display proc:filesystem associate ;
+allow init vendor_shell_exec:file rx_file_perms;
+allow init vendor_toolbox_exec:file rx_file_perms;
+allow init proc:file rw_file_perms;
+allow init proc_swappiness:file rw_file_perms;
+allow init proc_watermark_scale_factor:file rw_file_perms;
+allow init privapp_data_file:dir rw_dir_perms;
+allow init app_data_file:dir rw_dir_perms;
+allow init system_app_data_file:dir rw_dir_perms;
+allow init sysfs_devices_block:file rw_file_perms;
+allow init sysfs_leds:file create_file_perms;
+allow init mtk_hal_camera_exec:file rx_file_perms;
+allow init vendor_sysfs_otg_switch:file create_file_perms;
+allow init vendor_sysfs_usb_supply:file create_file_perms;
+allow init vendor_sysfs_graphics:file create_file_perms;
+allow init vendor_proc_display:file create_file_perms;
+allow init ccci_device:chr_file create_file_perms;
+binder_call(init, vtservice_hidl)
+binder_call(init, surfaceflinger)
+binder_call(init, radio)
+allow init vtservice_hidl:fd { use };
+allow init shell_exec:file rx_file_perms;
+allow init mtk_hal_audio:file rw_file_perms;
+allow init system_file:file rx_file_perms;
+allow init hal_performance_oplus_exec:file rx_file_perms;
+add_hwservice(init, hal_performance_oplus_hwservice)
+add_hwservice(init, mtk_hal_videotelephony_hwservice)
+allow init surfaceflinger_service:service_manager find;
+allow init radio_service:service_manager find;
+allow init default_android_service:service_manager { find add };

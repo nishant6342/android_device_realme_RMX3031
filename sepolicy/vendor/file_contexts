@@ -2,6 +2,7 @@
 /data/vendor/camera_update(/.*)?                                                                                       u:object_r:vendor_camera_update_data_file:s0
 /mnt/vendor/persist/camera(/.*)?                                                                                       u:object_r:persist_camera_file:s0
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.engcamera@1\.0-service                                               u:object_r:mtk_hal_camera_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.cammidasservice@1\.0-service                                         u:object_r:mtk_hal_camera_exec:s0
 
 # Charging
 /dev/oplus_chg                                                                                                         u:object_r:oplus_charger_device:s0
@@ -9,6 +10,7 @@
 
 # Display
 /dev/oplus_display                                                                                                     u:object_r:oplus_display_device:s0
+/sys/devices/platform/disp-leds/leds/lcd-backlight(/.*)?   u:object_r:sysfs_leds:s0
 
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RMX3031                                  u:object_r:hal_light_default_exec:s0
@@ -23,6 +25,12 @@
 /dev/block/sdc7                                                                                                        u:object_r:oplus_block_device:s0
 /dev/block/platform/soc/11270000.ufshci/by-name/oplus_custom                                                           u:object_r:oplus_block_device:s0
 /dev/block/platform/bootdevice/by-name/oplus_custom                                                                    u:object_r:oplus_block_device:s0
+/dev/block/sdc16                                                                                                       u:object_r:oplus_block_device:s0
+/mnt/vendor/persist/engineermode/cali_coe                                                                              u:object_r:oplus_sensor_file:s0
+/mnt/vendor/persist/engineermode/red_max_lux                                                                           u:object_r:oplus_sensor_file:s0
+/mnt/vendor/persist/engineermode/green_max_lux                                                                         u:object_r:oplus_sensor_file:s0
+/mnt/vendor/persist/engineermode/blue_max_lux                                                                          u:object_r:oplus_sensor_file:s0
+/mnt/vendor/persist/engineermode/white_max_lux                                                                         u:object_r:oplus_sensor_file:s0
 
 # Fingerprint
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@2\.1-service                                 u:object_r:hal_fingerprint_default_exec:s0
@@ -38,6 +46,12 @@
 # Firmwares
 /odm/vendor/firmware(/.*)?                                                                                             u:object_r:vendor_firmware_file:s0
 /odm/firmware(/.*)?                                                                                                    u:object_r:vendor_firmware_file:s0
+
+# ORMS Hal
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.ormsHalService-aidl-service                                          u:object_r:mtk_hal_camera_exec:s0
+
+# Performance
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.performance@1\.0-service                                             u:object_r:hal_performance_oplus_exec:s0
 
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.oplus                                      u:object_r:hal_lineage_touch_default_exec:s0
