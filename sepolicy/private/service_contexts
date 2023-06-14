@@ -1,0 +1,4 @@
+osensemanager                      u:object_r:osense_service:s0
+OplusResourceManagerService        u:object_r:oplus_resource_manager_service:s0
+OPLUSExService                     u:object_r:OPLUSExService_service:s0
+app_compatibility                  u:object_r:app_compatibility_service:s0

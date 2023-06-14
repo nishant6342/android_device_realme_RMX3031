@@ -11,7 +11,7 @@ type hal_commondcs_oplus_hwservice, hwservice_manager_type;
 type hal_fingerprint_oplus_hwservice, hwservice_manager_type;
 
 # Orms
-type hal_orms_oplus_hwservice, hwservice_manager_type;
+type oplus_hal_ormsHal_hwservice, hwservice_manager_type;
 
 # OSense
 type hal_osense_oplus_hwservice, hwservice_manager_type;

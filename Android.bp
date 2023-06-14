@@ -1,2 +1,10 @@
 soong_namespace {
 }
+
+prebuilt_etc {
+    name: "orms_core_config",
+    src: "configs/orms_core_config.xml",
+    filename_from_src: true,
+    sub_dir: "orms",
+	device_specific: true
+}

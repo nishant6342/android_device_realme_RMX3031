@@ -31,4 +31,5 @@ add_hwservice(init, hal_performance_oplus_hwservice)
 add_hwservice(init, mtk_hal_videotelephony_hwservice)
 allow init surfaceflinger_service:service_manager find;
 allow init radio_service:service_manager find;
-allow init default_android_service:service_manager { find add };
+allow init oplus_block_device:lnk_file relabelto;
+allow init oplus_orms_aidl_service_exec:file rx_file_perms;

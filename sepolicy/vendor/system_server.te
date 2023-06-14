@@ -4,3 +4,5 @@ allow system_server vendor_proc_oplus_version:dir search ;
 allow system_server vendor_proc_oplus_sensor_feature:dir search;
 allow system_server vendor_sysfs_usb_supply:file rw_file_perms;
 allow system_server vendor_sysfs_usb_supply:file { read open getattr setattr };
+allow system_server proc_boost_pool:file rw_file_perms;
+allow system_server proc_boost_pool:dir r_dir_perms;

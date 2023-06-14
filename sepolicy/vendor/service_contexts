@@ -1,0 +1,6 @@
+# Aidl Orms Hal
+vendor.oplus.hardware.ormsHalService.IOrmsAidlHalService/default  u:object_r:oplus_orms_aidl_hal_service:s0
+
+# OplusRadio-AIDL
+vendor.oplus.hardware.radio.IRadioStable/OplusRadio0  u:object_r:hal_radio_service:s0
+vendor.oplus.hardware.radio.IRadioStable/OplusRadio1  u:object_r:hal_radio_service:s0

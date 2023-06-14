@@ -1,0 +1,20 @@
+type oplus_hal_ormsHal, domain;
+type oplus_hal_ormsHal_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(oplus_hal_ormsHal)
+hwbinder_use(oplus_hal_ormsHal)
+add_hwservice(oplus_hal_ormsHal, oplus_hal_ormsHal_hwservice)
+get_prop(oplus_hal_ormsHal, hwservicemanager_prop)
+set_prop(oplus_hal_ormsHal, hwservicemanager_prop)
+
+allow oplus_hal_ormsHal oplus_hal_ormsHal_exec:file rx_file_perms;
+allow oplus_hal_ormsHal hwservicemanager_prop:file rw_file_perms;
+allow oplus_hal_ormsHal hal_fingerprint_default:dir search;
+allow oplus_hal_ormsHal mtk_hal_audio:dir search;
+allow oplus_hal_ormsHal hal_audio_default:dir search;
+allow oplus_hal_ormsHal vendor_proc_oplus_version:file r_file_perms;
+allow oplus_hal_ormsHal proc_version:file r_file_perms;
+allow oplus_hal_ormsHal system_prop:file r_file_perms;
+allow oplus_hal_ormsHal mtk_hal_audio:file rw_file_perms;
+allow oplus_hal_ormsHal hal_fingerprint_default:file rw_file_perms;
+binder_call(oplus_hal_ormsHal, servicemanager)

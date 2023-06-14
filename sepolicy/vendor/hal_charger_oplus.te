@@ -44,3 +44,6 @@ allow hal_charger_oplus vendor_sysfs_ac_supply:dir rw_dir_perms;
 allow hal_charger_oplus vendor_sysfs_ac_supply:file rw_file_perms;
 allow hal_charger_oplus oplus_block_device:dir search;
 allow hal_charger_oplus oplus_block_device:file r_file_perms;
+allow hal_charger_oplus oplus_block_device:blk_file r_file_perms;
+allow hal_charger_oplus block_device:dir search;
+allow hal_charger_oplus block_device:file rw_file_perms;

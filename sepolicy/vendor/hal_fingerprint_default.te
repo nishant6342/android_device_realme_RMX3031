@@ -29,7 +29,7 @@ allow hal_fingerprint_default vendor_sysfs_battery_supply:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_battery_supply:file r_file_perms;
 
 add_hwservice(hal_fingerprint_default, hal_commondcs_oplus_hwservice)
-add_hwservice(hal_fingerprint_default, hal_orms_oplus_hwservice)
+add_hwservice(hal_fingerprint_default, oplus_hal_ormsHal_hwservice)
 add_hwservice(hal_fingerprint_default, hal_performance_oplus_hwservice)
 add_hwservice(hal_fingerprint_default, hal_osense_oplus_hwservice)
 add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
@@ -37,3 +37,4 @@ add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
 get_prop(hal_fingerprint_default, system_oplus_project_prop)
 set_prop(hal_fingerprint_default, system_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+binder_call(hal_fingerprint_default, hal_performance_oplus)

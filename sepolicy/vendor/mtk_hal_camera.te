@@ -1,25 +1,28 @@
 add_hwservice(mtk_hal_camera, hal_camera_oplus_hwservice)
+add_hwservice(mtk_hal_camera, oplus_hal_ormsHal_hwservice)
+add_hwservice(mtk_hal_camera, hal_performance_oplus_hwservice)
+add_hwservice(mtk_hal_camera, hal_osense_oplus_hwservice)
+add_hwservice(mtk_hal_camera, mtk_hal_mmagent_hwservice)
+
+r_dir_file(mtk_hal_camera, proc_boost_pool)
+r_dir_file(mtk_hal_camera, proc_sched_assist)
+r_dir_file(mtk_hal_camera, proc_version)
+r_dir_file(mtk_hal_camera, system_data_file)
+r_dir_file(mtk_hal_camera, vendor_proc_oplus_version)
+
+get_prop(mtk_hal_camera, default_prop)
+get_prop(mtk_hal_camera, system_prop)
+set_prop(mtk_hal_camera, vendor_oplus_prop)
+get_prop(mtk_hal_camera, system_oplus_camera_prop)
 
 allow mtk_hal_camera persist_camera_file:dir rw_dir_perms;
 allow mtk_hal_camera persist_camera_file:file create_file_perms;
 allow mtk_hal_camera vendor_camera_update_data_file:dir rw_dir_perms;
 allow mtk_hal_camera vendor_camera_update_data_file:file create_file_perms;
 allow mtk_hal_camera persist_data_file:dir r_dir_perms;
-allow mtk_hal_camera system_data_file:dir r_dir_perms;
-allow mtk_hal_camera default_android_service:service_manager { add };
-
 allow mtk_hal_camera proc_sched_assist:file rw_file_perms;
-
-r_dir_file(mtk_hal_camera, vendor_proc_oplus_version)
-
-set_prop(mtk_hal_camera, vendor_oplus_prop)
-get_prop(mtk_hal_camera, vendor_oplus_prop)
-get_prop(mtk_hal_camera, system_oplus_camera_prop)
-allow mtk_hal_camera proc_version:file { read open getattr };
-allow mtk_hal_camera default_prop:file rw_file_perms;
-add_hwservice(mtk_hal_camera, hal_orms_oplus_hwservice)
-add_hwservice(mtk_hal_camera, hal_performance_oplus_hwservice)
-add_hwservice(mtk_hal_camera, hal_osense_oplus_hwservice)
-add_hwservice(mtk_hal_camera, mtk_hal_mmagent_hwservice)
+allow mtk_hal_camera proc_boost_pool:file rw_file_perms;
 binder_call(mtk_hal_camera, mtk_hal_mmagent)
-allow mtk_hal_camera vendor_proc_cam:file rw_file_perms;
+binder_call(mtk_hal_camera, opluscamera_app)
+allow mtk_hal_camera opluscamera_app:fd use;
+r_dir_file(mtk_hal_camera, system_data_file)

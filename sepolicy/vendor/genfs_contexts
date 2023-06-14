@@ -1,7 +1,5 @@
 # Camera
-genfscon proc /boost_pool/camera                                                            u:object_r:vendor_proc_cam:s0
-genfscon proc /boost_pool/camera_low                                                        u:object_r:vendor_proc_cam:s0
-genfscon proc /boost_pool/camera_stat                                                       u:object_r:vendor_proc_cam:s0
+genfscon proc /boost_pool                                                                   u:object_r:proc_boost_pool:s0
 
 # Charging
 genfscon sysfs /devices/platform/charger/power_supply/ac                                    u:object_r:vendor_sysfs_ac_supply:s0

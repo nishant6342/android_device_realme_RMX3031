@@ -1,6 +1,6 @@
 # Camera
 type vendor_proc_flash, fs_type, proc_type;
-type vendor_proc_cam, fs_type, proc_type;
+type proc_boost_pool, fs_type, proc_type;
 type vendor_camera_update_data_file, file_type, data_file_type;
 type persist_camera_file, file_type;
 
@@ -39,6 +39,7 @@ type vendor_sysfs_oplus_virtual_sensor, fs_type, sysfs_type;
 type vendor_proc_oplus_sensor_cali, fs_type, proc_type;
 type vendor_proc_oplus_sensor_als, fs_type, proc_type;
 type oplus_sensor_file, data_file_type, file_type;
+type persist_engineer_file, file_type;
 
 # Oplus
 type vendor_proc_oplus_version, fs_type, proc_type;
