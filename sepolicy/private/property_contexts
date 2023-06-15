@@ -23,3 +23,7 @@ audio.tuning.def_path u:object_r:system_oplus_audio_prop:s0
 ro.separate.soft      u:object_r:system_oplus_project_prop:s0
 ro.oplus.version.     u:object_r:system_oplus_project_prop:s0
 ro.oplus.image.       u:object_r:system_oplus_project_prop:s0
+
+# Realme Parts
+persist.cabc_profile        u:object_r:cabc_prop:s0
+persist.vib_strength        u:object_r:vib_strength_prop:s0
