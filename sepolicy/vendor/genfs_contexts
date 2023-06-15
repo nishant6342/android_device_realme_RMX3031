@@ -74,7 +74,8 @@ genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0038/wakeup/wakeup176    
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/duration  u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/trigger   u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/state     u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/activate     u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/activate  u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/11cb0000.i2c3/i2c-3/3-005a/leds/vibrator/vmax      u:object_r:sysfs_vibrator:s0
 
 # Swap
 genfscon proc /sys/vm/direct_swappiness           u:object_r:proc_swappiness:s0
