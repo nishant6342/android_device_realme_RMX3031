@@ -1,1 +1,2 @@
 allow surfaceflinger vendor_default_prop:file rw_file_perms;
+allow surfaceflinger mtk_hal_mmagent_hwservice:hwservice_manager find;
