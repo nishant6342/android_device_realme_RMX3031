@@ -488,7 +488,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.RMX3031
+    android.hardware.vibrator-service.mediatek
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
