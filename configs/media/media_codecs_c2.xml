@@ -108,12 +108,6 @@
             <Alias name="OMX.MTK.AUDIO.DECODER.WMA" />
             <Limit name="channel-count" max="2" />
         </MediaCodec>
-        <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="5">
-            <Alias name="OMX.MTK.AUDIO.DECODER.MP3" />
-            <Limit name="channel-count" max="2" />
-            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
-            <Limit name="bitrate" range="8000-320000" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.mpeg4.decoder" type="video/mp4v-es" >
             <Alias name="OMX.MTK.VIDEO.DECODER.MPEG4" />
             <Limit name="size" min="16x16" max="2048x1088" />
