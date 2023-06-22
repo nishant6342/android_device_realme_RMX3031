@@ -86,9 +86,6 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.GSM" type="audio/gsm" >
             <Limit name="channel-count" max="1" />
         </MediaCodec>
-        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-        <!-- guyishuang@MULTIMEDIA.MediaServer.CTS.2378060, 2021/10/27, Modify for CTS test -->
-        <!--
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.WMA" type="audio/x-ms-wma" >
             <Limit name="channel-count" max="2" />
         </MediaCodec>
@@ -106,7 +103,5 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.ALAC" type="audio/alac" >
             <Limit name="channel-count" max="8" />
         </MediaCodec>
-        -->
-        <!-- #endif OPLUS_BUG_COMPATIBILITY -->
     </Decoders>
 </Included>

@@ -136,16 +136,8 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
          <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="131-288" />
-            <!-- #ifndef OPLUS_BUG_COMPATIBILITY-->
-            <!-- Jingcheng.Li@MULTMEDIASERVER.PLAYER.2726993, 2021/12/07, Modify for CTS test-->
-            <!--
-            <Limit name="measured-frame-rate-640x360" range="285-626" />
-            <Limit name="measured-frame-rate-720x480" range="145-155" />
-            -->
-            <!-- #else OPLUS_BUG_COMPATIBILITY-->
             <Limit name="measured-frame-rate-640x360" range="285-626" />
             <Limit name="measured-frame-rate-720x480" range="351-772" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY-->
             <Limit name="measured-frame-rate-1280x720" range="206-454" />
             <Limit name="measured-frame-rate-1920x1080" range="125-276" />
         </MediaCodec>
@@ -156,12 +148,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="measured-frame-rate-1920x1080" range="23-51" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9" update="true">
-            <!-- #ifndef OPLUS_BUG_COMPATIBILITY-->
-            <!-- Yugang.Ma@MULTMEDIASERVER.PLAYER.2327311, 2021/10/21, Modify for CTS test-->
-            <!--<Limit name="measured-frame-rate-320x180" range="425-936" />-->
-            <!-- #else OPLUS_BUG_COMPATIBILITY-->
             <Limit name="measured-frame-rate-320x180" range="285-630" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY-->
             <Limit name="measured-frame-rate-640x360" range="249-547" />
             <Limit name="measured-frame-rate-1280x720" range="139-305" />
             <Limit name="measured-frame-rate-1920x1080" range="114-251" />
@@ -176,18 +163,9 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="110-243" />
-            <!-- #ifndef OPLUS_BUG_COMPATIBILITY-->
-            <!-- guyishuang@MULTMEDIASERVER.CODEC.3226509, 2022/3/3, Modify for CTS test-->
-            <!--
-            <Limit name="measured-frame-rate-720x480" range="31-68" />
-            <Limit name="measured-frame-rate-1280x720" range="10-23" />
-            <Limit name="measured-frame-rate-1920x1080" range="7-15" />
-            -->
-            <!-- #else OPLUS_BUG_COMPATIBILITY-->
             <Limit name="measured-frame-rate-720x480" range="51-114" />
             <Limit name="measured-frame-rate-1280x720" range="29-66" />
             <Limit name="measured-frame-rate-1920x1080" range="16-37" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY-->
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="114-250" />

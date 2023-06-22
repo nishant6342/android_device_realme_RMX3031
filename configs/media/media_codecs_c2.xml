@@ -104,15 +104,10 @@
             <Alias name="OMX.MTK.AUDIO.DECODER.ALAC" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
-        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-        <!-- xiaomiaobiao-xinzhi@MULTIMEDIA.MediaServer.CTS.4721281, 2022/11/5, Modify for CTS test -->
-        <!--
         <MediaCodec name="c2.mtk.wma.decoder" type="audio/x-ms-wma">
             <Alias name="OMX.MTK.AUDIO.DECODER.WMA" />
             <Limit name="channel-count" max="2" />
         </MediaCodec>
-        -->
-        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
         <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="5">
             <Alias name="OMX.MTK.AUDIO.DECODER.MP3" />
             <Limit name="channel-count" max="2" />
@@ -138,10 +133,7 @@
             <Limit name="size" min="64x64" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
             <Feature name="adaptive-playback"/>
-            <!-- #ifdef OPLUS_BUG_STABILITY-->
-            <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.4298357, 2022/09/01, add for wallpaper play-->
             <Feature name="can-swap-width-height"/>
-            <!-- #endif OPLUS_BUG_STABILITY-->
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1280x719" value="180" />
@@ -160,10 +152,7 @@
             <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
-            <!-- #ifdef OPLUS_BUG_STABILITY-->
-            <!-- Yugang.Ma@MULTIMEDIA.MEDIASERVER.PLAYER.4298357, 2022/09/01, add for wallpaper play-->
             <Feature name="can-swap-width-height"/>
-            <!-- #endif OPLUS_BUG_STABILITY-->
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-3840x2160" value="30" />
             <Limit name="performance-point-1280x719" value="180" />
@@ -404,14 +393,7 @@
         </MediaCodec>
         <MediaCodec name="c2.mtk.heif.encoder" type="image/vnd.android.heic" >
             <Alias name="OMX.MTK.VIDEO.ENCODER.HEIF" />
-            <!-- #ifndef OPLUS_BUG_COMPATIBILITY-->
-            <!-- CaiBo@MM.MediaServer.CTS.3318645, 2022/3/15, Modify for CTS test-->
-            <!--
-            <Limit name="size" min="16x16" max="16383x16383" />
-            -->
-            <!-- #else OPLUS_BUG_COMPATIBILITY-->
             <Limit name="size" min="160x128" max="16383x16383" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY-->
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
             <Limit name="quality" range="0-100" default="50" />
