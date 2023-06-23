@@ -28,6 +28,9 @@ genfscon sysfs /kernel/oplus_display                                         u:o
 genfscon proc /fp_id                                u:object_r:vendor_proc_fingerprint:s0
 genfscon proc /fp_kernel_event                      u:object_r:vendor_proc_fingerprint:s0
 
+# GPU
+genfscon sysfs /devices/platform/13000000.mali                 u:object_r:sysfs_gpu:s0
+
 # NFC
 genfscon proc /oplus_nfc/chipset                    u:object_r:vendor_proc_nfc_chipset:s0
 
