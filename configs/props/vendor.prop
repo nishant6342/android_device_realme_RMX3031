@@ -293,7 +293,6 @@ debug.sf.hwc.min.duration=23000000
 debug.sf.auto_latch_unsignaled=true
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_hwc_vds=0
-debug.sf.treat_170m_as_sRGB=1
 
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=1
