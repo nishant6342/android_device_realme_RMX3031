@@ -1,1 +1,1 @@
-set_prop(cameraserver, vendor_oplus_prop)
+get_prop(cameraserver, vendor_oplus_prop)

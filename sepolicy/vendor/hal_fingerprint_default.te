@@ -1,5 +1,7 @@
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
 
+add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
+
 allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default oplus_fingerprint_file:dir { create_dir_perms rw_dir_perms };
 allow hal_fingerprint_default oplus_fingerprint_file:file { create_file_perms rw_file_perms };
@@ -28,11 +30,10 @@ allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 allow hal_fingerprint_default vendor_sysfs_battery_supply:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_battery_supply:file r_file_perms;
 
-add_hwservice(hal_fingerprint_default, hal_commondcs_oplus_hwservice)
-add_hwservice(hal_fingerprint_default, oplus_hal_ormsHal_hwservice)
-add_hwservice(hal_fingerprint_default, hal_performance_oplus_hwservice)
-add_hwservice(hal_fingerprint_default, hal_osense_oplus_hwservice)
-add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
+allow hal_fingerprint_default hal_commondcs_oplus_hwservice:hwservice_manager find;
+allow hal_fingerprint_default oplus_hal_ormsHal_hwservice:hwservice_manager find;
+allow hal_fingerprint_default hal_performance_oplus_hwservice:hwservice_manager find;
+allow hal_fingerprint_default hal_osense_oplus_hwservice:hwservice_manager find;
 
 get_prop(hal_fingerprint_default, system_oplus_project_prop)
 set_prop(hal_fingerprint_default, system_fingerprint_prop)

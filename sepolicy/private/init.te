@@ -1,2 +1,0 @@
-allow init vtservice_service:service_manager { find add };
-allow init vtservice_hidl_service:service_manager { find add };

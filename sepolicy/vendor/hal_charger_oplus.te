@@ -1,10 +1,11 @@
 type hal_charger_oplus, domain;
 type hal_charger_oplus_exec, exec_type, vendor_file_type, file_type;
 
+add_hwservice(hal_charger_oplus, hal_charger_oplus_hwservice)
+
 init_daemon_domain(hal_charger_oplus)
 
 hwbinder_use(hal_charger_oplus)
-add_hwservice(hal_charger_oplus, hal_charger_oplus_hwservice)
 allow hal_charger_oplus fwk_sensor_hwservice:hwservice_manager find;
 
 allow hal_charger_oplus hal_charger_oplus:netlink_kobject_uevent_socket { read create bind getopt setopt };
@@ -40,7 +41,7 @@ r_dir_file(hal_charger_oplus, sysfs_batteryinfo)
 
 get_prop(hal_charger_oplus, hwservicemanager_prop)
 
-allow hal_charger_oplus vendor_sysfs_ac_supply:dir rw_dir_perms;
+allow hal_charger_oplus vendor_sysfs_ac_supply:dir r_dir_perms;
 allow hal_charger_oplus vendor_sysfs_ac_supply:file rw_file_perms;
 allow hal_charger_oplus oplus_block_device:dir search;
 allow hal_charger_oplus oplus_block_device:file r_file_perms;

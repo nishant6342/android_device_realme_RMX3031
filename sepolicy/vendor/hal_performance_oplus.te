@@ -1,18 +1,18 @@
 type hal_performance_oplus, domain;
 type hal_performance_oplus_exec, exec_type, vendor_file_type, file_type;
+add_hwservice(hal_performance_oplus, hal_performance_oplus_hwservice)
 
 init_daemon_domain(hal_performance_oplus)
 
 hwbinder_use(hal_performance_oplus)
-add_hwservice(hal_performance_oplus, hal_performance_oplus_hwservice)
+
 get_prop(hal_performance_oplus, hwservicemanager_prop)
 set_prop(hal_performance_oplus, hwservicemanager_prop)
-allow hal_performance_oplus hwservicemanager_prop:file rw_file_perms;
+allow hal_performance_oplus hwservicemanager_prop:file { read getattr open };
 allow hal_performance_oplus hal_fingerprint_default:dir search;
 allow hal_performance_oplus mtk_hal_audio:dir search;
 allow hal_performance_oplus hal_audio_default:dir search;
 allow hal_performance_oplus vendor_proc_oplus_version:file r_file_perms;
 allow hal_performance_oplus proc_version:file r_file_perms;
-allow hal_performance_oplus system_prop:file r_file_perms;
 allow hal_performance_oplus mtk_hal_audio:file rw_file_perms;
 allow hal_performance_oplus hal_fingerprint_default:file rw_file_perms;

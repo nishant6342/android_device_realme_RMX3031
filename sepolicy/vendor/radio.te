@@ -1,4 +1,1 @@
-allow radio vendor_default_prop:file rw_file_perms;
-allow radio init:binder call;
-allow radio vendor_mtk_radio_prop:property_service { set };
-binder_call(radio, init)
+get_prop(radio, vendor_mtk_radio_prop)

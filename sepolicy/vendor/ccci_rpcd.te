@@ -1,1 +1,0 @@
-allow ccci_rpcd default_prop:file rw_file_perms;

@@ -1,5 +1,5 @@
 # Allow system app to set vibration prop
-set_prop(system_app, vib_strength_prop)
+set_prop(system_app, system_vib_strength_prop)
 
 # Allow system_app to set cabc props
-set_prop(system_app, cabc_prop)
+set_prop(system_app, system_cabc_prop)

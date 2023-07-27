@@ -1,4 +1,1 @@
-allow fsck mnt_vendor_file:dir { search };
-allow fsck nvdata_file:dir { getattr };
-allow fsck nvcfg_file:dir { getattr };
 allow fsck oplus_block_device:blk_file rw_file_perms;

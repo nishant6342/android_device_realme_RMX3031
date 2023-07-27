@@ -9,3 +9,7 @@ system_public_prop(system_fingerprint_prop)
 
 # Version
 system_vendor_config_prop(system_oplus_project_prop)
+
+# Realme Parts
+system_public_prop(system_vib_strength_prop)
+system_public_prop(system_cabc_prop)

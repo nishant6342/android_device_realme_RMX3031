@@ -1,1 +1,0 @@
-allow audioserver vendor_default_prop:file rw_file_perms;

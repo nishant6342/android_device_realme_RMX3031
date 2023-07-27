@@ -1,11 +1,7 @@
 type mtk_hal_audio_tmpfs, fs_type;
 
-allow mtk_hal_audio mtk_hal_audio_tmpfs:file rx_file_perms;
-allow mtk_hal_audio default_prop:property_service { set };
 allow mtk_hal_audio mtk_hal_audio:process { execmem };
-allow mtk_hal_audio system_prop:file { read };
 allow mtk_hal_audio untrusted_app:fifo_file { write };
-allow mtk_hal_audio vendor_default_prop:property_service { set };
 
 r_dir_file(mtk_hal_audio, vendor_proc_oplus_version)
 get_prop(mtk_hal_audio, system_oplus_audio_prop)
@@ -13,6 +9,5 @@ set_prop(mtk_hal_audio, system_oplus_audio_prop)
 set_prop(mtk_hal_audio, vendor_audio_tuning_prop)
 
 allow mtk_hal_audio persist_data_file:dir r_dir_perms;
-allow mtk_hal_audio init:binder { call };
-add_hwservice(mtk_hal_audio, hal_performance_oplus_hwservice)
 binder_call(mtk_hal_audio, hal_performance_oplus)
+allow mtk_hal_audio hal_performance_oplus_hwservice:hwservice_manager find;

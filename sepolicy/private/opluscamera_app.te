@@ -37,7 +37,6 @@ binder_call(opluscamera_app, gpuservice)
 allow opluscamera_app media_session_service:service_manager find;
 allow opluscamera_app osense_service:service_manager find;
 allow opluscamera_app oplus_resource_manager_service:service_manager find;
-allow opluscamera_app oplus_exsystem_service_app:service_manager find;
 allow opluscamera_app OPLUSExService_service:service_manager find;
 allow opluscamera_app app_compatibility_service:service_manager find;
 allow opluscamera_app game_service:service_manager find;
