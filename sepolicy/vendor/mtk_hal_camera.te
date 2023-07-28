@@ -22,3 +22,4 @@ allow mtk_hal_camera proc_boost_pool:file rw_file_perms;
 binder_call(mtk_hal_camera, mtk_hal_mmagent)
 binder_call(mtk_hal_camera, opluscamera_app)
 allow mtk_hal_camera opluscamera_app:fd use;
+hal_client_domain(mtk_hal_camera, hal_mtk_mmagent)
