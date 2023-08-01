@@ -1694,7 +1694,6 @@ odm/etc/camera/config/imx471
 odm/etc/camera/config/imx682
 odm/etc/camera/config/oplus_camera_algo_switch_config
 odm/etc/camera/config/oplus_camera_aps_config
-odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/ov02b10
 odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/fb_model/000.png

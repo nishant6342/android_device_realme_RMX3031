@@ -91,6 +91,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl
 
 # Camera
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/camera/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0.vendor \
     android.hardware.camera.device@3.2.vendor \
