@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-util.vendor \
     android.hardware.audio@7.0-util.vendor \
     android.hardware.audio@7.0.vendor \
+    android.hardware.soundtrigger@2.3-impl:32 \
     audio.bluetooth.default \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
