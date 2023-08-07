@@ -1,3 +1,19 @@
+if [ -n "${CLEAN_DT_REPOS}" ]; then
+    if [ "$CLEAN_DT_REPOS" = "True" ]; then
+        echo "Cleaning old repos before cloning"
+        rm -rf vendor/realme
+        rm -rf kernel/realme
+        rm -rf packages/apps/prebuilt-apps
+        rm -rf device/mediatek/sepolicy_vndr
+        rm -rf device/oplus
+        rm -rf packages/apps/RealmeParts
+        rm -rf packages/apps/PocketMode
+        rm -rf hardware/lineage/compat
+        rm -rf hardware/mediatek
+        rm -rf hardware/oplus
+        unset CLEAN_DT_REPOS
+    fi
+fi
 echo start cloning repos
 VT=vendor/realme/RMX3031/RMX3031-vendor.mk
 if ! [ -a $VT ]; then git clone https://github.com/nishant6342/vendor_realme_RMX3031 -b RMUI4-OSS vendor/realme/RMX3031
