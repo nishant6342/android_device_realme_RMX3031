@@ -10,7 +10,6 @@
         <permission name="android.permission.UPDATE_DEVICE_STATS"/>
         <permission name="android.permission.LOCATION_BYPASS"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
-
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.engineermode">

@@ -459,17 +459,14 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-    mediatek-gwsd \
-    mediatek-gwsdv2 \
+    mediatek-carrier-config-manager \
     mediatek-common \
-    mediatek-services \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    mediatek-carrier-config-manager \
     oplus-framework \
     oplus-support-wrapper
 
