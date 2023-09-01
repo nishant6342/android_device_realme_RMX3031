@@ -64,6 +64,9 @@ function blob_fixup {
         vendor/lib*/libmtkisp_metadata.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui_oplus.so" "${2}"
             ;;
+	    vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
   esac
 }
 
