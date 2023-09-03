@@ -1376,7 +1376,6 @@ vendor/lib/libmtkhardware_legacy.so
 vendor/lib/libmtkisp_metadata.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtknetutils.so
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libmtkproperty.so
 vendor/lib/libmtkrillog.so
 vendor/lib/libmtkshifter_vendor.so
@@ -1625,7 +1624,6 @@ vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkmipc-ril.so
 vendor/lib64/libmtknetcap.so
 vendor/lib64/libmtknetutils.so
-vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libmtkproperty.so
 vendor/lib64/libmtkrillog.so
 vendor/lib64/libmtkrilutils.so
@@ -1661,6 +1659,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
+vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Camera-configs
 odm/etc/camera/aicolor/duallut_background.bmp
@@ -2664,7 +2663,6 @@ etc/init/init.vtservice.rc
 -framework/mediatek-telephony-common.jar
 -framework/oplus-framework.jar
 lib/libmtk_vt_wrapper.so
-lib/libmtkperf_client.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
 lib/libvsim-adaptor-client.so
@@ -2675,7 +2673,6 @@ lib64/libimsma_rtp.so
 lib64/libimsma_socketwrapper.so
 lib64/libmtk_vt_service.so
 lib64/libmtk_vt_wrapper.so
-lib64/libmtkperf_client.so
 lib64/libsignal.so
 lib64/libsink.so
 lib64/libsource.so
@@ -3018,22 +3015,7 @@ vendor/lib/liboppo_arcSoftBokehEngine.so
 vendor/lib64/liboppo_arcSoftBokehEngine.so
 
 # Power
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib/libperfctl_vendor.so
 vendor/lib/libpixelflinger.so
-vendor/lib/libpower_timer.so
--vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib64/libperfctl_vendor.so
-vendor/lib64/libpower_timer.so
--vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
-vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # PQ
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service

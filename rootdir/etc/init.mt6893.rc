@@ -1,15 +1,12 @@
 import /vendor/etc/init/hw/init.connectivity.rc
+import /vendor/etc/init/hw/init.mt6893.power.rc
 import /vendor/etc/init/hw/init.mt6893.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /FWUpgradeInit.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
-import /vendor/etc/init/hw/init.cgroup.rc
 import /vendor/etc/init/hw/init.modem.rc
 
 on early-init
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "5 0 0 0 3 3"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 1
-
     # initialize vendor.all.modules.ready to 1 here to prevent NOT GKI project blocked
     setprop vendor.all.modules.ready 1
 
@@ -30,13 +27,6 @@ on init
     # increase sysctl_rmem_max and sysctl_wmem_max values to 2M
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
-
-    # update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/top-app/cpus 0-7
 
     # Set permissions on oplus_chg nodes
     chown system system /sys/class/oplus_chg/battery/short_c_hw_status
@@ -85,9 +75,6 @@ on late-init
     write /sys/kernel/rcu_expedited 1
 
 on charger
-    write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
-    write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
-
     exec /system/bin/e2fsck -f -p /dev/block/platform/bootdevice/by-name/cache
     mount ext4 /dev/block/platform/bootdevice/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
