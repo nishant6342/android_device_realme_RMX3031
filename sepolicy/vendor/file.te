@@ -28,6 +28,8 @@ type vendor_proc_fingerprint, fs_type, proc_type;
 
 # Latency
 type latency_device, dev_type;
+type sysfs_mtk_cpufreq, fs_type, sysfs_type;
+type sysfs_mtk_gpufreq, fs_type, sysfs_type;
 
 # PPS
 type pps_socket, file_type;
