@@ -26,6 +26,12 @@ type oplus_fingerprint_file, data_file_type, file_type;
 type proc_fingerprint, fs_type, proc_type;
 type vendor_proc_fingerprint, fs_type, proc_type;
 
+# Latency
+type latency_device, dev_type;
+
+# PPS
+type pps_socket, file_type;
+
 # NFC
 type vendor_proc_nfc_chipset, fs_type, proc_type;
 
