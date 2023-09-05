@@ -26,3 +26,14 @@ get_prop(hal_audio_default, vendor_mtk_tel_switch_prop)
 get_prop(hal_audio_default, vendor_audio_prop)
 set_prop(hal_audio_default, vendor_audio_prop)
 set_prop(hal_audio_default, vendor_mtk_audiohal_prop)
+
+allow hal_audio_default hal_audio_default:process { execmem };
+allow hal_audio_default untrusted_app:fifo_file { write };
+
+r_dir_file(hal_audio_default, vendor_proc_oplus_version)
+set_prop(hal_audio_default, system_oplus_audio_prop)
+set_prop(hal_audio_default, vendor_audio_tuning_prop)
+
+allow hal_audio_default persist_data_file:dir r_dir_perms;
+binder_call(hal_audio_default, hal_performance_oplus)
+allow hal_audio_default hal_performance_oplus_hwservice:hwservice_manager find;

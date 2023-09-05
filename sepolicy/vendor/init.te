@@ -16,7 +16,7 @@ allow init vendor_proc_display:file create_file_perms;
 allow init ccci_device:chr_file r_file_perms;
 allow init vtservice_hidl:fd { use };
 allow init shell_exec:file {r_file_perms execute};
-allow init mtk_hal_audio:file rw_file_perms;
+allow init hal_audio_default:file rw_file_perms;
 allow init system_file:file {r_file_perms execute};
 allow init hal_performance_oplus_exec:file {r_file_perms execute};
 allow init hal_performance_oplus_hwservice:hwservice_manager find;

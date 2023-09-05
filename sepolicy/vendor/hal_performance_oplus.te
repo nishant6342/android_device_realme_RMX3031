@@ -10,9 +10,9 @@ get_prop(hal_performance_oplus, hwservicemanager_prop)
 set_prop(hal_performance_oplus, hwservicemanager_prop)
 allow hal_performance_oplus hwservicemanager_prop:file { read getattr open };
 allow hal_performance_oplus hal_fingerprint_default:dir search;
-allow hal_performance_oplus mtk_hal_audio:dir search;
+allow hal_performance_oplus hal_audio_default:dir search;
 allow hal_performance_oplus hal_audio_default:dir search;
 allow hal_performance_oplus vendor_proc_oplus_version:file r_file_perms;
 allow hal_performance_oplus proc_version:file r_file_perms;
-allow hal_performance_oplus mtk_hal_audio:file rw_file_perms;
+allow hal_performance_oplus hal_audio_default:file rw_file_perms;
 allow hal_performance_oplus hal_fingerprint_default:file rw_file_perms;
