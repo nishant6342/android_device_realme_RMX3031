@@ -270,6 +270,9 @@
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RMX3031                                  u:object_r:hal_light_default_exec:s0
 
+# Nfc
+/dev/nq-nci                                     u:object_r:nfc_device:s0
+
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.RMX3031                               u:object_r:mtk_hal_sensors_exec:s0
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                                             u:object_r:mtk_hal_sensors_exec:s0
