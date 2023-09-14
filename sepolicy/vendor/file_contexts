@@ -267,6 +267,9 @@
 /dev/oplus_display                                                                                                     u:object_r:oplus_display_device:s0
 /sys/devices/platform/disp-leds/leds/lcd-backlight(/.*)?   u:object_r:sysfs_leds:s0
 
+# Health
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.RMX3031                                 u:object_r:hal_health_default_exec:s0
+
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RMX3031                                  u:object_r:hal_light_default_exec:s0
 
