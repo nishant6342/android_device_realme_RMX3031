@@ -96,12 +96,7 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/kernel/gpu/gpu_min_clock",
       "Values": [
-        "950000",
-        "938000",
-        "926000",
-        "914000",
-        "902000",
-        "890000",
+        "886000",
         "876000",
         "862000",
         "848000",
@@ -133,7 +128,7 @@
         "438000",
         "420000",
         "402000",
-        "385000"
+        "350000"
       ],
       "ResetOnInit": true
     },
@@ -141,12 +136,7 @@
       "Name": "GPUMaxFreq",
       "Path": "/sys/kernel/gpu/gpu_max_clock",
       "Values": [
-        "950000",
-        "938000",
-        "926000",
-        "914000",
-        "902000",
-        "890000",
+        "886000",
         "876000",
         "862000",
         "848000",
@@ -178,7 +168,7 @@
         "438000",
         "420000",
         "402000",
-        "385000"
+        "350000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -379,7 +369,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "950000"
+      "Value": "886000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
