@@ -444,7 +444,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1525000"
+      "Value": "1000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -456,25 +456,25 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1855000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUPrimeClusterMaxFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUPrimeClusterMinFreq",
-      "Duration": 0,
-      "Value": "2463000"
+      "Value": "1162000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 0,
       "Value": "40"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUPrimeClusterMaxFreq",
+      "Duration": 3000,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUPrimeClusterMinFreq",
+      "Duration": 3000,
+      "Value": "2600000"
     },
     {
       "PowerHint": "LAUNCH",
@@ -517,6 +517,42 @@
       "Node": "DRAMOppMin",
       "Duration": 3000,
       "Value": "1"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPULittleClusterUpRateLimit",
+      "Duration": 3000,
+      "Value": "1000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPULittleClusterDownRateLimit",
+      "Duration": 3000,
+      "Value": "20000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBigClusterUpRateLimit",
+      "Duration": 3000,
+      "Value": "1000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUBigClusterDownRateLimit",
+      "Duration": 3000,
+      "Value": "10000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUPrimeClusterUpRateLimit",
+      "Duration": 3000,
+      "Value": "1000"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUPrimeClusterDownRateLimit",
+      "Duration": 3000,
+      "Value": "5000"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -595,42 +631,6 @@
       "Node": "TAUclampMin",
       "Duration": 0,
       "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPULittleClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "1000"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPULittleClusterDownRateLimit",
-      "Duration": 0,
-      "Value": "20000"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPUBigClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "1000"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPUBigClusterDownRateLimit",
-      "Duration": 0,
-      "Value": "10000"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPUPrimeClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "1000"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPUPrimeClusterDownRateLimit",
-      "Duration": 0,
-      "Value": "5000"
     }
   ]
 }
