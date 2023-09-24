@@ -19,3 +19,6 @@ vendor.debug.tpi.                  u:object_r:vendor_oplus_prop:s0
 
 # MNLD
 ro.oplus.mtk_gps_L1L5              u:object_r:vendor_mtk_mnld_prop:s0
+
+# PQ
+ro.vendor.mtk_hdr_video_support         u:object_r:vendor_mtk_pq_ro_prop:s0
