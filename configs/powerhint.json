@@ -91,6 +91,53 @@
       "ResetOnInit": true
     },
     {
+      "Name": "CPUPrimeClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq",
+      "Values": [
+        "9999999",
+        "3000000",
+        "2892000",
+        "2713000",
+        "2600000",
+        "2463000",
+        "2284000",
+        "2141000",
+        "1998000",
+        "1820000",
+        "1632000",
+        "1482000",
+        "1370000",
+        "1258000",
+        "1108000",
+        "921000"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUPrimeClusterMinFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq",
+      "Values": [
+        "9999999",
+        "3000000",
+        "2892000",
+        "2713000",
+        "2600000",
+        "2463000",
+        "2284000",
+        "2141000",
+        "1998000",
+        "1820000",
+        "1632000",
+        "1482000",
+        "1370000",
+        "1258000",
+        "1108000",
+        "921000"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUMinFreq",
       "Path": "/sys/kernel/gpu/gpu_min_clock",
       "Values": [
@@ -293,6 +340,12 @@
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
+      "Node": "CPUPrimeClusterMaxFreq",
+      "Duration": 0,
+      "Value": "3000000"
+    },
+    {
+      "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
       "Value": "2600000"
@@ -350,6 +403,18 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
       "Value": "1855000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUPrimeClusterMaxFreq",
+      "Duration": 0,
+      "Value": "9999999"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUPrimeClusterMinFreq",
+      "Duration": 0,
+      "Value": "2463000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -458,6 +523,12 @@
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
       "Value": "1624000"
+    },
+    {
+      "PowerHint": "Flipendo",
+      "Node": "CPUPrimeClusterMaxFreq",
+      "Duration": 0,
+      "Value": "2141000"
     },
     {
       "PowerHint": "Flipendo",
