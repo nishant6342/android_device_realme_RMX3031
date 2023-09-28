@@ -66,6 +66,7 @@ odm/lib/libnxprecord.so
 odm/lib/libnxpsmartpaparser.so
 odm/lib/libnxpspeech.so
 odm/lib/vendor.oplus.hardware.performance@1.0.so
+odm/lib64/lib_aurisys_lvimfs.so
 odm/lib64/libnxprecord.so
 odm/lib64/libnxpsmartpaparser.so
 odm/lib64/libnxpspeech.so
@@ -271,8 +272,6 @@ odm/etc/audio/audio_param/VolumeGainMap_AudioParam.xml
 odm/etc/audio/audio_param/VolumeGainMap_ParamUnitDesc.xml
 odm/etc/audio/audio_param/Volume_AudioParam.xml
 odm/etc/audio/audio_param/Volume_ParamUnitDesc.xml
-odm/etc/audio/aurisys_config/aurisys_config.xml
-odm/etc/audio/aurisys_config_hifi3/aurisys_config_hifi3.xml
 odm/etc/audio/lvimfs_params/LVACFS_Configuration.txt
 odm/etc/audio/lvimfs_params/LVIMFS_Calibration_2mic.dat
 odm/etc/audio/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
@@ -473,9 +472,6 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
-vendor/etc/aurisys_config.xml
-vendor/etc/aurisys_config_hifi3.xml
-vendor/etc/aurisys_config_rv.xml
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
