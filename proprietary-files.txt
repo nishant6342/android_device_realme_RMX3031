@@ -271,15 +271,7 @@ odm/etc/audio/audio_param/VolumeGainMap_AudioParam.xml
 odm/etc/audio/audio_param/VolumeGainMap_ParamUnitDesc.xml
 odm/etc/audio/audio_param/Volume_AudioParam.xml
 odm/etc/audio/audio_param/Volume_ParamUnitDesc.xml
-odm/etc/audio/aurisys_config/CMCC/aurisys_config.xml
-odm/etc/audio/aurisys_config/CT/aurisys_config.xml
-odm/etc/audio/aurisys_config/CTA/aurisys_config.xml
-odm/etc/audio/aurisys_config/CU/aurisys_config.xml
 odm/etc/audio/aurisys_config/aurisys_config.xml
-odm/etc/audio/aurisys_config_hifi3/CMCC/aurisys_config_hifi3.xml
-odm/etc/audio/aurisys_config_hifi3/CT/aurisys_config_hifi3.xml
-odm/etc/audio/aurisys_config_hifi3/CTA/aurisys_config_hifi3.xml
-odm/etc/audio/aurisys_config_hifi3/CU/aurisys_config_hifi3.xml
 odm/etc/audio/aurisys_config_hifi3/aurisys_config_hifi3.xml
 odm/etc/audio/lvimfs_params/LVACFS_Configuration.txt
 odm/etc/audio/lvimfs_params/LVIMFS_Calibration_2mic.dat
@@ -483,6 +475,7 @@ vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
+vendor/etc/aurisys_config_rv.xml
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
@@ -2391,7 +2384,6 @@ vendor/firmware/soc3_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/soc3_0_ram_wmmcu_1a_1_hdr.bin
 vendor/firmware/valhall-1691526.wa
 
-# Firmware ( Haptics )
 # Firmware ( tfa98xx )
 odm/etc/audio/smartpa_param/tfa98xx.cnt
 odm/etc/audio/smartpa_param/tfa98xx_music.bin
@@ -3361,7 +3353,6 @@ vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/MNL_Config.xml
-vendor/etc/aurisys_config_rv.xml
 vendor/etc/cgroups.json
 vendor/etc/cust_color.xml
 vendor/etc/cust_color_20615_samsung_amsye04_1080p_dsi_cmd.xml
