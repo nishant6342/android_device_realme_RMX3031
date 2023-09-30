@@ -462,7 +462,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 0,
-      "Value": "40"
+      "Value": "100"
     },
     {
       "PowerHint": "LAUNCH",
@@ -588,7 +588,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUDVFSInterval",
       "Duration": 0,
-      "Value": "75"
+      "Value": "100"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
