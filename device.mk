@@ -126,6 +126,10 @@ DONT_DEXPREOPT_PREBUILTS := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 
+# DisableHWOverlaysService
+PRODUCT_PACKAGES += \
+    DisableHWOverlaysService
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0.vendor \
