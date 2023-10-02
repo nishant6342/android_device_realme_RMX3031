@@ -477,7 +477,7 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUPrimeClusterMinFreq",
       "Duration": 3000,
-      "Value": "2600000"
+      "Value": "2892000"
     },
     {
       "PowerHint": "LAUNCH",
@@ -630,10 +630,58 @@
       "Value": "705000"
     },
     {
-      "PowerHint": "DISPLAY_INACTIVE",
+      "PowerHint": "DEVICE_IDLE",
       "Node": "TAUclampMin",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "600000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "902000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "CPUPrimeClusterMinFreq",
+      "Duration": 0,
+      "Value": "921000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "350000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "CPULittleClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1525000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 0,
+      "Value": "1985000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "CPUPrimeClusterMaxFreq",
+      "Duration": 0,
+      "Value": "2141000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "614000"
     }
   ]
 }
