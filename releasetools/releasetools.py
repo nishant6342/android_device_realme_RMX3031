@@ -52,7 +52,14 @@ def OTA_InstallEnd(info, incremental):
       'logo': ['logo']
       }
 
+  pl = 'preloader'
+  pl_part = ['sda', 'sdb']
+
   fw_cmd = 'ui_print("Patching radio images unconditionally...");\n'
+
+  AddImageOnly(info, "{}.bin".format(pl), incremental, True)
+  for part in pl_part:
+      fw_cmd += 'package_extract_file("{}.bin", "/dev/block/{}");\n'.format(pl, part)
 
   for _bin in bin_map.keys():
     AddImageOnly(info, '{}.bin'.format(_bin), incremental, True)
