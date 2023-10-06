@@ -20,6 +20,7 @@ ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 persist.vendor.bluetooth.leaudio_mode=ums
+bluetooth.hci.erroneous_data_reporting.enabled=false
 ro.vendor.bluetooth.bt_multidevice_perform=600
 ro.bluetooth.a2dp_offload.supported=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac
