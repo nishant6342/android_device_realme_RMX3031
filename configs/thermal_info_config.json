@@ -73,23 +73,23 @@
     },
     {
       "Name": "mtk-cl-bcct00",
-      "Type": "COMPONENT"
+      "Type": "BATTERY"
     },
     {
       "Name": "mtk-cl-bcct01",
-      "Type": "COMPONENT"
+      "Type": "BATTERY"
     },
     {
       "Name": "mtk-cl-bcct02",
-      "Type": "COMPONENT"
+      "Type": "BATTERY"
     },
     {
       "Name": "abcct_lcmoff",
-      "Type": "COMPONENT"
+      "Type": "BATTERY"
     },
     {
       "Name": "abcct",
-      "Type": "COMPONENT"
+      "Type": "BATTERY"
     },
     {
       "Name": "mtk-cl-cam00",
