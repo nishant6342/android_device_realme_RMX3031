@@ -1115,14 +1115,10 @@ system_ext/lib64/libapuwarexrp.mtk.so
 system_ext/lib64/libapuwarexrp_v2.mtk.so
 system_ext/lib64/libaudiopolicyextimpl.so
 system_ext/lib64/libcsextimpl.so
-system_ext/lib64/libinputextensionsimpl.so
-system_ext/lib64/libinputflingerextimpl.so
 system_ext/lib64/libneuron_graph_delegate.mtk.so
 system_ext/lib64/libneuronusdk_adapter.mtk.so
 system_ext/lib64/libnir_neon_driver_ndk.mtk.so
 system_ext/lib64/libnn_sample.so
-system_ext/lib64/libopex.so
-system_ext/lib64/liboplus-eap-aka.so
 system_ext/lib64/liboplusHeifDecoderImpl.so
 system_ext/lib64/liboplusNetd.so
 system_ext/lib64/liboplus_10bitHeif.so
@@ -1133,14 +1129,10 @@ system_ext/lib64/liboplus_heifconverter.so
 system_ext/lib64/liboplus_imageprocessing.so
 system_ext/lib64/liboplus_multimedia_kernel_event.so
 system_ext/lib64/liboplus_osvelte_malloc_debug.so
-system_ext/lib64/liboplus_servers.so
 system_ext/lib64/liboplusaudioDump.so
-system_ext/lib64/liboplusavenhancebase.so
-system_ext/lib64/liboplusavenhancements.so
 system_ext/lib64/liboplusbluetooth_jni.so
 system_ext/lib64/liboplusbpf.so
 system_ext/lib64/liboplusextbootmode.so
-system_ext/lib64/liboplusextbspfwupdate.so
 system_ext/lib64/liboplusextproperty.so
 system_ext/lib64/liboplusextstability.so
 system_ext/lib64/liboplusextuevent.so
@@ -1150,7 +1142,6 @@ system_ext/lib64/liboplusheifwriter.so
 system_ext/lib64/liboplushwui_jni.so
 system_ext/lib64/liboplusloadframe.so
 system_ext/lib64/liboplusmagicvoiceloopback.so
-system_ext/lib64/liboplusmediaplayerservice.so
 system_ext/lib64/liboplusmultimediaconfig.so
 system_ext/lib64/liboplusplugin.so
 system_ext/lib64/liboplusrecorder.so
