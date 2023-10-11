@@ -72,7 +72,7 @@
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
-
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.oneplus.gallery">
@@ -89,6 +89,7 @@
         <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
         <permission name="com.oplus.permission.safe.PHONE"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
     </privapp-permissions>
 
     <!-- OPLUS camera -->
