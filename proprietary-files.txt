@@ -2610,7 +2610,7 @@ vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 
 # Pin patched activity exported engineer mode
--priv-app/EngineerMode/EngineerMode.apk|9c90462d8caf098ce923bb947a58e49ca13be579
+-priv-app/EngineerMode/EngineerMode.apk|4b3a8284772d55fc3e49310209a2fa82ece2499b
 
 # Hotword Enrollment
 -my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
@@ -2630,7 +2630,7 @@ etc/init/init.vtservice.rc
 -framework/mediatek-ims-extension-plugin.jar
 -framework/mediatek-services.jar
 -framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-base.jar|6611b6ba53194ae230b844548c9e48e92c59f26a
 -framework/mediatek-telephony-common.jar
 -framework/oplus-framework.jar
 lib/libmtk_vt_wrapper.so
@@ -2680,7 +2680,7 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Pin ImsService from ARES
--priv-app/ImsService/ImsService.apk|26bfb0a15f82ad0cea8bc06ea0372227e486d8e1
+-priv-app/ImsService/ImsService.apk|f6522c2e3061dd1e6101d52ef5c2033ad3e939d9
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.trustonic
