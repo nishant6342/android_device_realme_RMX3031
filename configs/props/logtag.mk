@@ -1,4 +1,4 @@
-ifeq (eng,$(TARGET_BUILD_VARIANT))
+ifeq (userdebug,$(TARGET_BUILD_VARIANT))
 VENDOR_LOG_LEVEL=I
 else
 VENDOR_LOG_LEVEL=S
