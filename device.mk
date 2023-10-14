@@ -424,8 +424,6 @@ PRODUCT_PACKAGES += \
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.3-impl \
-    android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.3.vendor
 
 PRODUCT_COPY_FILES += \
