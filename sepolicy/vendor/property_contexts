@@ -13,9 +13,16 @@ vendor.fingerprint.             u:object_r:vendor_fingerprint_prop:s0
 
 # Camera
 vendor.oplus.camera.               u:object_r:vendor_oplus_prop:s0
-persist.vendor.camera.privapp.list u:object_r:vendor_oplus_prop:s0
+persist.vendor.camera.privapp.list u:object_r:vendor_persist_camera_prop:s0
 vendor.debug.cameralog.enable      u:object_r:vendor_oplus_prop:s0
 vendor.debug.tpi.                  u:object_r:vendor_oplus_prop:s0
+
+# LMK
+ro.lmk.limit_killing_array_kb         u:object_r:lmkd_config_prop:s0
+ro.lmk.psi_complete_stall_ms_dup      u:object_r:lmkd_config_prop:s0
+ro.lmk.nandswap_version               u:object_r:lmkd_config_prop:s0
+ro.lmk.psi_scrit_complete_stall_ms    u:object_r:lmkd_config_prop:s0
+ro.lmk.swap_is_low_kill_enable        u:object_r:lmkd_config_prop:s0
 
 # MNLD
 ro.oplus.mtk_gps_L1L5              u:object_r:vendor_mtk_mnld_prop:s0
