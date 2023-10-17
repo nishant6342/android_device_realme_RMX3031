@@ -183,6 +183,7 @@
 /(vendor|odm)/lib(64)?/libhyperlapse\.so                                     u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libOGLManager\.so                                     u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libui\.so                                             u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/libui_oplus\.so                                       u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libdiptest_iopipe_wpe\.so                             u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libalCFR\.so                                          u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/liboplusblur_capture_api\.so                          u:object_r:same_process_hal_file:s0
