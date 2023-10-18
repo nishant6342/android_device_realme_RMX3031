@@ -209,6 +209,7 @@ persist.vendor.factory.GB2312=yes
 
 # Neural Networks
 ro.vendor.mtk_nn_support=1
+ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn.option=A,B,E,F,Z
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_baseline_support=1
