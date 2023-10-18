@@ -47,16 +47,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "CPULittleClusterUpRateLimit",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us",
-      "Values": [
-        "500",
-        "1000",
-        "2000"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq",
       "Values": [
@@ -97,16 +87,6 @@
         "1162000",
         "1046000",
         "902000"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBigClusterUpRateLimit",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us",
-      "Values": [
-        "500",
-        "1000",
-        "2000"
       ],
       "ResetOnInit": true
     },
@@ -154,16 +134,6 @@
         "1258000",
         "1108000",
         "921000"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUPrimeClusterUpRateLimit",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us",
-      "Values": [
-        "500",
-        "1000",
-        "2000"
       ],
       "ResetOnInit": true
     },
@@ -439,24 +409,6 @@
       "Node": "TAUclampMin",
       "Duration": 0,
       "Value": "100"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPULittleClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "500"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBigClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "500"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUPrimeClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "500"
     },
     {
       "PowerHint": "LAUNCH",
