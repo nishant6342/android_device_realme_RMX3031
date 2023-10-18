@@ -40,12 +40,6 @@ function blob_fixup {
         vendor/lib*/libmtkcam_stdutils.so)
             "$PATCHELF" --replace-needed libutils.so libutils-v32.so "$2"
             ;;
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|\
-        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
-           "$PATCHELF" --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "$2"
-           "$PATCHELF" --replace-needed libcodec2_vndk.so libcodec2_vndk-mtk.so "$2"
-           "$PATCHELF" --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl-mtk@1.0.so "$2"
-            ;;
         vendor/bin/mtk_agpsd)
            "$PATCHELF" --replace-needed libcrypto.so libcrypto-v32.so "$2"
             ;;
