@@ -2708,7 +2708,7 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/jpegtool
 vendor/bin/recordevent
 vendor/bin/replayevent
-vendor/bin/vpud
+vendor/bin/vpud:vendor/bin/dupv
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/vpud.rc
 -vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
