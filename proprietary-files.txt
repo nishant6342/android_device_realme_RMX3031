@@ -3308,7 +3308,6 @@ vendor/etc/cust_color.xml
 vendor/etc/cust_color_20615_samsung_amsye04_1080p_dsi_cmd.xml
 vendor/etc/cust_silky_brightness.xml
 vendor/etc/factory.ini
-vendor/etc/media_codecs_mediatek_audio.xml
 vendor/etc/nhw
 vendor/lib/mt6893/arm.graphics-ndk_platform.so
 vendor/lib/audio_common-aidl-cpp.so
