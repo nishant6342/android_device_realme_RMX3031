@@ -16,9 +16,5 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-        <service
-            android:directBootAware="true"
-            android:name="org.realme.rmx3031.disablehwoverlays.DisableHWOverlaysService">
-        </service>
     </application>
 </manifest>
